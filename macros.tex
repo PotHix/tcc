@@ -1,0 +1,44 @@
+\newcommand{\cabecalhotabela}
+{
+Afirmativas &
+\scriptsize{Se aplica totalmente à empresa} &
+\scriptsize{Se aplica muito à empresa} &
+\scriptsize{Se aplica parcialmente à empresa} &
+\scriptsize{Não se aplica à empresa} &
+\scriptsize{Não sabe} \\
+}
+
+
+\newcounter{titem}
+\newcommand{\tabitem}{\stepcounter{titem}\arabic{titem} {--} }
+\newcounter{citem}[titem]
+\newcommand{\cellitem}{\stepcounter{citem}\alph{citem}. }
+\newcommand{\fimcel}{ & & & & & \\}
+
+\newcounter{thead}
+\newcommand{\tablehead}[2]{\cellcolor[gray]{0.6}\stepcounter{thead}\arabic{thead} {--} #1 #2}
+\newcounter{cellitem}[thead]
+\newcommand{\tcitem}{\stepcounter{cellitem}\arabic{thead}.\arabic{cellitem}. }
+
+\newcommand{\subheader}{Objetivo & Fundamentação Teórica \\ }
+
+\newcommand{\iso}{NBR ISO/IEC 17799:2001}
+\newcommand{\isop}{(NBR ISO/IEC 17799:2001)}
+
+%%% Macros das tabelas de dados
+\newcommand{\theadone}{Questão & Item & 0 & 1 & 2 & 3 & 4 \\}
+\newcommand{\CA}{Controle de Acesso}
+\newcommand{\CI}{Classificação~e Controle dos Ativos~de~Informação}
+\newcommand{\CO}{Conformidade}
+\newcommand{\DS}{Desenvolvimento e Manutenção de Sistemas}
+\newcommand{\GC}{Gestão de Contratos}
+\newcommand{\GN}{Gestão da Continuidade do Negócio}
+\newcommand{\GO}{Gerenciamento das Operações e Comunicação}
+\newcommand{\PS}{Política de Segurança}
+\newcommand{\SO}{Segurança Organizacional}
+\newcommand{\SF}{Segurança Física e de Ambiente}
+\newcommand{\SI}{Segurança da Informação }
+\newcommand{\SP}{Segurança em Pessoas}
+\newlength{\tlen}
+\setlength{\tlen}{6cm}
+

@@ -1,0 +1,54 @@
+\documentclass[pdftex,12pt,a4paper]{article}
+\input{preambulo}
+\title{Segurança da Informação \\ Um estudo sobre a aplicação da segurança e
+gestão de contratos}
+\author{Fernanda Rodrigues Arraiol}
+\begin{document}
+\input{macros}
+
+  %%% Capa
+  \input{capa}
+  \clearpage
+
+  %%% Folha Rosto
+  \input{folharosto}
+  \clearpage
+
+  %%% Agradecimentos
+  \input{agradecimentos}
+  \clearpage
+
+  %%% Epígrafe
+  \input{epigrafe}
+  \clearpage
+
+  %%% Índice
+  \renewcommand\thepage{}
+  \setcounter{tocdepth}{1}
+  \tableofcontents
+  \clearpage
+
+
+  %%% Lista de Figuras
+  \listoffigures
+  \clearpage
+
+  %%% Lista de Tabelas
+  \listoftables
+  \clearpage
+
+  %%% Capítulos
+  \include{resumo}
+  \include{resumo_en}
+  \renewcommand\thepage{\arabic{page}}
+  \setcounter{page}{1}
+  \include{introducao}
+  \include{ref_bib}
+  \include{relato}
+  \include{analise}
+  \include{conclusao}
+  \include{bibliografia}
+  \include{glossario}
+  \include{apendices}
+
+\end{document}
