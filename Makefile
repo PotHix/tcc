@@ -19,7 +19,7 @@ $(DOC).pdf:
 	$(TEX) $(DOC).tex
 	bibtex $(DOC).aux
 	$(TEX) $(DOC).tex
-	makeindex $(DOC).idx
+	#makeindex $(DOC).idx
 	$(TEX) $(DOC).tex
 
 clean:
