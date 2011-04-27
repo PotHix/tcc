@@ -1,4 +1,4 @@
-# Trabalho de conclusão do curso de Sistemas de informação da Fundação Santo André
+# TCC do curso de Sistemas de informação da Fundação Santo André
 
 ## Desenvolvimento de jogos utilizando as tecnologias dos navegadores modernos
 
