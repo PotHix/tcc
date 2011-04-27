@@ -42,5 +42,6 @@ clean:
 show:	$(DOC).pdf
 	evince $(DOC).pdf
 
-shownew:	clean	$(DOC).pdf
-		evince $(DOC).pdf
+shownew: clean
+	make
+	evince $(DOC).pdf
