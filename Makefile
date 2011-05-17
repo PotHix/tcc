@@ -49,3 +49,4 @@ show:		$(DOC).pdf
 shownew:	clean
 		make
 		evince $(DOC).pdf
+		make clean
