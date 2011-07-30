@@ -33,7 +33,8 @@ quer utilizar seu código fonte.
 Uma das grandes preocupações de todos os desenvolvedores de jogos é a
 performance. A área de jogos exige muito processamento para calcular
 cada um dos passos que um jogador vai dar dentro de um jogo, como cada
-objeto vai se comportar, calcular trajetórias de projéteis e outras
+objeto vai se comportar, calcular trajetórias de projéteis, calcular
+iluminação dos objetos da cena, calcular a física dos objetos e outras
 coisas, e para isso é necessário utilizar muito processamento do
 dispositivo que estiver executando o mesmo. Sabemos que Javascript vai
 ser interpretado em cima de um navegador, que por sua vez está sendo
@@ -50,8 +51,43 @@ dispositivos que possuem baixa performance, desde que bem executado.
 
 \subsection{Navegadores}
 
-Comentar sobre o problema com navegadores antigos
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Os navegadores são a parte fundamental para a execução do jogo, pois
+ele é a plataforma de desenvolvimento que o desenvolvedor está visando,
+ou seja, assim como muitas grandes empresas visam video games,
+computadores ou celulares, como plataforma alvo de desenvolvimento, o
+desenvolvedor deve ter em mente que está desenvolvendo para o
+navegador, e estar ciente de suas vantagens, desvantagens e
+limitações.
+
+%TODO: Listar alguma funcionalidade do Diveintohtml5
+Um dos grandes problemas de se trabalhar com navegadores é a
+fragmentação, pois o desenvolvedor deve pensar em quais navegadores e
+dispositivos o seu jogo estará disponível, levanvando em consideração
+que cada usuário vai escolher seu navegador preferido, e que talvez
+esse navegador não estará na ultima versão. Atualmente vários sites na
+internet descrevem quais funcionalidades do HTML5 estão disponíveis em
+qual navegador, um deles é o \cite{diveintohtml5}.
+Esse problema acontece também no desenovimento para computadores e
+video games, mas é um pouco mais simples de lidar, pois os jogos
+simplesmente não são compatíveis, ou seja, se você tem um computador
+que o hardware não é bom o suficiente para executar um jogo, ele será
+barrado já na instalação, ou será executado mas será impossível de ser
+jogado devido a sua lentidão. O mesmo acontece com os jogos no
+navegador, caso o navegador não tenha suporte as funcionalidades que o
+jogo precisa, ele simplesmente não irá ser executado. Enquanto o
+desenvolvimento do jogo estiver sendo feito, o desenvolvedor deve ter
+definido quais são as plataformas alvo do seu jogo, pois, apesar de
+estar lidando com navegadores, que podem executar em uma grande
+quantidade de plataformas, é nítido que não será possível ter a mesma
+performance em todas elas, tendo em vista que um computador pessoal
+possui muito mais capacidade de processamento do que um celular, por
+exemplo.
+
+O problema da fragmentação pode ser mais facilmente contornado quando
+o desenvolvedor fixa algumas confugurações, como por exemplo a versão
+dos navegadores suportados. A liberdade do desenvolvedor é total,
+bastando apenas ter em mente o quanto de processamento será utilizado
+e quais funcionalidades serão necessárias para a execução do jogo.
 
 \subsection{WebSockets}
 
