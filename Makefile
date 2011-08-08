@@ -14,6 +14,7 @@ RM = rm -f
 CP = cp -f
 MAKE = make
 PUBLISHFOLDER = /files/Dropbox/FSA-TCC-HTML5/
+#VERSION_NUMBER = $(ls -l | grep -v total | grep *.dat | awk '{print $8}' | expr `sed 's/[a-zA-Z.]//g'` + 1)
 
 ########################################################################
 
