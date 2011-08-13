@@ -1,0 +1,2 @@
+VERSION=`ls -l $1 | grep pdf | awk '{print $8}' | xargs echo | sed 's/[A-Za-z_.]//g; s/ //g' | tail -c 2`
+echo $2$VERSION.pdf
