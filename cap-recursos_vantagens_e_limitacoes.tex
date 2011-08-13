@@ -91,33 +91,54 @@ e quais funcionalidades serão necessárias para a execução do jogo.
 
 \subsection{Canvas}
 
-Canvas é uma tecnologia que prove ao desenvolvedor uma forma fácil
-para criar desenhos, importando imagens, criando figuras geométricas,
-e manipulando-as de uma forma simples.
-Essa tecnologia é a tecnologia fundamental para o desenvolvimento de
-jogos para o navegador, pois permite ao desenvolvedor uma forma de
-exibir objetos e manipulá-los da mesma forma que é feito com jogos
+O Canvas prove uma interface com resolução de dependencias para
+desenhar coisas diretamente no navegador, e pode ser utilizado para
+gerar gráficos, gráficos de jogos, e outras imagens para ser
+visualizadas no momento da execução. \cite{w3ccanvas}
+
+O canvas na web segue a mesma interface que é utilizada nas grandes
+plataformas atuais. O conceito de canvas foi criado pela Apple para
+utilizar no webkit do MacOS X \cite{lubbers2010pro}, criando uma API
+para desenhar widgets e outras coisas em sua plataforma, e essa API
+vem sendo padronizada e implementada em vários navegadores.
+
+Essa tecnologia é fundamental para o desenvolvimento de jogos para
+o navegador, pois permite ao desenvolvedor uma forma de exibir
+objetos e manipulá-los da mesma forma que é feito com jogos
 simples em duas dimensões para computadores.
-% procurar mais informações na documentação do canvas do W3C
 
-\subsection{WebSockets}
+\subsection{WebSocket API}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+WebSocket API define uma especificação que permite as páginas web
+utilizar o protocolo de Sockets para utilizar uma comunicação em duas
+vias com um servidor remoto \cite{w3cwebsockets}
+
+Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
+(em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
+em latencia. \cite{lubbers2010pro}
 
 \subsection{WebGL}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-\cite{webglmodel}
+WebGL é uma API para gráficos 3D na web \cite{lubbers2010pro}.
+WebGL é um mapeamento do OpenGL ES2 em Javascript \cite{lubbers2010pro}.
+Algumas coisas legais que são possíveis de fazer com webgl \cite{webglmodel}.
+
+Suporta shaders
+
+baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
+
 
 \subsection{Offline cache}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-\subsection{Filesystem API}
+Offline cache, em sua maneira mais simplista, é uma lista apontando
+para o HTML, CSS, Javascript, imagens e outros recursos que devem
+estar disponíveis para o wesite \cite{pilgrim2010html5}.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
 \subsection{SVG}
+SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
+bi-dimensionais e imagens, e um conjunto de script relacionados a
+interfaces graficas.\cite{w3csvg}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
