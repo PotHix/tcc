@@ -44,7 +44,7 @@ clean:
 
 publish:	$(DOC).pdf
 		$(CP) $(DOC).pdf $(PUBLISHFOLDER)
-		./update_file_version $(PUBLISHFOLDER) $(DOC)_v
+		./update_file_version $(PUBLISHFOLDER) $(DOC)
 
 show:		$(DOC).pdf
 		evince $(DOC).pdf
