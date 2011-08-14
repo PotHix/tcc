@@ -1,6 +1,6 @@
 # TCC do curso de Sistemas de informação da Fundação Santo André
 
-## Desenvolvimento de jogos utilizando as tecnologias dos navegadores modernos
+## Desenvolvimento de jogos utilizando as tecnologias dos navegadores compatíveis com HTML5
 
 ### Como compilar esse trabalho
 
