@@ -5,8 +5,6 @@
 #
 # DOC: the document
 
-SHELL := /bin/bash
-
 DOC = tcc
 
 ############################### PROGRAMS ###############################
