@@ -106,6 +106,16 @@ Essa tecnologia é fundamental para o desenvolvimento de jogos para
 o navegador, pois permite ao desenvolvedor uma forma de exibir
 objetos e manipulá-los da mesma forma que é feito com jogos
 simples em duas dimensões para computadores.
+Diferentemente do DOM, que cria vários objetos que podem ser
+manipulados individualmente pelo navegador, o canvas quando criado
+gera apenas um elemento no navegador, e todos os elementos criados
+no nesse elemento (imagens, retangulos e etc) ficam invisíveis para acesso, e
+não podem ser modificados, apenas recriados.
+
+O canvas pode ser utilizado em várias camadas, gerando vários
+elementos canvas dentro do navegador, e posicionando-os no mesmo
+lugar, assim facilitando a manipulação de cenário e melhorando a
+performance.
 
 \subsection{WebSocket API}
 
