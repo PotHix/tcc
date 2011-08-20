@@ -117,11 +117,28 @@ elementos canvas dentro do navegador, e posicionando-os no mesmo
 lugar, assim facilitando a manipulação de cenário e melhorando a
 performance.
 
+% Colocar aqui um exemplo de um jogo que utiliza canvas e camadas
+
 \subsection{WebSocket API}
 
 WebSocket API define uma especificação que permite as páginas web
 utilizar o protocolo de Sockets para utilizar uma comunicação em duas
-vias com um servidor remoto \cite{w3cwebsockets}
+vias com um servidor remoto \cite{w3cwebsockets}. Com essa tecnologia
+conseguimos facilmente criar jogos multiplayer, pois podemos
+trocar informações entre dois computadores de uma maneira bem mais
+veloz, trafegando menos dados e recebendo as informações mais
+rapidamente.
+O que traz essa velocidade na comunicação via internet é não utilizar
+o metodo normal de comunicação que o HTTP fornece, e sim utilizar um
+tunel direto entre o computador e o servidor.
+Nos metodos normais de comunicação utilizando o HTTP a cada requisição
+é necessário passar por todo o processo de comunicação do TCP, e
+receber todos os dados e metas do HTTP, o que gera um tempo maior para
+o recebimento dos dados e um maior trafego de rede. Com o Socket (que
+é criados pela funcionalidade de WebSockets), apenas uma conexão TCP é
+criada e mantida durante um período de tempo, assim facilitando o
+tráfego de informações viabilizando uma comunicação mais rápida e
+usável para um jogo em tempo real.
 
 Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 (em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
