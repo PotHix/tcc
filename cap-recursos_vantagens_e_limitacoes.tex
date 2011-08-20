@@ -117,7 +117,7 @@ elementos canvas dentro do navegador, e posicionando-os no mesmo
 lugar, assim facilitando a manipulação de cenário e melhorando a
 performance.
 
-% Colocar aqui um exemplo de um jogo que utiliza canvas e camadas
+%TODO: Colocar aqui um exemplo de um jogo que utiliza canvas e camadas
 
 \subsection{WebSocket API}
 
@@ -144,23 +144,24 @@ Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 (em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
 em latencia. \cite{lubbers2010pro}
 
-\subsection{WebGL}
-
-WebGL é uma API para gráficos 3D na web \cite{lubbers2010pro}.
-WebGL é um mapeamento do OpenGL ES2 em Javascript \cite{lubbers2010pro}.
-Algumas coisas legais que são possíveis de fazer com webgl \cite{webglmodel}.
-
-Suporta shaders
-
-baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
-
+%TODO: Colocar aqui um exemplo de um jogo que utiliza websockets para um jogo multiplayer
 
 \subsection{Offline cache}
 Offline cache, em sua maneira mais simplista, é uma lista apontando
 para o HTML, CSS, Javascript, imagens e outros recursos que devem
-estar disponíveis para o website \cite{pilgrim2010html5}.
+estar disponíveis para o website \cite{pilgrim2010html5}. Utilizando
+essa lista o navegador faz o download de todos os recursos que
+precisam ser utilizados quando o dispositivo em questão não estiver
+apto a acessar a internet, ou seja, na primeira requisição, tudo que estiver
+disponivel no arquivo de manifesto que contem essa lista será baixado
+e guardado no dispositivo e será utilizado até que o manifesto seja
+modificado.
+A cada nova requisição de uma aplicação que utiliza offline cache o
+navegador verifica o arquivo de manifesto, se ele não foi modificado
+o navegador vai utilizar os arquivos que estão disponíveis localmente,
+caso contrário todos os arquivos da seção "CACHE" desse arquivo serão baixados novamente.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+%TODO: Adicionar um exemplo de aplicação que utiliza offline cache
 
 \subsection{SVG}
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
@@ -189,3 +190,14 @@ esquema chave-valor, ou seja, uma chave como índice, associado a um
 determinado valor, que será convertido para texto quando adicionado.
 
 %TODO: Dar um exemplo de uso de localstorage e falar de sua utilização em jogos casuais
+
+\subsection{WebGL}
+
+WebGL é uma API para gráficos 3D na web \cite{lubbers2010pro}.
+WebGL é um mapeamento do OpenGL ES2 em Javascript \cite{lubbers2010pro}.
+
+%TODO: Adicionar as imagens dessa citação \cite{webglmodel}.
+
+Suporta shaders
+
+baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
