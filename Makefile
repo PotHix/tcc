@@ -43,6 +43,7 @@ clean:
 publish:	$(DOC).pdf
 		$(CP) $(DOC).pdf $(PUBLISHFOLDER)
 		./update_file_version $(PUBLISHFOLDER) $(DOC)
+		make clean
 
 show:		$(DOC).pdf
 		evince $(DOC).pdf
