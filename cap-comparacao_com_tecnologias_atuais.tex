@@ -47,7 +47,7 @@ fazer jogos, pois esse é o foco da engine.
 
 \subsection{Performance}
 
-No mundo dos jogos digitais, performance é um assunto muito falado,
+Performance é um assunto muito discutido no densenvolvimento de jogos
 pois os jogos consomem muito recurso do dispositivo em que estão
 executando, pois estão, entre outras coisas, em constante execução, fazendo
 calculos diversos para situar o jogador dentro do jogo, por exemplo.
@@ -92,12 +92,32 @@ desenvolvedor terá que lidar com um problema de fragmentação, pois
 para cada tipo de dispositivo o jogo terá que ser customizado de uma
 maneira diferente dependendo da tecnologia que foi escolhida para o
 desenvolvimento do mesmo.
-Utilizando HTML5 temos a vantagem de lidar com um navegador que estará
-cuidando de todo o processo de aplicação nativa para o dispositivo,
-funcionando como uma maquina virtual para executar o jogo
-desenvolvido.
 
-%TODO: falar sobre as outras tecnologias
+Os desenvolvedores que usam as tecnologias que dependem de plugins para executar o
+jogo não sofrem muito com a fragmentação, pois o plugin gerencia
+grande parte das diferenças entre os dispositivos, permitindo ao
+desenvolvedor se preocupar apenas com a lógica do jogo. Dependendo do
+plugin utilizado, alguns poucos problemas podem chegar ao
+desenvolvedor, como o tamanho de tela, por exemplo, pois ao jogar em
+um dispositivo com uma tela menor (um celular, por exemplo), o jogo
+deve se adaptar ao novo formato, e dependendo do estilo do jogo, o
+programador terá que lidar com as diferençar e adaptar o jogo aos
+vários tamanhos de tela.
+
+Ao utilizar HTML5 o navegador se torna a plataforma de execução do
+jogo, portanto, o jogo funcionará em todos os dispositivos que
+suportarem o mesmo, com a vantagem de já estar instalado préviamente
+no dispositivo em questão.
+Independente do navegador já estar instalado no sistema, o
+desenvolvedor do jogo terá os mesmos problemas dos plugins, ou seja,
+também terá de lidar com as diferenças no tamanhos das telas dos
+dispositivos mobile.
+
+Uma das desvantagens do HTML5 sobre as outras tecnologias é a versão
+dos navegadores que pode ser diferente em cada dispositivo, assim
+aumentando o problema de fragmentação. Esse problema é conhecido pelos
+desenvolvedores web, e não é um grande problema quando definido um
+requisito mínimo para se utilizar determinada aplicação.
 
 \subsection{Recursos para desenvolvimento}
 
