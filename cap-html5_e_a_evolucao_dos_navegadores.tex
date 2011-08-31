@@ -1,13 +1,13 @@
 \section{HTML5 e a evolução dos navegadores}
 
-Os navegadores evoluiram muito nos ultimos anos e com essa evolução
+Os navegadores evoluíram muito nos últimos anos e com essa evolução
 veio a possibilidade de utilização de tecnologias que integram
 diretamente com o navegador, provendo muitas possibilidades de uso com
 a vantagem de terceirizar o trabalho da implementação multi-plataforma
-de uma aplicação, pois as empresas que desenvolvem os navagadores
+de uma aplicação, pois as empresas que desenvolvem os navegadores
 terão todo esse trabalho pelo desenvolvedor. Essa se tornou uma das
 grandes vantagens do HTML5, e com sua evolução constante, é possível
-contruir diretamente no navegador muitas coisas que atualmente necessitam
+construir diretamente no navegador muitas coisas que atualmente necessitam
 de ferramentas de terceiros, apenas utilizando javascript para a
 manipulação.
 
@@ -19,19 +19,23 @@ netscape 2 \cite{mdnjavascript}, sendo padronizada pela Ecma
 international em 1997, lançando assim a primeira versão do ECMAScript.
 Javascript é uma linguagem de programação com capacidades de Orientação a objetos e que tem como uma das suas principais
 utilizações a manipulação de objetos em navegadores \cite{flanagan2006javascript}, sendo que, nesse contexto
-ela tem seu propósito extendido com objetos que permitem aos scripts uma interação com o usuário,
+ela tem seu propósito estendido com objetos que permitem aos scripts uma interação com o usuário,
 controlando o navegador e alterando o conteúdo do documento que aparece na janela do navegador.
 Desde sua padronização, o Javascript vem sendo alterado e
 recebendo algumas atualizações, sendo que a versão comummente
 utilizada (e considerada estável) é a versão 3 padronizada em 1999.
 O Javascript é muito utilizado nas paginas de internet atuais, para
 diversas finalidades, seja validação de simples formulários até
-animações em objetos HTML.
+animações mais complexas. Várias bibliotecas foram desenvolvidas para
+dar um poder maior ao desenvolvedor, sendo uma das mais conhecidas o
+jQuery, que ajuda o desenvolvedor a ser mais produtivo, facilitando a
+pesquisa por objetos dentro do DOM, facilitando a criação de efeitos
+básicos, dando uma interface simples para alterar CSS e outras coisas.
 
 \subsection{CSS e sua evolução}
 
 CSS é uma linguagem para criação de folhas de estilo, que foi criada
-para facilitar a criação de páginas para internet, comparada as tecnicas da época de
+para facilitar a criação de páginas para internet, comparada as técnicas da época de
 1990, o CSS fornece um controle bem maior sobre as páginas. \cite{schmitt2009css}.
 O CSS interage com um documento HTML, dando a ele uma melhor visualização, manipulando
 fontes, cores e espaçamentos, assim deixando a diagramação e visualização do documento
@@ -39,37 +43,61 @@ separado da estrutura do mesmo, permitindo assim ter uma página semanticamente 
 e apenas manipulando a visualização utilizando CSS.
 A versão mais utilizada atualmente, e considerada estável para utilização, é a versão 2
 que se tornou padrão em maio de 1998. \cite{zeldman2009designing}.
-A versão 3 está em desenvolvimento e alguns dos navegadores atuais mais populares suportam
-já suportam muitas de suas funcionalidades, apesar de o CSS3 estar em constante evolução.
+A versão 3 está em desenvolvimento e alguns dos navegadores atuais mais populares
+já suportam muitas de suas funcionalidades, e estão constantemente
+adicionando as novas funcionalidades assim que são lançadas.
+Com CSS3 é possível fazer muitas coisas que demandavam muito trabalho
+do desenvolvedor com CSS2. Um exemplo bem simples do quanto o CSS3
+pode ajudar na criação de um layout são os botões com cantos
+arredondados, que era muito trabalhoso de se fazer utilizando CSS2 e
+dependia de várias imagens juntas para fazer cada um dos cantos e
+bordas do botão. O CSS3 possui essa funcionalidade implementada, e os
+botões podem ter cantos arredondados facilmente utilizando a
+propriedade border-radius, tirando toda essa complexidade das mãos do
+desenvolvedor.
 
 \subsection{HTML e sua evolução}
 
 HTML é uma linguagem de marcação de hipertexto que é utilizado como base para a internet
-atual. O HTML mudou bastante desde sua versão inicial em 1991
-\cite{powell2003html}, no início o HTML não era muito definido, e cada
-navegador definia novas tags, que tinham funções diferentes em cada
-navegador, não seguindo um padrão específico, o que dificultava
-bastante o trabalho dos desenvolvedores da época. Com o passar do
-tempo o IETF (Internet Engeenering Task Force) começou a padronizá-lo em 1995, lançando a
-primeira versão padronizada do HTML, que ficou conhecida como HTML 2.0.
+atual. O HTML mudou bastante desde sua versão inicial em 1991.
+\cite{powell2003html}.
+No início o HTML não era muito definido, e cada
+navegador definia novas tags, que tinham funções diferentes,
+não seguindo um padrão específico, o que dificultava
+bastante o trabalho dos desenvolvedores da época.
+O tempo se foi se passando e um esforço de padronização da linguagem
+começou a ser organizado, e em 1995 o IETF começou o processo de
+padronização, lançando a primeira versão padronizada do HTML, que ficou conhecida como HTML 2.0.
 Com o tempo o HTML foi se tornando mais padronizado, ganhando validações e novas integrações
 (com CSS por exemplo), tornando-o mais versátil e adequado as novas necessidades da
 internet.
 Essa padronização resolveu vários problemas de fragmentação, onde cada
-browser implementava sua funcionalidade específica, pois os
-navegadores puderam começar a seguir as especificações padronizadas,
+navegador implementava sua funcionalidade específica, pois os agora
+eles poderiam começar a seguir as especificações padronizadas,
 facilitando assim as implementações de cada navegador, que agora implementavam com
 menos frequência o seu próprio estilo de marcação.
-A ultima versão do HTML que está em desenvolvimento é o HTML5, que traz funcionalidades
-que dão um olhar diferente para a internet, ou seja, ao invés de apenas se preocupar com texto
-e formatação, o HTML5 visa atender as necessidades multimídia da internet, cobrindo
-todos os espaços multimídia que tiveram que ser contornados com outras tecnologias,
-como por exemplo vídeo, audio e desenho.
-Com o crescimento do HTML, algumas coisas foram alteradas na parte de visualização,
-removendo algumas tags que eram utilizadas para isso, como a tag font
-por exemplo.
-Com a remoção dessas tags surgia a utilização de outra forma para
-estilização de páginas, o CSS.
+As primeiras página HTML eram feitas apenas com HTML, ou seja, era
+responsabilidade do HTML cuidar de toda a diagramação do site para que
+ele fosse agradável para o visitante, e muitos tipos de
+desenvolvimento foram adotados, utilizando os melhores elementos para
+conseguir diagramar uma página sem se importar com a semântica do
+documento. Com a chegada do Google as coisas mudaram bastante, pois
+agora não havia apenas humanos olhando para a página, robôs também
+estavam passando por ali e precisavam entender da melhor maneira
+possível aquele conteúdo para poder adicionar a página no lugar certo
+nos índices de busca. E o HTML começa a ser utilizado em conjunto com
+o CSS, deixando a parte de diagramação do conteúdo, cores, tipos de
+fonte e etc a cargo do mesmo, assim deixando apenas a parte de
+estrutura com o HTML, podendo assim manter um documento bem formado e
+semântico para os robôs e bonito aos olhos dos visitantes.
+
+A ultima versão do HTML que está em desenvolvimento é o HTML5, que
+traz novos marcadores para definir melhor a semântica dos documentos e
+traz também funcionalidades que dão um olhar diferente para a internet,
+ou seja, ao invés de apenas se preocupar com texto e formatação, o HTML5
+visa atender as necessidades multimídia da internet, cobrindo todos os
+espaços multimídia que tiveram que ser contornados com outras tecnologias,
+como por exemplo vídeo, áudio e desenho.
 
 \subsection{A evolução dos navegadores}
 
@@ -78,36 +106,37 @@ e é possível notar sua constante evolução para suprir as necessidades
 dos usuários e desenvolvedores \cite{robbins2006web}. No início, os
 navegadores eram apenas texto preto sobre um fundo cinza, e foi assim
 nos primórdios da internet, enquanto o Mosaic e o Lynx eram os
-browsers modo texto famosos. Em 1994 foi lançado o netscape 0.9, que
+navegadores modo texto famosos. Em 1994 foi lançado o netscape 0.9, que
 trouxe várias inovações para a internet, e dois anos depois a
 Microsoft contra ataca com o Internet Explorer 3.0, com várias
 funcionalidades novas, inclusive o suporte a folhas de estilo (e
-introduzindo o CSS). e iniciando o que chamam de "A guerra dos
+introduzindo o CSS), e iniciando o que chamam de "A guerra dos
 navegadores". Essa guerra foi travada entre a Microsoft e a Netscape
 por muitos anos e trouxe muitas coisas boas e ruins para a internet. O
 impacto positivo foi a aceleração do desenvolvimento para essas
 plataforma, e o impacto negativo foi a grande falta de padrão para os
 desenvolvedores, pois cada navegador implementava um formato diferente
-de HTML e etc. A Microsoft conseguiu uma grande vantagem quando lançou
+de HTML. A Microsoft conseguiu uma grande vantagem quando lançou
 o Windows 3.0 que já tinha o internet explorer gratuitamente
 \cite{asleson2006foundations}, e venceu oficialmente a guerra dos navegadores quando a
 Netscape foi comprada pela AOL. A Netscape deixou o código fonte
-de seu navegador liberado como Open Source, e a Mozilla utilizou esse
-código para começar o desenvolvimento do que futuramente seria o
-Firefox.
+de seu navegador liberado para quem quisesse continuar o projeto,
+e a Mozilla utilizou esse código para começar o desenvolvimento
+do que futuramente seria o Firefox.
 Em 2005 foi lançada a primeira versão do Firefox e a Microsoft começa
 a perder seu reinado absoluto com navegadores. O Firefox conseguiu uma
 boa fatia do mercado de navegadores, e a Microsoft aos poucos vai
 ficando para trás em termos de tecnologia e segurança com a versão 6
 do internet explorer.
+
 Com o passar dos anos, outros navegadores entram nessa disputa, entre
 eles estão o Opera, que tem uma pequena parte do mercado, mas está em
-constante desenvolvimento, e o Chrome do Google, que está entre os
+constante desenvolvimento, e o Chrome da Google, que está entre os
 mais rápidos e seguros navegadores da atualidade.
 Novamente uma Guerra dos navegadores começa, mas dessa vez um pouco
 mais controlada, pois existe um órgão regulamentador da internet que
-todos os browsers procuram seguir e se adequar, ele se chama W3C
-(World Wide Web Consortium), e seu papel nessa história é dizer o que
+todos os navegadores procuram seguir e se adequar, ele se chama W3C,
+e seu papel nessa história é dizer o que
 é padrão e o que não é, assim fazendo que a interface para os
 desenvolvedores seja o mais parecida possível entre todos os
 navegadores.
@@ -120,28 +149,28 @@ desse interpretador e o suporte as novas funcionalidades que o HTML5
 propõe.
 Os principais navegadores da atualidade são: Opera, Firefox, Internet
 Explorer e Chrome. Todos estão implementando, cada um em seu ritmo, as
-funcionalidades do HTML5, e estes serão usados como base para os
-estudos desse trabalho.
+funcionalidades do HTML5, e estes, em suas ultimas versões, serão usados
+como base para os estudos desse trabalho.
 
 \subsection{Jogos no navegador}
 % Utilizar esse capítulo para falar bastante sobre jogos no navegador
 % por que aqui começa o trabalho de verdade
-O numero de jogos de navegador cresceu nos ultimos anos e esse
+O numero de jogos de navegador cresceu nos últimos anos e esse
 desenvolvimento continua \cite{ozcan2010recent}. Esse tipo de jogo
 ganhou força com a ajuda de plugins externos como o Flash player ou
 o Java applets, que conseguiam um poder grande de processamento para
-recursos da época, e assim os jogos foram crescendo rapidamente.
+recursos da internet da época, e assim os jogos foram crescendo rapidamente.
 Um dos grandes motivos do sucesso desses jogos é a possibilidade de
-jogar em qualquer lugar, em curtos periodos no meio da vida cotidiana
+jogar em qualquer lugar, em curtos períodos no meio da vida cotidiana
 do jogador, onde alguns movimentos no jogo vão tomar apenas alguns
-minitos \cite{ozcan2010recent}.
+minutos \cite{ozcan2010recent}.
 
 Os jogos desenvolvidos para a internet geralmente são jogos simples,
 que podem prender o jogador por curtos períodos de tempo, permitindo
 ao mesmo jogar nos intervalos da vida cotidiana, como o horário de almoço
 do trabalho, por exemplo.
 Por possuir fácil acessibilidade e estar na internet juntamente com as
-outras páginas e redes sociais, os jogos possuim uma fácil integração
+outras páginas e redes sociais, os jogos possuem uma fácil integração
 com redes sociais, assim ganhando facilmente a atenção desses
 jogadores casuais, que ao estar navegando em sua rede social, recebem
 mensagens de seus amigos sobre um jogo que o mesmo está jogando,
