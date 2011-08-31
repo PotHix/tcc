@@ -20,14 +20,15 @@ Java foi uma das primeiras tecnologias a ser aplicadas sobre os
 navegadores, logo após a criação do Java, quando a tecnologia foi
 portada uma facil execução sobre o navegador utilizando os chamados
 applets.
+%http://javaboutique.internet.com/tutorials/Java_Game_Programming/
 %TODO: Escrever mais sobre os applets e sua utilização
 
 \subsubsection{Flash}
 
-Flash é um produto da Adobe para enriquecer a o visual de uma página
+Flash é um produto da Adobe para enriquecer o visual de uma página
 de internet, trazendo conteúdo multimídia. Atualmente, o Flash é a
 tecnologia mais utilizada para desenvolvimento de jogos para a
-internet, tendo sua extensão instalada em mais de 90 por cento dos
+internet, tendo seu plugin instalado em mais de 90 por cento dos
 computadores pessoais.
 
 %FIXME: Achar algumas referencias do flash como produto mais utilizado
@@ -51,25 +52,36 @@ Performance é um assunto muito discutido no densenvolvimento de jogos
 pois os jogos consomem muito recurso do dispositivo em que estão
 executando, pois estão, entre outras coisas, em constante execução, fazendo
 calculos diversos para situar o jogador dentro do jogo, por exemplo.
-Entre esses calculos, dependendo do jogo, estão calculos de fisica dos
+Entre esses calculos, dependendo do jogo, estão os calculos de fisica dos
 objetos da cena e do próprio jogador, transformação de imagens para
 dar impressão de movimento ou sombra e outras coisas que exigem alto
 processamento em um curto período de tempo.
-As tecnologias Java, Flash e Unity possuem uma performance melhor no
-momento de escrita desse trabalho, pois eles possuem seu próprio
-software desenvolvido, e roda nativamente no sistema operacional,
-assim ganhando várias vantagens como um processo separado no sistema,
-apenas executando um jogo que foi préviamente "compilado"
-especialmente para essa tecnologia.
+
+As tecnologias que exigem a instalação de um software de terceiros
+(Java, Unity e Flash) possuem uma performance melhor no
+momento de escrita desse trabalho. O motivo desse ganho de performance
+é a otimização da plataforma para utilização em um determinado
+dispositivo, fazendo com que o jogo seja interpretado e executado
+nativamente no sistema operacional, assim ganhando várias
+vantagens como um processo separado no sistema, apenas executando um
+jogo que foi préviamente "compilado" especialmente para essa tecnologia.
 
 O HTML5 juntamente com Javascript perde um pouco em performance, pois
 o sistema operacional vê apenas um navegador como processo, e esse
 navegador vai fazer a interface entre o jogo e o sistema operacional.
-Temos que levar em consideração que o navegador também tem seus
-"processos" (outras páginas de internet que podem estar abertas no
-momento), e ele deve gerenciá-las da melhor maneira.
+O navegador não é uma plataforma otimizada para jogos (como é o caso
+dos plugins, que possuem apenas essa finalidade, ou são bem
+direcionados para o tal), apesar de estar e constante evolução e
+desenvolvimento para interpretar Javascript de uma maneira mais veloz,
+a cada nova versão.
 
-%TODO: Continuar escrevendo essa parte, ainda está pela metade
+O estado dos navegadores na data de escrita desse
+trabalho suporta a execução de jogos jogos casuais simples, que exigem
+um processamento aceitável do dispositivo, ou seja, jogos em duas
+dimensões, com calculos de física básica. Se o desenvolvimento do jogo
+focar em performance, há uma grande possibilidade de que o mesmo
+funcione sem grandes problemas e com uma performance aceitável em dispositivos
+que possuem menor poder de processamento, como os celulares por exemplo.
 
 \subsection{Portabilidade}
 
@@ -148,4 +160,3 @@ jogos, apenas segue o mesmo padrão de desenvolvimento convencional
 java e utiliza as bibliotecas de applet para preparar o jogo para
 funcionar na web, ou seja, com uma das conhecidas IDEs (Eclipse por
 exmeplo) você consegue desenvolver um jogo casual em Java.
-%http://javaboutique.internet.com/tutorials/Java_Game_Programming/
