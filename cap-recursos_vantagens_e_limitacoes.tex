@@ -134,13 +134,14 @@ utiliza canvas com várias camadas para a renderização padrão.
 
 \clearpage
 
+
 \subsection{SVG}
+
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
 bi-dimensionais e imagens, e um conjunto de script relacionados a
 interfaces graficas. \cite{w3csvg}.
 
 Quando usar Canvas e quando usar SVG?
-
 
 Na figura \ref{img:angrybirds}, é possível ver o logo da empresa
 Timetrap, que foi desenvolvido apenas com SVG, utilizando animações. O
@@ -156,6 +157,7 @@ http://files.myopera.com/emoller/blog/timetrap.html conforme \cite{svgtimetrap}.
 
 \clearpage
 
+
 \subsection{WebSocket API}
 
 WebSocket API define uma especificação que permite as páginas web
@@ -166,9 +168,9 @@ trocar informações entre dois computadores de uma maneira bem mais
 veloz, trafegando menos dados e recebendo as informações mais
 rapidamente.
 O que traz essa velocidade na comunicação via internet é não utilizar
-o metodo normal de comunicação que o HTTP fornece, e sim utilizar um
-tunel direto entre o computador e o servidor.
-Nos metodos normais de comunicação utilizando o HTTP a cada requisição
+o método normal de comunicação que o HTTP fornece, e sim utilizar um
+túnel direto entre o computador e o servidor.
+Nos métodos normais de comunicação utilizando o HTTP a cada requisição
 é necessário passar por todo o processo de comunicação do TCP, e
 receber todos os dados e metas do HTTP, o que gera um tempo maior para
 o recebimento dos dados e um maior trafego de rede. Com o Socket (que
@@ -179,9 +181,21 @@ usável para um jogo em tempo real.
 
 Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 (em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
-em latencia. \cite{lubbers2010pro}.
+em latência. \cite{lubbers2010pro}.
 
-Exemplo do jogo multiplayer na figura \ref{img:swarmation}
+Na figura \ref{img:swarmation}, é apresentado um jogo que utiliza
+uma biblioteca que disponibiliza uma interface de código WebSockets,
+se utilizando de diferentes ferramentas para que essa interface seja a mesma em
+todos os navegadores, inclusive os que não possuem suporte para essa
+tecnologia.
+
+A ideia do jogo é integrar vários jogadores em um único lugar, sendo que
+cada jogador assume o papel de um pixel, e eles precisam formar uma
+determinada imagem que é gerada aleatoriamente pelo jogo e mostrada a
+direita. A função do WebSockets nesse jogo é sincronizar em tempo real a
+posição de cada jogador para que ao final da contagem possa ser
+calculado os posicionamentos para saber quais imagens foram formadas e
+quais jogadores devem ser pontuados.
 
 \begin{figure}[H]
   \centering
@@ -193,9 +207,8 @@ Exemplo do jogo multiplayer na figura \ref{img:swarmation}
 \clearpage
 
 
-%TODO: Colocar aqui um exemplo de um jogo que utiliza websockets para um jogo multiplayer
-
 \subsection{Offline cache}
+
 Offline cache, em sua maneira mais simplista, é uma lista apontando
 para o HTML, CSS, Javascript, imagens e outros recursos que devem
 estar disponíveis para o website. \cite{pilgrim2010html5}. Utilizando
