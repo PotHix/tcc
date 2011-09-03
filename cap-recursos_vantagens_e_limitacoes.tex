@@ -117,21 +117,20 @@ elementos canvas dentro do navegador, e posicionando-os no mesmo
 lugar, assim facilitando a manipulação de cenário e melhorando a
 performance.
 
-%TODO: Colocar aqui um exemplo de um jogo que utiliza canvas e camadas
+Exemplo do jogo Angry Birds na figura \ref{img:angrybirds}, que
+utiliza canvas com várias camadas para a renderização padrão.
 
-%Exemplo do jogo Angry Birds \ref{img:angrybirds}
-%
-%\newlength{\imgwidth}
-%\setlength{\imgwidth}{16.09cm}
-%\newlength{\imgheight}
-%\setlength{\imgheight}{10.59cm}
-%
-%\begin{figure}[H]
-%  \centering
-%	\includegraphics[height=\imgheight,width=\imgwidth]{angrybirds}
-%  \caption{Angry Birds {--} Utilizando canvas em varias camadas}
-%  \label{img:angrybirds}
-%\end{figure}
+\newlength{\imgwidth}
+\setlength{\imgwidth}{16.09cm}
+\newlength{\imgheight}
+\setlength{\imgheight}{10.59cm}
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{angrybirds}
+  \caption{Angry Birds {--} Utilizando canvas em varias camadas}
+  \label{img:angrybirds}
+\end{figure}
 
 \clearpage
 
@@ -141,8 +140,21 @@ bi-dimensionais e imagens, e um conjunto de script relacionados a
 interfaces graficas. \cite{w3csvg}.
 
 Quando usar Canvas e quando usar SVG?
-%TODO: Adicionar um exemplo de utilização de SVG (talvez o logo da empresa que faz o emberwind)
-\cite{svgtimetrap}.
+
+
+Na figura \ref{img:angrybirds}, é possível ver o logo da empresa
+Timetrap, que foi desenvolvido apenas com SVG, utilizando animações. O
+logo animado pode ser visto em
+http://files.myopera.com/emoller/blog/timetrap.html conforme \cite{svgtimetrap}.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{timetrap}
+  \caption{Logo da empresa Timetrap {--} Utilizando apenas vetores SVG para sua construção}
+  \label{img:timetrap}
+\end{figure}
+
+\clearpage
 
 \subsection{WebSocket API}
 
@@ -170,11 +182,6 @@ Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 em latencia. \cite{lubbers2010pro}.
 
 Exemplo do jogo multiplayer na figura \ref{img:swarmation}
-
-\newlength{\imgwidth}
-\setlength{\imgwidth}{16.09cm}
-\newlength{\imgheight}
-\setlength{\imgheight}{10.59cm}
 
 \begin{figure}[H]
   \centering
@@ -236,18 +243,13 @@ Suporta shaders
 
 baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
 
-%Exemplo do jogo Emberwind sendo executado utilizando WebGL \ref{img:emberwind}
-%
-%\newlength{\imgwidth}
-%\setlength{\imgwidth}{16.09cm}
-%\newlength{\imgheight}
-%\setlength{\imgheight}{10.59cm}
-%
-%\begin{figure}[H]
-%  \centering
-%	\includegraphics[height=\imgheight,width=\imgwidth]{emberwind}
-%  \caption{Emberwind {--} Utilizando o poder do WebGL para acelerar o processamento}
-%  \label{img:emberwind}
-%\end{figure}
+Exemplo do jogo Emberwind sendo executado utilizando WebGL \ref{img:emberwind}
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{emberwind}
+  \caption{Emberwind {--} Utilizando o poder do WebGL para acelerar o processamento}
+  \label{img:emberwind}
+\end{figure}
 
 \clearpage
