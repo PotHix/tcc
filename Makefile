@@ -52,3 +52,5 @@ shownew:	clean
 		make
 		evince $(DOC).pdf
 		make clean
+todo:
+		grep TODO *.tex -R
