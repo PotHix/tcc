@@ -42,7 +42,7 @@ para facilitar a criação de páginas para internet, comparada as técnicas da 
 O CSS interage com um documento HTML, dando a ele uma melhor visualização, manipulando
 fontes, cores e espaçamentos, assim deixando a diagramação e visualização do documento
 separado da estrutura do mesmo, permitindo assim ter uma página semanticamente correta
-e apenas manipulando a visualização utilizando CSS.
+e apenas utilizando CSS para manipular a visualização.
 A versão mais utilizada atualmente, e considerada estável para utilização, é a versão 2
 que se tornou padrão em maio de 1998. \cite{zeldman2009designing}.
 A versão 3 está em desenvolvimento e alguns dos navegadores atuais mais populares
@@ -106,21 +106,30 @@ não é considerado apenas uma nova linguagem de marcação, mas sim todo
 o ambiente que vem junto com a nova linguagem. Alguns exemplos das novas
 funcionalidades que compõe esse novo ambiente:
 \begin{itemize}
-  \item Nova tag <article> para delimitar artigos
-  \item Nova tag <section> para delimitar seções
-  \item Nova tag <aside> para delimitar menu lateral
-  \item Nova tag <audio> para inserir audio na pagina
-  \item Nova tag <video> para inserir video na pagina
-  \item Novos tipos para a tag <input> para inserir mais facilmente
-  data, url, numero, dia, mes, ano, horário, email e outros.
-  \item History API
-  \item GeoLocation
-  \item WebWorkers
-  \item WebSockets
-  \item LocalStorage
-  \item Offline cache
-  \item Canvas
-  \item SVG
+  \item Nova tag <article> para delimitar artigos;
+  \item Nova tag <section> para delimitar seções;
+  \item Nova tag <aside> para delimitar menu lateral;
+  \item Nova tag <audio> para inserir áudio na pagina;
+  \item Nova tag <video> para inserir vídeo na pagina;
+  \item Novos tipos para a tag <input> para inserir mais facilmente;
+  data, url, numero, dia, mês, ano, horário, email e outros.
+  \item History API, para poder ter acesso ao histórico de visitas do
+  usuário, pedindo-lhe permissão para esse acesso;
+  \item GeoLocation: Utilizado para saber onde o usuário está localizado no
+  mundo;
+  \item WebWorkers: Utilizado para executar scripts independentemente das ações
+  da página;
+  \item WebSockets: Utilizado para criar uma conexão persistente entre
+  o servidor e o navegador;
+  \item LocalStorage: Utilizado para guardar informações no navegador
+  do usuário;
+  \item Offline cache: Utilizado para salvar os arquivos necessários
+  para que a aplicação fique disponível quando o usuário não estiver
+  conectado à internet;
+  \item Canvas: Para fazer desenhos e importar imagens de uma maneira
+  mais fácil, e rápida, não dependendo da separação de objetos do DOM;
+  \item SVG: Para criação e manipulação de vetores diretamente no
+  navegador;
 \end{itemize}
 
 \subsection{A evolução dos navegadores}
@@ -139,11 +148,11 @@ navegadores". Essa guerra foi travada entre a Microsoft e a Netscape
 por muitos anos e trouxe muitas coisas boas e ruins para a internet. O
 impacto positivo foi a aceleração do desenvolvimento para essas
 plataforma, e o impacto negativo foi a grande falta de padrão para os
-desenvolvedores, pois cada navegador implementava um formato diferente
-de HTML. A Microsoft conseguiu uma grande vantagem quando lançou
+desenvolvedores, pois cada navegador implementava HTML utilizando seu
+próprio formato. A Microsoft conseguiu uma grande vantagem quando lançou
 o Windows 3.0 que já tinha o internet explorer gratuitamente
 \cite{asleson2006foundations}, e venceu oficialmente a guerra dos navegadores quando a
-Netscape foi comprada pela AOL. A Netscape deixou o código fonte
+Netscape foi comprada pela AOL(America Online). A Netscape deixou o código fonte
 de seu navegador liberado para quem quisesse continuar o projeto,
 e a Mozilla utilizou esse código para começar o desenvolvimento
 do que futuramente seria o Firefox.
