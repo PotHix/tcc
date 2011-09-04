@@ -1,10 +1,12 @@
 \section{HTML5 para o desenvolvimento de jogos casuais}
 
+Nesse capítulo será abordado as ferramentas mais utilizadas para
+desenvolvimento de jogos casuais dentro do ambiente HTML5.
 As ferramentas atuais que suportam HTML5 possuem muitas vantagens,
 principalmente em portabilidade, tirando do desenvolvedor a
-responsabilidade de implemtação de código para várias plataformas, mas
+responsabilidade de implementação de código para várias plataformas, mas
 com isso também introduz algumas limitações para que o jogo
-desenvolvido possa funcionar em vários disposiivos e sistemas
+desenvolvido possa funcionar em vários dispositivos e sistemas
 operacionais. Esse capítulo visa mostrar as vantagens e desvantagens
 de cada uma das ferramentas utilizadas no HTML5, o que pode ser usado
 com tranquilidade e o que necessita de mais cautela no seu uso.
@@ -18,15 +20,15 @@ impressão de movimento do protagonista do jogo.
 Javascript é uma linguagem muito poderosa que suporta vários tipos de
 sintaxes, e possui muitas vantagens de uma linguagem de alto nível,
 como por exemplo coletor de lixo (garbage collector), e tipagem
-dinamica, o que ajuda o desenvolvedor a se preocupar menos com tipos
+dinâmica, o que ajuda o desenvolvedor a se preocupar menos com tipos
 de variáveis e elementos, e evita a grande preocupação com o
 gerenciamento de memória.
 Como desvantagem, o Javascript tende a expor o código do jogo em
-quetão para a internet, pois, para que um navegador execute o jogo é
+questão para a internet, pois, para que um navegador execute o jogo é
 necessário que o mesmo possua o código, tendo em vista que Javascript
 não é uma linguagem compilada, e sim interpretada. Uma das técnicas
 utilizadas para evitar a distribuição do código para o usuário é a
-ofoscação de código. Com essa técnica o seu código continua chegando
+ofuscação de código. Com essa técnica o seu código continua chegando
 ao usuário, mas de uma maneira não legível, ou seja, será facilmente
 entendida pelo navegador mas dificilmente entendida por um humano que
 quer utilizar seu código fonte.
@@ -53,7 +55,7 @@ dispositivos que possuem baixa performance, desde que bem executado.
 
 Os navegadores são a parte fundamental para a execução do jogo, pois
 ele é a plataforma de desenvolvimento que o desenvolvedor está visando,
-ou seja, assim como muitas grandes empresas visam video games,
+ou seja, assim como muitas grandes empresas visam vídeo games,
 computadores ou celulares, como plataforma alvo de desenvolvimento, o
 desenvolvedor deve ter em mente que está desenvolvendo para o
 navegador, e estar ciente de suas vantagens, desvantagens e
@@ -61,13 +63,13 @@ limitações.
 
 Um dos grandes problemas de se trabalhar com navegadores é a
 fragmentação, pois o desenvolvedor deve pensar em quais navegadores e
-dispositivos o seu jogo estará disponível, levanvando em consideração
+dispositivos o seu jogo estará disponível, levando em consideração
 que cada usuário vai escolher seu navegador preferido, e que talvez
 esse navegador não estará na ultima versão. Atualmente vários sites na
 internet descrevem quais funcionalidades do HTML5 estão disponíveis em
 qual navegador, um deles é o dive into html5. \cite{diveintohtml5}.
-Esse problema acontece também no desenovimento para computadores e
-video games, mas é um pouco mais simples de lidar, pois os jogos
+Esse problema acontece também no desenvolvimento para computadores e
+vídeo games, mas é um pouco mais simples de lidar, pois os jogos
 simplesmente não são compatíveis, ou seja, se você tem um computador
 que o hardware não é bom o suficiente para executar um jogo, ele será
 barrado já na instalação, ou será executado mas será impossível de ser
@@ -83,14 +85,14 @@ possui muito mais capacidade de processamento do que um celular, por
 exemplo.
 
 O problema da fragmentação pode ser mais facilmente contornado quando
-o desenvolvedor fixa algumas confugurações, como por exemplo a versão
+o desenvolvedor fixa algumas configurações, como por exemplo a versão
 dos navegadores suportados. A liberdade do desenvolvedor é total,
 bastando apenas ter em mente o quanto de processamento será utilizado
 e quais funcionalidades serão necessárias para a execução do jogo.
 
 \subsection{Canvas}
 
-O Canvas prove uma interface com resolução de dependencias para
+O Canvas prove uma interface com resolução de dependências para
 desenhar coisas diretamente no navegador, e pode ser utilizado para
 gerar gráficos, gráficos de jogos, e outras imagens para ser
 visualizadas no momento da execução. \cite{w3ccanvas}.
@@ -108,7 +110,7 @@ simples em duas dimensões para computadores.
 Diferentemente do DOM, que cria vários objetos que podem ser
 manipulados individualmente pelo navegador, o canvas quando criado
 gera apenas um elemento no navegador, e todos os elementos criados
-no nesse elemento (imagens, retangulos e etc) ficam invisíveis para acesso, e
+no nesse elemento (imagens, retângulos e etc) ficam invisíveis para acesso, e
 não podem ser modificados, apenas recriados.
 
 O canvas pode ser utilizado em várias camadas, gerando vários
@@ -135,10 +137,11 @@ utiliza canvas com várias camadas para a renderização padrão.
 
 
 \subsection{SVG}
+%TODO: escrever sobre SVG
 
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
 bi-dimensionais e imagens, e um conjunto de script relacionados a
-interfaces graficas. \cite{w3csvg}.
+interfaces gráficas. \cite{w3csvg}.
 
 Quando usar Canvas e quando usar SVG?
 
@@ -214,7 +217,7 @@ estar disponíveis para o website. \cite{pilgrim2010html5}. Utilizando
 essa lista o navegador faz o download de todos os recursos que
 precisam ser utilizados quando o dispositivo em questão não estiver
 apto a acessar a internet, ou seja, na primeira requisição, tudo que estiver
-disponivel no arquivo de manifesto que contem essa lista será baixado
+disponível no arquivo de manifesto que contem essa lista será baixado
 e guardado no dispositivo e será utilizado até que o manifesto seja
 modificado.
 A cada nova requisição de uma aplicação que utiliza offline cache o
@@ -238,16 +241,18 @@ banda, expondo os dados, e deixando as requisições mais lentas.
 O Local storage foi criado para resolver esses problemas, dando uma
 interface simples para o desenvolvedor guardar dados de sua
 aplicação diretamente no navegador do usuário. Para guardar tais dados
-o desenvolvedor utiliza um banco que armazana dados seguindo um
+o desenvolvedor utiliza um banco que armazena dados seguindo um
 esquema chave-valor, ou seja, uma chave como índice, associado a um
 determinado valor, que será convertido para texto quando adicionado.
 
 %TODO: Dar um exemplo de uso de localstorage e falar de sua utilização em jogos casuais
 
 \subsection{Audio}
+%TODO: escrever sobre a tag audio
 Yes, we can!
 
 \subsection{WebGL}
+%TODO: escrever sobre webgl
 
 WebGL é uma API para gráficos 3D na web. \cite{lubbers2010pro}.
 WebGL é um mapeamento do OpenGL ES2 em Javascript. \cite{lubbers2010pro}.
