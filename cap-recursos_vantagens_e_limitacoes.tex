@@ -249,11 +249,23 @@ determinado valor, que será convertido para texto quando adicionado.
 WebGL é uma API para gráficos 3D na web. \cite{lubbers2010pro}.
 WebGL é um mapeamento do OpenGL ES2 em Javascript. \cite{lubbers2010pro}.
 
-%TODO: Adicionar as imagens dessa citação. \cite{webglmodel}.
-
 Suporta shaders
 
 baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
+
+Na figura \ref{img:webglmodels} é possível ver modelos 3D no formato
+MD2 (o mesmo formato que o jogo Quake II utilizava para seus
+personagens) sendo renderizados via WebGL. Isso é feito utilizando a
+biblioteca GLGE, que é um facilitador para a utilização do WebGL.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{webglmodels}
+  \caption{Modelos 3D {--} Modelos de personagens 3D sendo renderizados com WebGL}
+  \label{img:webglmodels}
+\end{figure}
+
+\clearpage
 
 Exemplo do jogo Emberwind sendo executado utilizando WebGL \ref{img:emberwind}
 
