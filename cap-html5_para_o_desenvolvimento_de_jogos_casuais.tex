@@ -236,12 +236,32 @@ apto a acessar a internet, ou seja, na primeira requisição, tudo que estiver
 disponível no arquivo de manifesto que contem essa lista será baixado
 e guardado no dispositivo e será utilizado até que o manifesto seja
 modificado.
+
 A cada nova requisição de uma aplicação que utiliza offline cache o
 navegador verifica o arquivo de manifesto, se ele não foi modificado
 o navegador vai utilizar os arquivos que estão disponíveis localmente,
 caso contrário todos os arquivos da seção "CACHE" desse arquivo serão baixados novamente.
 
-%TODO: Adicionar um exemplo de aplicação que utiliza offline cache
+A funcionalidade de offline cache também prevê as requisições que não
+podem ser guardadas localmente, requisições que precisam
+necessariamente estar online para funcionar corretamente, e para isso
+existe uma seção chamara REMOTE no arquivo manifesto, definindo quais
+são os arquivos que não devem ser considerados quando o usuário não
+estiver offline.
+
+Todos os arquivos utilizados na aplicação devem estar no arquivo de
+manifesto, para os arquivos que não estarão disponíveis localmente há
+uma seção chamada FALLBACK.
+
+Utilizando Offline cache é possível criar uma aplicação para a
+internet que funcione normalmente sem conexão com a internet. Isso
+pode ser muito utilizado em jogos casuais, para disponibilizar um
+determinado para utilização em um dispositivo móvel, bastando
+adicionar o jogo aos favoritos, e ele estará disponível a qualquer
+momento.
+
+
+%TODO: Adicionar um exemplo da aplicação (provavelmente o conversor de valores que apareceu no Hacker news
 
 \subsection{Local Storage}
 
@@ -254,6 +274,7 @@ essa tecnologia se provou muito ineficiente para uma quantidade um
 pouco maior de dados, pois além de ser limitado para guardar informações,
 os dados ficam trafegando pela rede em cada requisição, consumindo
 banda, expondo os dados, e deixando as requisições mais lentas.
+
 O Local storage foi criado para resolver esses problemas, dando uma
 interface simples para o desenvolvedor guardar dados de sua
 aplicação diretamente no navegador do usuário. Para guardar tais dados
@@ -261,6 +282,11 @@ o desenvolvedor utiliza um banco que armazena dados seguindo um
 esquema chave-valor, ou seja, uma chave como índice, associado a um
 determinado valor, que será convertido para texto quando adicionado.
 
+Essa funcionalidade é muito utilizada em conjunto com a funcionalidade
+de offline cache, pois quando uma aplicação não possui conexão com a
+internet é necessário utilizar localStorage para guardar informações
+que serão sincronizadas com o servidor assim que a aplicação possuir
+conexão com a internet novamente.
 %TODO: Dar um exemplo de uso de localstorage e falar de sua utilização em jogos casuais
 
 \subsection{Audio}
