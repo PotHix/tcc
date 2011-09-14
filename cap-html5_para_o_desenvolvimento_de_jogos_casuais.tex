@@ -137,13 +137,24 @@ utiliza canvas com várias camadas para a renderização padrão.
 
 
 \subsection{SVG}
-%TODO: escrever sobre SVG, falar sobre quando usar canvas ou svg
 
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
 bi-dimensionais e imagens, e um conjunto de script relacionados a
-interfaces gráficas. \cite{w3csvg}.
+interfaces gráficas. \cite{w3csvg}. Essa linguagem é utilizada por
+editores como o Inkscape para definir os vetores criados por ele.
 
-Na Figura~\ref{img:angrybirds}, é possível ver o logo da empresa
+Comparando SVG com Canvas, é possível verificar uma grande diferença
+em termos de desenho. SVG é utilizado para construir desenhos
+vetoriais que podem ser facilmente modificados, diferentemente do
+canvas, que possui uma particularidade de não poder ser alterado, ou
+seja, após um objeto canvas ser desenhado, ele não pode ser mais
+modificado, apenas redesenhado.
+
+Com SVG também é possível fazer animações, assim possibilitando a
+criação de mídias mais interativas, como logotipos animados e pequenas
+animações de introdução.
+
+Na Figura~\ref{img:timetrap}, é possível ver o logo da empresa
 Timetrap, que foi desenvolvido apenas com SVG, utilizando animações. O
 logo animado pode ser visto em
 http://files.myopera.com/emoller/blog/timetrap.html conforme \cite{svgtimetrap}.
@@ -156,6 +167,13 @@ http://files.myopera.com/emoller/blog/timetrap.html conforme \cite{svgtimetrap}.
 \end{figure}
 
 \clearpage
+
+No desenvolvimento de jogos a utilização do SVG é bem limitada, sendo
+comumente utilizada para as animações acima citadas. O motivo do SVG
+não ser utilizado para o desenho dos jogos é a dificuldade e
+performance de alterar cada um dos vetores, por esse motivo,
+a técnica de sprites é mais utilizada, favorecendo imagens pré-feitas
+ao invés da manipulação de vetores.
 
 
 \subsection{WebSocket API}
