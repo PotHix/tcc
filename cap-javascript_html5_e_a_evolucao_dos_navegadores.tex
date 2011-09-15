@@ -16,17 +16,17 @@ manipulação.
 \subsection{Javascript e sua evolução}
 
 Javascript é uma linguagem que foi criada em 1995 por Brendan Eich,
-um engenheiro da netscape, e foi lançada no começo de 1996 com o
-netscape 2 \cite{mdnjavascript}, sendo padronizada pela Ecma
-international em 1997, lançando assim a primeira versão do ECMAScript.
-Javascript é uma linguagem de programação com capacidades de Orientação a objetos e que tem como uma das suas principais
-utilizações a manipulação de objetos em navegadores \cite{flanagan2006javascript}, sendo que, nesse contexto
+um engenheiro da Netscape, e foi lançada no começo de 1996 com o
+Netscape 2 \cite{mdnjavascript}, sendo padronizada pela Ecma
+Internacional em 1997, lançando assim a primeira versão do ECMAScript.
+Javascript é uma linguagem de programação com capacidades de orientação a objetos e que tem como uma das suas principais
+utilizações a manipulação de objetos em navegadores \cite{flanagan2006javascript}, sendo que, nesse contexto,
 ela tem seu propósito estendido com objetos que permitem aos scripts uma interação com o usuário,
 controlando o navegador e alterando o conteúdo do documento que aparece na janela do navegador.
 Desde sua padronização, o Javascript vem sendo alterado e
-recebendo algumas atualizações, sendo que a versão comummente
-utilizada (e considerada estável) é a versão 3 padronizada em 1999.
-O Javascript é muito utilizado nas paginas de internet atuais, para
+recebeu algumas atualizações, sendo que a versão comumente
+utilizada (e considerada estável) é a versão 3, padronizada em 1999.
+O Javascript é muito utilizado nas paginas de internet atuais para
 diversas finalidades, seja validação de simples formulários até
 animações mais complexas. Várias bibliotecas foram desenvolvidas para
 dar um poder maior ao desenvolvedor, sendo uma das mais conhecidas o
@@ -55,49 +55,51 @@ arredondados, que era muito trabalhoso de se fazer utilizando CSS2 e
 dependia de várias imagens juntas para fazer cada um dos cantos e
 bordas do botão. O CSS3 possui essa funcionalidade implementada, e os
 botões podem ter cantos arredondados facilmente utilizando a
-propriedade border-radius, tirando toda essa complexidade das mãos do
+propriedade \textit{border-radius}, tirando toda essa complexidade das mãos do
 desenvolvedor.
 
 \subsection{HTML e sua evolução}
 
-HTML é uma linguagem de marcação de hipertexto que é utilizado como base para a internet
-atual. O HTML mudou bastante desde sua versão inicial em 1991.
-\cite{powell2003html}.
+HTML é uma linguagem de marcação de hipertexto que é utilizada como base para a internet
+atual. O HTML mudou bastante desde sua versão inicial em 1991. \cite{powell2003html}.
 No início o HTML não era muito definido, e cada
-navegador definia novas tags, que tinham funções diferentes,
+navegador definia novas tags que tinham funções diferentes,
 não seguindo um padrão específico, o que dificultava
 bastante o trabalho dos desenvolvedores da época.
-O tempo se foi se passando e um esforço de padronização da linguagem
-começou a ser organizado, e em 1995 o IETF começou o processo de
+O tempo se foi se passando e após algum tempo um esforço de padronização da linguagem
+começou a ser organizado e, em 1995 o IETF começou o processo de
 padronização, lançando a primeira versão padronizada do HTML, que ficou conhecida como HTML 2.0.
 Com o tempo o HTML foi se tornando mais padronizado, ganhando validações e novas integrações
-(com CSS por exemplo), tornando-o mais versátil e adequado as novas necessidades da
+(com CSS por exemplo), tornando-o mais versátil e adequado às novas necessidades da
 internet.
 Essa padronização resolveu vários problemas de fragmentação, onde cada
 navegador implementava sua funcionalidade específica, pois os agora
 eles poderiam começar a seguir as especificações padronizadas,
-facilitando assim as implementações de cada navegador, que agora implementavam com
+facilitando as implementações de cada navegador, que agora implementavam com
 menos frequência o seu próprio estilo de marcação.
 As primeiras página HTML eram feitas apenas com HTML, ou seja, era
 responsabilidade do HTML cuidar de toda a diagramação do site para que
 ele fosse agradável para o visitante, e muitos tipos de
 desenvolvimento foram adotados, utilizando os melhores elementos para
 conseguir diagramar uma página sem se importar com a semântica do
-documento. Com a chegada do Google as coisas mudaram bastante, pois
+documento. Com a chegada do site de busca da Google as coisas mudaram bastante, pois
 agora não havia apenas humanos olhando para a página, robôs também
 estavam passando por ali e precisavam entender da melhor maneira
 possível aquele conteúdo para poder adicionar a página no lugar certo
-nos índices de busca. E o HTML começa a ser utilizado em conjunto com
-o CSS, deixando a parte de diagramação do conteúdo, cores, tipos de
-fonte e etc a cargo do mesmo, assim deixando apenas a parte de
-estrutura com o HTML, podendo assim manter um documento bem formado e
-semântico para os robôs e bonito aos olhos dos visitantes.
+nos índices de busca. Com isso o HTML começa a ser utilizado de uma
+forma mais estruturada, utilizando o CSS para estilizar a visualização,
+assim, removendo do HTML a responsabilidade de lidar com cores, tipos de
+fonte e etc. Com as responsabilidades bem divididas, o CSS pode tratar
+do que é mostrado para o usuário e o HTML cuidar do que é mostrado
+para os robôs, mantendo o melhor dos dois pontos.
+
+%TODO: falar de XHTML
 
 A ultima versão do HTML que está em desenvolvimento é o HTML5, que
 traz novos marcadores para definir melhor a semântica dos documentos e
 traz também funcionalidades que dão um olhar diferente para a internet,
 ou seja, ao invés de apenas se preocupar com texto e formatação, o HTML5
-visa atender as necessidades multimídia da internet, cobrindo todos os
+visa atender às necessidades multimídia da internet, cobrindo todos os
 espaços multimídia que tiveram que ser contornados com outras tecnologias,
 como por exemplo vídeo, áudio e desenho.
 
@@ -111,7 +113,7 @@ funcionalidades que compõe esse novo ambiente:
   \item Nova tag <aside> para delimitar menu lateral;
   \item Nova tag <audio> para inserir áudio na pagina;
   \item Nova tag <video> para inserir vídeo na pagina;
-  \item Novos tipos para a tag <input> para inserir mais facilmente
+  \item Novos tipos para a tag <input> para inserir mais facilmente:
   data, url, numero, dia, mês, ano, horário, email e outros;
   \item History API, para poder ter acesso ao histórico de visitas do
   usuário, pedindo-lhe permissão para esse acesso;
@@ -139,7 +141,9 @@ e é possível notar sua constante evolução para suprir as necessidades
 dos usuários e desenvolvedores \cite{robbins2006web}. No início, os
 navegadores eram apenas texto preto sobre um fundo cinza, e foi assim
 nos primórdios da internet, enquanto o Mosaic e o Lynx eram os
-navegadores modo texto famosos. Em 1994 foi lançado o netscape 0.9, que
+navegadores modo texto famosos, sendo que o Mosaic foi o primeiro
+navegador a mostrar as imagens junto com o texto.
+Em 1994 foi lançado o Netscape 0.9, que
 trouxe várias inovações para a internet, e dois anos depois a
 Microsoft contra ataca com o Internet Explorer 3.0, com várias
 funcionalidades novas, inclusive o suporte a folhas de estilo (e
@@ -150,20 +154,19 @@ impacto positivo foi a aceleração do desenvolvimento para essas
 plataforma, e o impacto negativo foi a grande falta de padrão para os
 desenvolvedores, pois cada navegador implementava HTML utilizando seu
 próprio formato. A Microsoft conseguiu uma grande vantagem quando lançou
-o Windows 3.0 que já tinha o internet explorer gratuitamente
+o Windows 95 OSR2 que já tinha o internet explorer gratuitamente
 \cite{asleson2006foundations}, e venceu oficialmente a guerra dos navegadores quando a
-Netscape foi comprada pela AOL(America Online). A Netscape deixou o código fonte
+Netscape foi comprada pela AOL(America Online). A Netscape deixou o código-fonte
 de seu navegador liberado para quem quisesse continuar o projeto,
 e a Mozilla utilizou esse código para começar o desenvolvimento
 do que futuramente seria o Firefox.
 Em 2005 foi lançada a primeira versão do Firefox e a Microsoft começa
 a perder seu reinado absoluto com navegadores. O Firefox conseguiu uma
-boa fatia do mercado de navegadores, e a Microsoft aos poucos vai
-ficando para trás em termos de tecnologia e segurança com a versão 6
-do internet explorer.
+boa fatia do mercado de navegadores, e a Microsoft ficou para trás em
+termos de tecnologia e segurança a partir da versão 6 do Internet Explorer.
 
 Com o passar dos anos, outros navegadores entram nessa disputa, entre
-eles estão o Opera, que tem uma pequena parte do mercado, mas está em
+eles estão o Opera, que tem uma pequena parte do mercado mas está em
 constante desenvolvimento, e o Chrome da Google, que está entre os
 mais rápidos e seguros navegadores da atualidade.
 Novamente uma Guerra dos navegadores começa, mas dessa vez um pouco
@@ -173,12 +176,13 @@ e seu papel nessa história é dizer o que
 é padrão e o que não é, assim fazendo que a interface para os
 desenvolvedores seja o mais parecida possível entre todos os
 navegadores.
-Ainda hoje cada navegador possui sua implementação de algumas
-funcionalidades do HTML5 ou CSS3, e sua própria implementação do
+Ainda hoje cada navegador possui um conjunto diferente de funcionalidades
+do HTML5 ou CSS3, o que faz com que nem todos os recursos funcionem em todos
+os browsers, e sua própria implementação do
 interpretador de Javascript, o que faz alguns serem mais rápidos que
 outros. E uma das grandes vantagens atuais, principalmente falando de
 aplicações ricas, que tem um uso intenso de Javascript, é a velocidade
-desse interpretador e o suporte as novas funcionalidades que o HTML5
+desse interpretador e o suporte às novas funcionalidades que o HTML5
 propõe.
 Os principais navegadores da atualidade são: Opera, Firefox, Internet
 Explorer e Chrome. Todos estão implementando, cada um em seu ritmo, as
