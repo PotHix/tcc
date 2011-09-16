@@ -322,8 +322,8 @@ internet.
 
 \subsection{Audio}
 %TODO: achar alguma referencia da tag audio
-A tag audio foi construída para suprir uma das necessidades multimídia
-da internet. Com o crescimento, os conteúdos da internet foram mudando
+A uma das funcionalidades construídas para suprir uma das necessidades multimídia
+da internet foi a \tagaudio. Com o crescimento, os conteúdos da internet foram mudando
 e se tornando cada vez mais multimídia, e não apenas hipertexto de
 acordo com a idéia inicial. Para utilizar esse tipo de mídia na
 internet foram utilizados componentes externos, como o Adobe Flash por
@@ -332,7 +332,7 @@ tipo de problema.
 
 O padrão HTML5 define uma forma para adicionar áudio a uma página de
 internet de uma maneira fácil e sem depender de produtos externos.
-Isso é feito através da tag \textit{<audio>}, que traz uma
+Isso é feito através da \tagaudio, que traz uma
 implementação nativa (que será feita pelos navegadores) para que o
 audio seja executado.
 
@@ -340,19 +340,28 @@ Essa funcionalidade fornece uma API Javascript para a manipulação do
 audio inserido no documento, possibilitando parar, pausar, tocar,
 pular entre várias partes do audio e etc.
 
-Um dos problemas que podem ser encontrados com a tag audio é o tipo de
+Um dos problemas que podem ser encontrados com a \tagaudio é o tipo de
 implementação de formatos que cada navegador suporta. Há um exemplo
 simples desse problema na atual data de escrita desse trabalho. O
 navegador Firefox possui a implementação do formato \textit{ogg}, que
 é um formato aberto, enquanto outros navegadores como o Chrome por
 exemplo, implementam o formato \textit{mp3}. Esse problema pode ser
-facilmente contornado pela implementação atual da tag \textit{audio},
+facilmente contornado pela implementação atual da \tagaudio,
 apenas definindo os dois formatos na mesma tag permitindo que o
 navegador escolha o arquivo correto para ser executado.
 
-%TODO: continuar esse paragrafo
-Essa funcionalidade é muito útil para o desenvolvimento de jogos, pois
-todos os sons do jogo
+%TODO: Corrigir o nome da web-audio-api
+A \tagaudio possui algumas particularidades que não permitem uma
+resposta rápida e pode atrapalhar a jogabilidade provendo um som com
+atraso. Para resolver esse problema está sendo desenvolvido a
+web-audio-API, que fornece APIs bem parecidas com a \tagaudio, mas
+tratando os eventos no momento certo, lidando com a taxa de
+atualização de cada dispositivo.
+
+Essas funcionalidades são muito úteis para o desenvolvimento de jogos, pois
+todos os sons que o jogo deve produzir podem ser adicionados e
+manipulados utilizando essas funcionalidades, assim criando uma
+experiencia mais divertida para o jogador.
 
 \subsection{WebGL}
 
