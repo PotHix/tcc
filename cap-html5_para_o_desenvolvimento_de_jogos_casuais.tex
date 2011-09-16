@@ -335,16 +335,36 @@ internet.
 Yes, we can!
 
 \subsection{WebGL}
-%TODO: escrever sobre webgl
 
-WebGL é uma API para gráficos 3D na web. \cite{lubbers2010pro}.
-WebGL é um mapeamento do OpenGL ES2 em Javascript. \cite{lubbers2010pro}.
+WebGL é uma API para gráficos 3D na web. \cite{lubbers2010pro}. Essa
+API possibilita a criação de jogos que exigem mais processamento pelo
+computador pois utiliza a GPU do dispositivo em questão para processar
+os gráficos do jogo.
 
-Suporta shaders
+Essa tecnologia é baseada no OpenGL ES2, apenas um mapeamento para
+Javascript conforme \citeonline{lubbers2010pro}, portanto, possui
+quase todas as funcionalidades que as versões para celular possuem,
+inclusive shaders. Essa particularidade contribui
+para que os atuais desenvolvedores de jogos (principalmente jogos em
+três dimensões) tenham mais facilidade para portar os jogos mais
+simples para web, apenas lidando com as particularidades de cada
+navegador e com o fluxo diferenciado que um jogo web terá.
 
-baseado na tag canvas, mas utiliza o contexto 3d ao invés do 2d.
+O WebGL é baseado na tag canvas, e utiliza a mesma tag utilizada para
+se fazer desenhos canvas comums, mas ao invés de utilizar o contexto
+2D, é utilizado o contexto 3D.
 
-Na Figura~\ref{img:webglmodels} é possível ver modelos 3D no formato
+Um dos possíveis problemas de se utilizar WebGL na atual data desse
+de escrita desse trabalho é a falta de suporte dos navegadores e
+dispositivos para essa funcionalidade. Como o WebGL depende muito do
+hardware do dispositivo, dar suporte para ele ainda é um problema,
+pois depende dos drivers de cada dispositivo estar funcionando
+corretamente, além do navegador possuir suporte para o mesmo.
+O que está sendo bem utilizado atualmente é utilizar WebGL para
+acelerar o carregamento do jogo, mas não depender totalmente dele para
+que o jogo funcione.
+
+Na figura~\ref{img:webglmodels} é possível ver modelos 3D no formato
 MD2 (o mesmo formato que o jogo Quake II utilizava para seus
 personagens) utilizando WebGL para a renderização. Isso é feito utilizando a
 biblioteca GLGE, que é um facilitador para a utilização do WebGL.
@@ -358,6 +378,12 @@ biblioteca GLGE, que é um facilitador para a utilização do WebGL.
 
 \clearpage
 
+A figura~\ref{img:webglmodels} dá uma idéia de para onde o WebGL está
+caminhando, e provavelmente daqui a algum tempo será possível criar
+jogos 3D simples que funcionarão diretamente no navegador, ou seja, há
+possibilidade que os jogos simples em três dimensões que estão atualmente
+disponíveis para celulares estarão disponíveis no navegador em breve.
+
 Na Figura~\ref{img:emberwind} é possível ver um exemplo do jogo Emberwind
 sendo executado utilizando WebGL.
 
@@ -369,3 +395,10 @@ sendo executado utilizando WebGL.
 \end{figure}
 
 \clearpage
+
+Esse jogo em particular, está sendo portado para a plataforma web,
+fortificando o argumento dado neste subcapítulo. Uma particularidade
+desse jogo é a opção de se utilizar apenas canvas para os dispositivos
+que não suportam WebGL, o que mostra que é possível contornar a falta
+de suporte do WebGL para jogos casuais nos dispositivos atuais, assim
+como foi dito durante esse subcapítulo.
