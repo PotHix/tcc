@@ -321,8 +321,38 @@ sincronização com um servidor externo assim que houver conexão com a
 internet.
 
 \subsection{Audio}
-%TODO: escrever sobre a tag audio
-Yes, we can!
+%TODO: achar alguma referencia da tag audio
+A tag audio foi construída para suprir uma das necessidades multimídia
+da internet. Com o crescimento, os conteúdos da internet foram mudando
+e se tornando cada vez mais multimídia, e não apenas hipertexto de
+acordo com a idéia inicial. Para utilizar esse tipo de mídia na
+internet foram utilizados componentes externos, como o Adobe Flash por
+exemplo, pois a internet ainda não estava preparada para resolver esse
+tipo de problema.
+
+O padrão HTML5 define uma forma para adicionar áudio a uma página de
+internet de uma maneira fácil e sem depender de produtos externos.
+Isso é feito através da tag \textit{<audio>}, que traz uma
+implementação nativa (que será feita pelos navegadores) para que o
+audio seja executado.
+
+Essa funcionalidade fornece uma API Javascript para a manipulação do
+audio inserido no documento, possibilitando parar, pausar, tocar,
+pular entre várias partes do audio e etc.
+
+Um dos problemas que podem ser encontrados com a tag audio é o tipo de
+implementação de formatos que cada navegador suporta. Há um exemplo
+simples desse problema na atual data de escrita desse trabalho. O
+navegador Firefox possui a implementação do formato \textit{ogg}, que
+é um formato aberto, enquanto outros navegadores como o Chrome por
+exemplo, implementam o formato \textit{mp3}. Esse problema pode ser
+facilmente contornado pela implementação atual da tag \textit{audio},
+apenas definindo os dois formatos na mesma tag permitindo que o
+navegador escolha o arquivo correto para ser executado.
+
+%TODO: continuar esse paragrafo
+Essa funcionalidade é muito útil para o desenvolvimento de jogos, pois
+todos os sons do jogo
 
 \subsection{WebGL}
 
