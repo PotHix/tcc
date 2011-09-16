@@ -303,8 +303,12 @@ internet é necessário utilizar localStorage para guardar informações
 que serão sincronizadas com o servidor assim que a aplicação possuir
 conexão com a internet novamente.
 
-Figura~\ref{img:gmailoffline}.
-%TODO: Dar um exemplo de uso de localstorage e falar de sua utilização em jogos casuais
+Um exemplo que ilustra muito bem a utilização de local storage é a
+aplicação do Google para visualização do Gmail offline (vide
+figura~\ref{img:gmailoffline}), que utiliza local storage para guardar
+as informações dos emails que ele controla, e utiliza offline cache
+para manter a aplicação disponível sem a necessidade de conexão com a
+internet.
 
 \begin{figure}[H]
   \centering
@@ -316,6 +320,15 @@ Figura~\ref{img:gmailoffline}.
 \end{figure}
 
 \clearpage
+
+Utilizando essas funcionalidades para jogos casuais, é possível
+guardar informações de tabelas de pontos, nomes dos jogadores,
+informações sobre os níveis e falas dos personagens durante o jogo e
+etc. Quando a funcionalidade de offline cache for utilizada, local
+storage provavelmente será utilizada em conjunto para manter a
+consistência dos dados do jogador, e possibilitar uma possível
+sincronização com um servidor externo assim que houver conexão com a
+internet.
 
 \subsection{Audio}
 %TODO: escrever sobre a tag audio
