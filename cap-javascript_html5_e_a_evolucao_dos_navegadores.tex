@@ -77,30 +77,43 @@ deixar um documento mais semântico.
 Alguns exemplos das novas funcionalidades que compõe esse novo ambiente:
 
 \begin{itemize}
-  \item Nova tag <article> para delimitar artigos;
-  \item Nova tag <section> para delimitar seções;
-  \item Nova tag <aside> para delimitar menu lateral;
-  \item Nova tag <audio> para inserir áudio na pagina;
-  \item Nova tag <video> para inserir vídeo na pagina;
+  \item Novas tags como: <article>, <section>, <aside> entre outras.
+  Essas tags são utilizas para dar um conteúdo mais semântico para a
+  internet, ou seja, classificar o conteúdo das paginas colocando-os
+  em seus devidos contextos;
   \item Novos tipos para a tag <input> para inserir mais facilmente:
-  data, url, numero, dia, mês, ano, horário, email e outros;
-  \item History API, para poder ter acesso ao histórico de visitas do
-  usuário, pedindo-lhe permissão para esse acesso;
+  data, url, numero, dia, mês, ano, horário, email e outros. Essa
+  funcionalidade foi criada para suprir a necessidade de deixar a
+  internet com um conteúdo mais amigável sem a necessidade de utilizar
+  Javascript, como é feito atualmente;
+  \item History API, permite acesso ao histórico de visitas do usuário,
+  pedindo-lhe permissão para esse acesso. Pode ser usado para dar ao
+  usuário informações mais relacionadas com o seu perfil, baseado nas
+  páginas que ele já acessou;
   \item GeoLocation: Utilizado para saber onde o usuário está localizado no
-  mundo;
+  mundo. Pode ser utilizado para jogos sociais e aplicações que
+  trabalham com avaliação de estabelecimentos;
   \item WebWorkers: Utilizado para executar scripts independentemente das ações
-  da página;
+  da página. Vem para acabar com uma necessidade de executar tarefas
+  Javascript mais pesadas, sem que o navegador termine o processo;
   \item WebSockets: Utilizado para criar uma conexão persistente entre
-  o servidor e o navegador;
+  o servidor e o navegador. Pode ser utilizado para jogos multiplayer,
+  que necessitam de atualização constante de informações;
   \item LocalStorage: Utilizado para guardar informações no navegador
-  do usuário;
+  do usuário. Veio para substituir o mau uso dos Cookies, que eram
+  utilizados para guardar uma grande quantidade de informações do
+  usuário, e possui mais capacidade e performance para guardar
+  informações de uma aplicação;
   \item Offline cache: Utilizado para salvar os arquivos necessários
   para que a aplicação fique disponível quando o usuário não estiver
-  conectado à internet;
+  conectado à internet, assim viabilizando aplicações como um leitor
+  de e-mails, web que trabalhe offline, por exemplo;
   \item Canvas: Para fazer desenhos e importar imagens de uma maneira
-  mais fácil, e rápida, não dependendo da separação de objetos do DOM;
+  mais fácil, e rápida. Pode ser usado por diversas aplicações para criar desenhos e
+  imagens;
   \item SVG: Para criação e manipulação de vetores diretamente no
-  navegador;
+  navegador. Possui vários usos, entre eles a criação de animações
+  simples.
 \end{itemize}
 
 \subsection{Javascript e sua evolução}
