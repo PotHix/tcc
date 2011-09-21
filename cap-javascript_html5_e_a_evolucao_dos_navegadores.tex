@@ -1,6 +1,26 @@
 \section{Javascript, HTML5 e a evolução dos navegadores}
 
-%TODO: Fazer um resumo da arquitetura da internet
+A internet é uma rede de computadores interligados, onde esses
+computadores podem fazer requisições uns aos outros utilizando protocolos pré-definidos e
+padronizados para conseguir determinadas informações.
+A arquitetura da internet é muito bem descrita por
+\citeonline{berners2006framework}, que é o criador inicial da
+internet, onde ele menciona as URIs (Indentificador unificado de
+recursos), que identifica um recurso em meio a rede de computadores, e
+seu papel com o HTTP, que é um protocolo de transporte de hipertexto e
+pode transportar texto e metadados entre os computadores.
+Para localizar cada um dos servidores os recursos são organizados de
+uma forma hierárquica nos servidores de nome chamados de DNS (Domain
+Name System), que fazem a tradução do endereço mais reconhecível pelo
+homem para o endereço mais simples para a maquina, ou seja, uma URI
+simples para o usuário se torna um endereço IP que facilmente
+reconhecido pelos equipamentos de rede que fazem a transferência dos
+pacotes.
+E após localizado o destino de cada requisição, pacotes com
+requisições HTTP são enviados ao servidor de destino, que retornam
+retornam as informações necessárias para a formação da página que é vista no
+navegador. Essas informações são geralmente HTML, Javascript, CSS,
+imagens e outros conteúdos que a página possuir.
 
 Os navegadores evoluíram muito nos últimos anos e com essa evolução
 veio a possibilidade de utilização de tecnologias que integram
@@ -9,9 +29,9 @@ a vantagem de terceirizar o trabalho da implementação multi-plataforma
 de uma aplicação, pois as empresas que desenvolvem os navegadores
 terão todo esse trabalho pelo desenvolvedor. Essa se tornou uma das
 grandes vantagens do HTML5, e com sua evolução constante, é possível
-construir diretamente no navegador muitas coisas que atualmente necessitam
-de ferramentas de terceiros, apenas utilizando javascript para a
-manipulação.
+construir diretamente no navegador, apenas utilizando javascript para
+manipulação de elementos HTML, muitas coisas que atualmente necessitam
+de ferramentas de terceiros.
 
 \subsection{HTML e sua evolução}
 
