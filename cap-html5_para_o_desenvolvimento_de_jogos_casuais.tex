@@ -1,6 +1,6 @@
 \section{HTML5 para o desenvolvimento de jogos casuais}
 
-Nesse capítulo será abordado as ferramentas mais utilizadas para
+Nesse capítulo serão abordadas as ferramentas mais utilizadas para
 desenvolvimento de jogos casuais dentro do ambiente HTML5.
 As ferramentas atuais que suportam HTML5 possuem muitas vantagens,
 principalmente em portabilidade, tirando do desenvolvedor a
@@ -11,6 +11,7 @@ operacionais. Esse capítulo visa mostrar as vantagens e desvantagens
 de cada uma das ferramentas utilizadas no HTML5, o que pode ser usado
 com tranquilidade e o que necessita de mais cautela no seu uso.
 
+%TODO: Achar um melhor título para esse capítulo
 \subsection{Javascript}
 
 Como dito no capítulo anterior, Javascript é a principal ferramenta
@@ -24,22 +25,23 @@ dinâmica, o que ajuda o desenvolvedor a se preocupar menos com tipos
 de variáveis e elementos, e evita a grande preocupação com o
 gerenciamento de memória.
 Como desvantagem, o Javascript tende a expor o código do jogo em
-questão para a internet, pois, para que um navegador execute o jogo é
+questão para a internet, pois para que um navegador execute o jogo é
 necessário que o mesmo possua o código, tendo em vista que Javascript
 não é uma linguagem compilada, e sim interpretada. Uma das técnicas
 utilizadas para evitar a distribuição do código para o usuário é a
 ofuscação de código. Com essa técnica o seu código continua chegando
 ao usuário, mas de uma maneira não legível, ou seja, será facilmente
 entendida pelo navegador mas dificilmente entendida por um humano que
-quer utilizar seu código fonte.
+quer utilizar seu código-fonte.
 Uma das grandes preocupações de todos os desenvolvedores de jogos é a
 performance. A área de jogos exige muito processamento para calcular
 cada um dos passos que um jogador vai dar dentro de um jogo, como cada
 objeto vai se comportar, calcular trajetórias de projéteis, calcular
 iluminação dos objetos da cena, calcular a física dos objetos e outras
 coisas, e para isso é necessário utilizar muito processamento do
-dispositivo que estiver executando o mesmo. Sabemos que Javascript vai
-ser interpretado em cima de um navegador, que por sua vez está sendo
+dispositivo que estiver executando o mesmo.
+%TODO: Evitar a primeira pessoa do plural
+Sabemos que Javascript vai ser interpretado em cima de um navegador, que por sua vez está sendo
 executado pelo sistema operacional e dividindo memória e processamento
 com outros programas no escalonador de processos, portanto, não
 podemos esperar que um jogo que vai rodar no navegador tenha as mesmas
