@@ -169,7 +169,7 @@ http://files.myopera.com/emoller/blog/timetrap.html conforme
 No desenvolvimento de jogos a utilização do SVG é bem limitada, sendo
 comumente utilizada para as animações acima citadas. O motivo do SVG
 não ser utilizado para o desenho dos jogos é a dificuldade e
-performance de alterar cada um dos vetores, por esse motivo,
+performance de alterar cada um dos vetores, por esse motivo
 a técnica de sprites é mais utilizada, favorecendo imagens pré-feitas
 ao invés da manipulação de vetores.
 
@@ -177,7 +177,7 @@ ao invés da manipulação de vetores.
 \subsection{WebSocket API}
 
 WebSocket API define uma especificação que permite as páginas web
-utilizar o protocolo de Sockets para utilizar uma comunicação em duas
+utilizar o protocolo de Sockets para fazer comunicação em duas
 vias com um servidor remoto \cite{website:w3cwebsockets}. Com essa tecnologia
 conseguimos facilmente criar jogos multiplayer, pois podemos
 trocar informações entre dois computadores de uma maneira bem mais
@@ -188,11 +188,11 @@ o método normal de comunicação que o HTTP fornece, e sim utilizar um
 túnel direto entre o computador e o servidor.
 Nos métodos normais de comunicação utilizando o HTTP a cada requisição
 é necessário passar por todo o processo de comunicação do TCP, e
-receber todos os dados e metas do HTTP, o que gera um tempo maior para
-o recebimento dos dados e um maior trafego de rede. Com o Socket (que
-é criados pela funcionalidade de WebSockets), apenas uma conexão TCP é
+receber todos os dados e metadados do HTTP, o que gera um tempo maior para
+o recebimento dos dados e um maior tráfego de rede. Com o Socket (que
+é criado pela funcionalidade de WebSockets), apenas uma conexão TCP é
 criada e mantida durante um período de tempo, assim facilitando o
-tráfego de informações viabilizando uma comunicação mais rápida e
+tráfego de informações, viabilizando uma comunicação mais rápida e
 usável para um jogo em tempo real.
 
 Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
@@ -201,17 +201,16 @@ em latência \cite{lubbers2010pro}.
 
 Na Figura~\ref{img:swarmation}, é apresentado um jogo que utiliza
 uma biblioteca que disponibiliza uma interface de código WebSockets,
-se utilizando de diferentes ferramentas para que essa interface seja a mesma em
+a finalidade dela é tentar manter as mesmas interfaces em
 todos os navegadores, inclusive os que não possuem suporte para essa
 tecnologia.
 
 A ideia do jogo é integrar vários jogadores em um único lugar, sendo que
 cada jogador assume o papel de um pixel, e eles precisam formar uma
-determinada imagem que é gerada aleatoriamente pelo jogo e mostrada a
+determinada imagem que é gerada aleatoriamente pelo jogo e mostrada à
 direita. A função do WebSockets nesse jogo é sincronizar em tempo real a
-posição de cada jogador para que ao final da contagem possa ser
-calculado os posicionamentos para saber quais imagens foram formadas e
-quais jogadores devem ser pontuados.
+posição de cada jogador para que ao final da contagem saber quais imagens
+foram formadas e quais jogadores devem ser pontuados.
 
 \begin{figure}[H]
   \centering
@@ -225,16 +224,17 @@ quais jogadores devem ser pontuados.
 
 Offline cache, em sua maneira mais simplista, é uma lista apontando
 para o HTML, CSS, Javascript, imagens e outros recursos que devem
-estar disponíveis para o website \cite{pilgrim2010html5}. Utilizando
-essa lista o navegador faz o download de todos os recursos que
-precisam ser utilizados quando o dispositivo em questão não estiver
-apto a acessar a internet, ou seja, na primeira requisição, tudo que estiver
-disponível no arquivo de manifesto que contem essa lista será baixado
-e guardado no dispositivo e será utilizado até que o manifesto seja
-modificado.
+estar disponíveis para o website \cite{pilgrim2010html5}. O arquivo de
+manifesto é o responsável por conter essa lista de arquivos, provendo
+ao navegador a informação sobre os recursos que
+precisam ser utilizados quando o dispositivo que está executando a
+página em questão não estiver apto a acessar a internet, ou seja,
+na primeira requisição, tudo que estiver disponível no arquivo de manifesto
+que contem essa lista será baixado, guardado no dispositivo e utilizado até
+que o manifesto seja modificado.
 
 A cada nova requisição de uma aplicação que utiliza offline cache o
-navegador verifica o arquivo de manifesto, se ele não foi modificado
+navegador verifica o arquivo de manifesto se ele não foi modificado
 o navegador vai utilizar os arquivos que estão disponíveis localmente,
 caso contrário todos os arquivos da seção "CACHE" desse arquivo serão baixados novamente.
 
@@ -246,7 +246,7 @@ são os arquivos que não devem ser considerados quando o usuário não
 estiver offline.
 
 Todos os arquivos utilizados na aplicação devem estar no arquivo de
-manifesto, para os arquivos que não estarão disponíveis localmente há
+manifesto para os arquivos que não estarão disponíveis localmente há
 uma seção chamada FALLBACK.
 
 Utilizando Offline cache é possível criar uma aplicação para a
@@ -266,7 +266,7 @@ normalmente como se fosse uma aplicação nativa.
   \label{img:currency}
 \end{figure}
 
-Essa funcionalidade pode ser muito utilizado em jogos casuais, para disponibilizar um
+Essa funcionalidade pode ser muito utilizada em jogos casuais para disponibilizar um
 determinado para utilização em um dispositivo móvel, bastando
 adicionar o jogo aos favoritos, e ele estará disponível a qualquer
 momento.
@@ -293,7 +293,7 @@ determinado valor, que será convertido para texto quando adicionado.
 
 Essa funcionalidade é muito utilizada em conjunto com a funcionalidade
 de offline cache, pois quando uma aplicação não possui conexão com a
-internet é necessário utilizar localStorage para guardar informações
+internet é necessário utilizar Local Storage para guardar informações
 que serão sincronizadas com o servidor assim que a aplicação possuir
 conexão com a internet novamente.
 
@@ -322,11 +322,12 @@ consistência dos dados do jogador, e possibilitar uma possível
 sincronização com um servidor externo assim que houver conexão com a
 internet.
 
-\subsection{Audio}
+\subsection{Áudio}
 A uma das funcionalidades construídas para suprir uma das necessidades multimídia
-da internet foi a \tagaudio. Com o crescimento, os conteúdos da internet foram mudando
+da internet foi a \tagaudio. Com o passar do tempo e o aumento no
+numero de sites, os conteúdos da internet foram mudando
 e se tornando cada vez mais multimídia, e não apenas hipertexto de
-acordo com a idéia inicial. Para utilizar esse tipo de mídia na
+acordo com a ideia inicial. Para utilizar esse tipo de mídia na
 internet foram utilizados componentes externos, como o Adobe Flash por
 exemplo, pois a internet ainda não estava preparada para resolver esse
 tipo de problema.
@@ -335,11 +336,11 @@ O padrão HTML5 define uma forma para adicionar áudio a uma página de
 internet de uma maneira fácil e sem depender de produtos externos.
 Isso é feito através da \tagaudio, que traz uma
 implementação nativa (que será feita pelos navegadores) para que o
-audio seja executado.
+áudio seja executado.
 
 Essa funcionalidade fornece uma API Javascript para a manipulação do
-audio inserido no documento \cite{pfeiffer2010definitive}, possibilitando parar, pausar, tocar,
-pular entre várias partes do audio e etc.
+áudio inserido no documento \cite{pfeiffer2010definitive}, possibilitando parar, pausar, tocar,
+pular entre várias partes do áudio, entre outras funcionalidades.
 
 Um dos problemas que podem ser encontrados com a \tagaudio é o tipo de
 implementação de formatos que cada navegador suporta. Há um exemplo
@@ -371,7 +372,7 @@ computador pois utiliza a GPU do dispositivo em questão para processar
 os gráficos do jogo.
 
 Essa tecnologia é baseada no OpenGL ES2, apenas um mapeamento para
-Javascript conforme \citeonline{lubbers2010pro}, portanto, possui
+Javascript conforme \citeonline{lubbers2010pro}, portanto possui
 quase todas as funcionalidades que as versões para celular possuem,
 inclusive shaders. Essa particularidade contribui
 para que os atuais desenvolvedores de jogos (principalmente jogos em
@@ -387,11 +388,12 @@ Um dos possíveis problemas de se utilizar WebGL na atual data desse
 de escrita desse trabalho é a falta de suporte dos navegadores e
 dispositivos para essa funcionalidade. Como o WebGL depende muito do
 hardware do dispositivo, dar suporte para ele ainda é um problema,
-pois depende dos drivers de cada dispositivo estar funcionando
+pois depende dos drivers de cada dispositivo funcionar
 corretamente, além do navegador possuir suporte para o mesmo.
-O que está sendo bem utilizado atualmente é utilizar WebGL para
-acelerar o carregamento do jogo, mas não depender totalmente dele para
-que o jogo funcione.
+WebGL está sendo bem utilizado atualmente para acelerar a execução do jogo,
+mas não depender totalmente dele para que o jogo funcione, assim
+aproveitando as vantagens do WebGL para os navegadores e sistemas que
+possuem esse suporte.
 
 Na figura~\ref{img:webglmodels} é possível ver modelos 3D no formato
 MD2 (o mesmo formato que o jogo Quake II utilizava para seus
@@ -405,16 +407,17 @@ biblioteca GLGE, que é um facilitador para a utilização do WebGL.
   \label{img:webglmodels}
 \end{figure}
 
-A figura~\ref{img:webglmodels} dá uma idéia de para onde o WebGL está
+A figura~\ref{img:webglmodels} dá uma ideia de para onde o WebGL está
 caminhando, e provavelmente daqui a algum tempo será possível criar
 jogos 3D simples que funcionarão diretamente no navegador, ou seja, há
 possibilidade que os jogos simples em três dimensões que estão atualmente
-disponíveis para celulares estarão disponíveis no navegador em breve.
+disponíveis para celulares serem desenvolvidos novamente para que
+sejam executados diretamente no navegador num futuro não tão distante.
 
-Outro exemplo de como webgl pode ser poderoso pode ser visto na Figura~\ref{img:webglwater}
+Outro exemplo de como WebGL pode ser poderoso pode ser visto na Figura~\ref{img:webglwater}
 que está disponível integralmente em http://madebyevan.com/webgl-water/.
 Nesse exemplo 3D são utilizadas várias técnicas de sombreamento e
-manipulação da agua e da iluminação, que exigem um bom processamento
+manipulação da água e da iluminação, que exigem um bom processamento
 do dispositivo, e o WebGL desempenha um ótimo papel em computadores
 modernos.
 
@@ -431,7 +434,7 @@ conceito para mostrar que o WebGL é realmente útil e pode ser
 utilizado para aplicações que exigem um grande processamento do
 navegador. Mas além de provas de conceito, alguns jogos já estão
 utilizando WebGL como tecnologia auxiliar para acelerar no desenho dos
-gráficos e nos calculos.
+gráficos e nos cálculos.
 Na Figura~\ref{img:emberwind} é possível ver um exemplo do jogo Emberwind
 sendo executado utilizando WebGL.
 
@@ -442,11 +445,11 @@ sendo executado utilizando WebGL.
   \label{img:emberwind}
 \end{figure}
 
-Esse jogo em particular, está sendo portado para a plataforma web,
+Esse jogo em particular está sendo portado para a plataforma web,
 fortificando o argumento dado neste subcapítulo. Uma particularidade
 desse jogo é a opção de se utilizar apenas canvas para os dispositivos
 que não suportam WebGL, o que mostra que é possível contornar a falta
 de suporte do WebGL para jogos casuais nos dispositivos atuais, assim
-como foi dito durante esse subcapítulo.
+como foi dito previamente.
 
 \clearpage
