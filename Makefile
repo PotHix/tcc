@@ -45,10 +45,7 @@ publish:	$(DOC).pdf
 		./update_file_version $(PUBLISHFOLDER) $(DOC)
 		make clean
 
-show:		$(DOC).pdf
-		evince $(DOC).pdf
-
-shownew:	clean
+show:		clean
 		make
 		evince $(DOC).pdf
 		make clean
