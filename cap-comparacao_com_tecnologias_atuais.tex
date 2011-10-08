@@ -1,5 +1,6 @@
-\section{Comparação com as outras tecnologias utilizadas atualmente}
+\section{Comparação com outras tecnologias web para jogos casuais}
 
+%TODO: Adicionar uma enumeração sobre os comparativos.
 Com base nas funcionalidades apresentadas sobre as tecnologias que
 fazem parte da especificação do HTML5, será feita uma comparação com
 as principais ferramentas utilizadas para o desenvolvimento de jogos
@@ -7,25 +8,27 @@ na data da escrita desse trabalho.
 
 \subsection{Outras tecnologias utilizadas atualmente}
 
+%TODO: Estruturar essa frase melhor. Até o "sobre"
 Com exceção do HTML5, as ferramentas atuais para desenvolvimento de jogos para a internet se
 utilizam de extensões que são instaladas nativamente no computador
 para que possa ser uma plataforma na qual o jogo desenvolvido vai
 executar sobre, para assim gerar uma plataforma mais consistente para
 o desenvolvimento e ter um melhor acesso ao hardware do dispositivo em
-questão. Essas tecnologias são:
+questão. Essas tecnologias são Java, Flash e Unity.
 
 \subsubsection{Java}
 
+%TODO: Trocar "o java" por "a plataforma Java" ou remover pelo menos o artigo
 Java foi uma das primeiras tecnologias que podia proporcionar um
 ambiente favorável ao desenvolvimento de games portada para os
 navegadores. Para que essa funcionalidade ficasse disponível para os
-navegadores, o Java disponibilizou um segundo tipo de aplicação,
+navegadores, a plataforma Java disponibilizou um segundo tipo de aplicação,
 chamado applet.
 
 Os applets são programas Java que podem ser inseridos em uma página de
 internet \cite{boese2009introduction}. Esses programas são inseridos nas
 páginas utilizando a tag \textit{<applet>} no documento HTML passando
-o arquivo Java em um dos seus atributos. Com isso o programa java é
+o arquivo Java em um dos seus atributos. Com isso o programa Java é
 baixado do servidor e executado na maquina do cliente pelo navegador,
 que utiliza um ambiente de \textit{sandbox}, assim não permitindo
 ao programa ter total acesso dentro da maquina do usuário.
@@ -41,48 +44,50 @@ acadêmico.
 
 Flash é um produto criado pela Macromedia em 1996, com a finalidade de
 enriquecer o conteúdo da internet, trazendo funcionalidades que não
-era possível fazer apenas com HTML na época de sua criação.
+era possível disponibilizar apenas com HTML na época de sua criação.
 Com Flash, foi possível a criação de diversos sites com animações, e
 foi o que originou as home pages animadas com um "Clique para entrar".
 
-Em 2005 a Macromedia foi comprada pela adobe e vem sendo mantido por
-eles desde então, juntamente com todo o pacote de multimidia da
+Em 2005 a Macromedia foi comprada pela Adobe e vem sendo mantido por
+ela desde então, juntamente com todo o pacote de multimidia da
 Macromedia.
 
 A facilidade em gerar animações com o Flash trouxe a idéia de
 utilizá-lo para a criação de jogos que funcionassem diretamente no
-navegador, tendo em vista que Flash o plugin exporta um binário para ser
+navegador, tendo em vista que plugin do Flash exporta um binário para ser
 executado utilizando o Flash player instalado pelo usuário, a
 performance pode ser bem melhor, pois o flash player tem acesso ao
 hardware do dispositivo no qual ele está instalado.
 
-Atualmente, o Flash é a tecnologia mais utilizada para desenvolvimento de jogos para a
+Atualmente, Flash é a tecnologia mais utilizada para desenvolvimento de jogos para a
 internet \cite{website:adobeflashleading}. Essa ferramenta possui muitas
 bibliotecas feitas para facilitar o desenvolvimento de jogos, e por
 possuir uma interface simples tanto para o designer como para o desenvolvedor,
 ela vem mantendo seu legado ao longo dos anos.
 Mais de 99 por cento dos computadores pessoais possuem o Flash Player
 instalado \cite{website:adobeflashpenetration}. E esse é um dos grandes
-motivos do sucesso do flash, pois quebra um dos grandes problemas de
+motivos do sucesso do Flash, pois quebra um dos grandes problemas de
 se desenvolver um jogo que necessita de dependencias externas para ser
 executado.
 
 \subsubsection{Unity}
 
-Conforme \citeonline{blackman2011beginning}, a engine Unity 3D provê
+%TODO: Falar um pouco sobre o surgimento da unity e a empresa
+%responsável. Talvez dar algum exemplo que use Unity para web.
+Conforme \citeonline{blackman2011beginning}, a \textit{engine} Unity 3D provê
 um bom ponto de entrada para o mundo do desenvolvimento de jogos, pois
 ela possui um bom balanceamento entre funcionalidades e um bom preço.
 
-Unity é engine relativamente nova para desenvolvimento de jogos e está
+Unity é uma \textit{engine} relativamente nova para desenvolvimento de jogos e está
 ganhando muito espaço no mercado devido a sua facilidade de uso e
 aumento na popularidade dos seus plugins. Utilizando-a é possível
 desenvolver apenas um jogo e exportá-lo para ser executado em
-diferentes plataformas, entre elas o navegador, que utiliza um plugin um
-plugin para executa-lo, e a quantidade de instalações do plugin já
+diferentes plataformas, entre elas o navegador, que utiliza um
+plugin para executá-lo, e a quantidade de instalações do plugin já
 ultrapassa 35 milhões \cite{blackman2011beginning}.
 
 É possível exportar jogos para rodar diretamente no navegador, mas
-esse não é o único caminho que a Unity fornece, é possível exportar
+esse não é o único caminho que a \textit{engine} Unity fornece, é possível exportar
 para Windows, Mac e outros dispositivos que já possuem versões do
 Unity rodando.
 
@@ -100,6 +105,7 @@ para desenvolvimento de jogos para o navegador.
 
 \subsection{Performance}
 
+%TODO: Falar o que são os tais recursos.
 Performance é um assunto muito discutido no desenvolvimento de jogos
 pois os jogos consomem muito recurso do dispositivo em que estão
 executando, pois estão, entre outras coisas, em constante execução, fazendo
@@ -123,10 +129,13 @@ o sistema operacional vê apenas um navegador como processo, e esse
 navegador vai fazer a interface entre o jogo e o sistema operacional.
 O navegador não é uma plataforma otimizada para jogos (como é o caso
 dos plugins, que possuem apenas essa finalidade, ou são bem
-direcionados para o tal), apesar de estar e constante evolução e
+direcionados para o tal), apesar de estar em constante evolução e
 desenvolvimento para interpretar Javascript de uma maneira mais veloz,
 a cada nova versão.
 
+%TODO: "Se o desenvolvimento do jogo focar em performance"
+% Mudar essa frase para dar uma idéia de que o foco em performance é
+% necessário para que o jogo funcione bem em plataformas mobile.
 O estado dos navegadores na data de escrita desse
 trabalho suporta a execução de jogos jogos casuais simples, que exigem
 um processamento aceitável do dispositivo, ou seja, jogos em duas
@@ -137,6 +146,10 @@ que possuem menor poder de processamento, como os celulares por exemplo.
 
 \subsection{Portabilidade}
 
+%TODO: Mencionar as plataformas que podem rodar jogos em HTML5, como
+%android iPhone e etc.
+
+%TODO: Mencionar um pouco sobre a portabilidade do flash.
 Sempre que um jogo casual é desenvolvido, tem-se em mente que ele deve
 abranger a maior quantidade de dispositivos possível, para assim
 atingir um maior publico, e ser utilizado onde o jogador estiver (como
@@ -152,12 +165,12 @@ plataforma final, pois o desenvolvedor vai depender de uma empresa
 terceira (nesse caso, o desenvolvedor do plugin para essa tecnologia),
 que na maioria dos casos utiliza código proprietário, impedindo que o
 próprio desenvolvedor desenvolva o plugin para essa outra plataforma,
-e o jogo desenvolvido fica dependendo das plataformas em que o plugin
+e o jogo desenvolvido se torna dependente das plataformas em que o plugin
 funciona.
 
 No caso de jogos feitos com HTML5 e Javascript, a única dependência é
 o navegador, que todos os dispositivos que acessam a internet possuem,
-a única limitação é exigir um navegador com suporte as essas
+e a única limitação é exigir um navegador com suporte à essas
 tecnologias, o que acontece com muita frequência nos dispositivos que
 possuem um poder de processamento considerável, que também é um dos
 requisitos para o jogo ser executado sem que o jogador sofra com
@@ -166,12 +179,13 @@ lentidões.
 \subsection{Fragmentação}
 
 Quando um jogo é desenvolvido para rodar em diversas plataformas
-(conhecidos como jogos multiplataforma) e muito provável que o
+(conhecidos como jogos multiplataforma) é muito provável que o
 desenvolvedor terá que lidar com um problema de fragmentação, pois
 para cada tipo de dispositivo o jogo terá que ser customizado de uma
 maneira diferente dependendo da tecnologia que foi escolhida para o
 desenvolvimento do mesmo.
 
+%TODO: Dar um exemplo de "estilo do jogo"
 Os desenvolvedores que usam as tecnologias que dependem de plugins para executar o
 jogo não sofrem muito com a fragmentação, pois o plugin gerencia
 grande parte das diferenças entre os dispositivos, permitindo ao
@@ -184,7 +198,7 @@ programador terá que lidar com as diferençar e adaptar o jogo aos
 vários tamanhos de tela.
 
 Ao utilizar HTML5 o navegador se torna a plataforma de execução do
-jogo, portanto, o jogo funcionará em todos os dispositivos que
+jogo, portanto ele funcionará em todos os dispositivos que
 suportarem o mesmo, com a vantagem de já estar instalado previamente
 no dispositivo em questão.
 Independente do navegador já estar instalado no sistema, o
@@ -192,6 +206,8 @@ desenvolvedor do jogo terá os mesmos problemas dos plugins, ou seja,
 também terá de lidar com as diferenças no tamanhos das telas dos
 dispositivos mobile.
 
+%TODO: mostrar as diferenças entre dois navegadores, as
+%funcionalidades que eles suportam e como isso afetaria um jogo.
 Uma das desvantagens do HTML5 sobre as outras tecnologias é a versão
 dos navegadores que pode ser diferente em cada dispositivo, assim
 aumentando o problema de fragmentação. Esse problema é conhecido pelos
@@ -200,14 +216,17 @@ requisito mínimo para se utilizar determinada aplicação.
 
 \subsection{Recursos para desenvolvimento}
 
+%TODO: Procurar uma ferramenta utilizada para desenvolvimento de jogos
+%com HTML5
 Cada tecnologia disponibiliza diferentes ferramentas para facilitar o
 desenvolvimento em sua plataforma, para isso algumas utilizam meios
 gráficos, como ferramentas WYSIWYG que facilitam o posicionamento de
 objetos e outras apenas disponibilizam suas bibliotecas como um
 framework para facilitar tarefas de código.
 
+%TODO: Remover os links e colocar na bibliografia
 A adobe possui o Adobe Flash professional (http://www.adobe.com/br/products/flash.html),
-que possibilita ao desenvolvedor um acesso rápido as ferramentas de cores
+que possibilita ao desenvolvedor um acesso rápido às ferramentas de cores
 e desenhos, e facilita muito o posicionamento e a transição entre o
 código e a amostragem do jogo, integrando os dois lados em uma única
 plataforma, o que facilita o trabalho para o desenvolvedor
@@ -223,6 +242,6 @@ foco do Unity).
 
 Java não possui uma ferramenta diferente para o desenvolvimento de
 jogos, apenas segue o mesmo padrão de desenvolvimento convencional
-java e utiliza as bibliotecas de applet para preparar o jogo para
+Java e utiliza as bibliotecas de applet para preparar o jogo para
 funcionar na web, ou seja, com uma das conhecidas IDEs (Eclipse por
 exemplo) você consegue desenvolver um jogo casual em Java.
