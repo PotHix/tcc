@@ -206,13 +206,24 @@ desenvolvedor do jogo terá os mesmos problemas dos plugins, ou seja,
 também terá de lidar com as diferenças no tamanhos das telas dos
 dispositivos mobile.
 
-%TODO: mostrar as diferenças entre dois navegadores, as
-%funcionalidades que eles suportam e como isso afetaria um jogo.
 Uma das desvantagens do HTML5 sobre as outras tecnologias é a versão
 dos navegadores que pode ser diferente em cada dispositivo, assim
 aumentando o problema de fragmentação. Esse problema é conhecido pelos
 desenvolvedores web, e não é um grande problema quando definido um
-requisito mínimo para se utilizar determinada aplicação.
+requisito mínimo para se utilizar determinada aplicação. Um exemplo
+simples desse problema é o jogo demo Quake III, que por ter seu código
+aberto está sendo portado para rodar com WebGL diretamente no navegador
+\cite{website:webglquake3}. Quando esse jogo é acessado por um
+dispositivo que não possui suporte a WebGL o jogo não irá funcionar,
+pois ele depende dessa plataforma para sua execução, portanto, quando
+um jogo precisa de uma determinada funcionalidade para funcionar, e
+essa funcionalidade ainda não é suportada por todos os navegadores
+mais conhecidos, o usuário precisa ser informado do motivo dele não
+conseguir executar o jogo ao acessá-lo.
+O escopo desse trabalho são jogos casuais, assim excluiremos jogos
+maiores como é o caso do exemplo acima, portanto para a maioria dos
+casos é possível ter uma segunda alternativa para que o jogo seja
+executado, mesmo que para isso a performance seja inferior.
 
 \subsection{Recursos facilitadores para desenvolvimento}
 
