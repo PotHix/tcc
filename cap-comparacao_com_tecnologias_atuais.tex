@@ -16,7 +16,8 @@ executam o mesmo nativamente no dispositivo para obter um melhor
 acesso ao hardware. A utilização de extensões de terceiros para a
 executação de um jogo possui várias vantagens e desvantagens, e esse
 capítulo visa mostrar quais são e compará-las com o que o HTML provê.
-Essas tecnologias mais utilizadas para desenvolvimento de jogos são Java, Flash e Unity.
+Essas tecnologias mais utilizadas para desenvolvimento de jogos são
+Java, Flash e Unity3D.
 
 \subsubsection{Java}
 
@@ -70,15 +71,13 @@ motivos do sucesso do Flash, pois quebra um dos grandes problemas de
 se desenvolver um jogo que necessita de dependencias externas para ser
 executado.
 
-\subsubsection{Unity}
+\subsubsection{Unity3D}
 
-%TODO: Falar um pouco sobre o surgimento da unity e a empresa
-%responsável. Talvez dar algum exemplo que use Unity para web.
-Conforme \citeonline{blackman2011beginning}, a \textit{engine} Unity 3D provê
+Conforme \citeonline{blackman2011beginning}, a \textit{engine} Unity3D provê
 um bom ponto de entrada para o mundo do desenvolvimento de jogos, pois
 ela possui um bom balanceamento entre funcionalidades e um bom preço.
 
-Unity é uma \textit{engine} relativamente nova para desenvolvimento de jogos e está
+Unity3D é uma \textit{engine} relativamente nova para desenvolvimento de jogos e está
 ganhando muito espaço no mercado devido a sua facilidade de uso e
 aumento na popularidade dos seus plugins. Utilizando-a é possível
 desenvolver apenas um jogo e exportá-lo para ser executado em
@@ -86,10 +85,22 @@ diferentes plataformas, entre elas o navegador, que utiliza um
 plugin para executá-lo, e a quantidade de instalações do plugin já
 ultrapassa 35 milhões \cite{blackman2011beginning}.
 
+A \textit{engine} Unity3D é criada pela empresa Unity
+\cite{website:unity3dcompany}, sendo esse o principal produto da
+empresa. O foco dessa \textit{engine} é facilitar o desenvolvimento de jogos no
+geral, tirando do desenvolvedor a preocupação de criar um jogo para
+diversas plataformas, assim deixando-o mais livre para pensar nas
+funcionalidades do seu próprio jogo e também prover um ambiente
+simples para esse desenvolvimento, lhe dando ferramentas gráficas que
+facilitam a criação dos personagens e mapas do jogo, tanto para jogos
+3D, que são o foco principal da \textit{engine}, como para jogos 2D
+que podem se utilizar do 3D para a criação de um jogo que faça uma
+simulação simples de 2D,
+
 É possível exportar jogos para rodar diretamente no navegador, mas
-esse não é o único caminho que a \textit{engine} Unity fornece, é possível exportar
+esse não é o único caminho que a \textit{engine} Unity3D fornece, é possível exportar
 para Windows, Mac e outros dispositivos que já possuem versões do
-Unity rodando.
+Unity3D rodando.
 
 Apesar de possuir uma versão paga com muitas vantagens e novas
 funcionalidades muito úteis para empresas de jogos, essa engine possui
@@ -103,6 +114,10 @@ cada vez mais novas pessoas na comunidade, que já possui mais de
 \citeonline{blackman2011beginning}), e vem disputando a fama de melhor plataforma
 para desenvolvimento de jogos para o navegador.
 
+O site oficial do Unity3D possui alguns jogos que foram feitos para
+navegador \cite{website:unity3dwebgames}, o jogador precisa instalar o
+%TODO
+
 \subsection{Performance}
 
 Performance é um assunto muito discutido no desenvolvimento de jogos
@@ -115,7 +130,7 @@ dar impressão de movimento ou sombra e outras coisas que exigem alto
 processamento em um curto período de tempo.
 
 As tecnologias que exigem a instalação de um software de terceiros
-(Java, Unity e Flash) possuem uma performance melhor no
+(Java, Unity3D e Flash) possuem uma performance melhor no
 momento de escrita desse trabalho. O motivo desse ganho de performance
 é a otimização da plataforma para utilização em um determinado
 dispositivo, fazendo com que o jogo seja interpretado e executado
@@ -256,13 +271,13 @@ código e a amostragem do jogo, integrando os dois lados em uma única
 plataforma, o que facilita o trabalho para o desenvolvedor
 inexperiente.
 
-O Unity editor \cite{website:unity3d} é o editor da engine Unity que possibilita toda a
+O Unity editor \cite{website:unity3d} é o editor da engine Unity3D que possibilita toda a
 criação do jogo utilizando a plataforma, permitindo, por exemplo, a
 qualquer momento clicar no botão de iniciar e testar como está a sua
 criação, emulando a plataforma que você deseja publicar.
 Esse editor possui a facilidade de arrastar objetos e programá-los
 facilmente, o que é totalmente necessário para um jogo 3D (que e o
-foco do Unity).
+foco do Unity3D).
 
 Java não possui uma ferramenta diferente para o desenvolvimento de
 jogos, apenas segue o mesmo padrão de desenvolvimento convencional
