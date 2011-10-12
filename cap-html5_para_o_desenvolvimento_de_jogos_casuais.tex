@@ -358,16 +358,20 @@ Web audio API, que fornece APIs bem parecidas com a \tagaudio, mas
 tratando os eventos no momento certo, lidando com a taxa de
 atualização de cada dispositivo.
 
-%TODO: arrumar essa descrição
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{webaudioapi}
-  \caption{webaudio api {--} Modelos de personagens 3D sendo renderizados com WebGL}
+  \caption{Plink {--} Jogo feito utilizando Web Audio Api}
   \label{img:webaudioapi}
 \end{figure}
 
-A figura~\ref{img:webglmodels} dá uma ideia de para onde o WebGL está
-caminhando, e provavelmente daqui a algum tempo será possível criar
+A figura~\ref{img:webaudioapi} mostra o jogo Plink, que utiliza Web
+Audio Api para fornecer aos usuários uma forma divertida de interagir
+entre si e criar musicas. Cada usuário controla sua posição com o
+mouse, e o som gerado depende da sua posição e cor. Esse é um ótimo
+exemplo de como a Web Audio Api está trazendo a manipulação de audio
+em tempo real para o navegador, assim resolvendo os problemas de
+latencia da tag audio.
 
 Essas funcionalidades são muito úteis para o desenvolvimento de jogos, pois
 todos os sons que o jogo deve produzir podem ser adicionados e
