@@ -13,7 +13,6 @@ TEX = pdflatex
 RM = rm -f
 CP = cp -f
 MAKE = make
-PUBLISHFOLDER = /files/Dropbox/FSA-TCC-HTML5/
 
 ########################################################################
 
@@ -41,8 +40,7 @@ clean:
 		$(RM) texput.log core
 
 publish:	$(DOC).pdf
-		$(CP) $(DOC).pdf $(PUBLISHFOLDER)
-		./update_file_version $(PUBLISHFOLDER) $(DOC)
+		./update_file_version $(DOC)
 		make clean
 
 show:		clean

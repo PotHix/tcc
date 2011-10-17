@@ -1,3 +1,14 @@
-VERSION=`ls -l $1 | grep rev | awk '{print $8}' | xargs echo | sed 's/[A-Za-z_.]//g; s/ //g' | tail -c 2`
+#!/bin/bash
+
+cp -f $1.pdf $PUBLISHFOLDER
+
+if [ -d /Applications ]; then
+  PUBLISHFOLDER=/Users/pothix/Dropbox/FSA-TCC-HTML5/
+  VERSION=`ls -l $PUBLISHFOLDER | grep rev | awk '{print $9}' | xargs echo | sed 's/[A-Za-z_.]//g; s/ //g' | tail -c 2`
+else
+  PUBLISHFOLDER=/files/Dropbox/FSA-TCC-HTML5/
+  VERSION=`ls -l $PUBLISHFOLDER | grep rev | awk '{print $8}' | xargs echo | sed 's/[A-Za-z_.]//g; s/ //g' | tail -c 2`
+fi
+
 NEW_VERSION=`expr $VERSION + 1`
-mv $1$2.pdf $1$2_v$NEW_VERSION.pdf
+mv $1.pdf $PUBLISHFOLDER$1_v$NEW_VERSION.pdf
