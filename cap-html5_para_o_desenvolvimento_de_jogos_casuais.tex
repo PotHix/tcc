@@ -134,6 +134,26 @@ Birds, que utiliza canvas com várias camadas para a renderização padrão.
 \end{figure}
 
 
+\subsection{Transformações e transições com CSS3}
+
+O CSS3 possui uma série de transformações e transições que permitem o
+desenvolvedor rotacionar e escalar os elementos de uma página
+\cite{agi2011html5}. Apesar da grande movimentação dos desenvolvedores
+em função do desenvolvimento de jogos utilizando as funcionalidades do
+Canvas, muito ainda é discutido sobre utilizar DOM para o
+desenvolvimento de jogos assim aproveitando as vantagens que o CSS3
+pode trazer.
+Uma das vantagens de ter um jogo que utiliza DOM ao invés de Canvas é
+a maior compatibilidade com os navegadores, pois todos possuem suporte
+a DOM, que é utilizado para a renderização das páginas de internet que
+estão funcionando atualmente.
+
+As transições e transformações do CSS3 são muito úteis ao utilizar
+objetos DOM para um jogo pois todos esses efeitos são renderizados
+pelo navegador com aceleração de hardware, ou seja, não dependem de
+várias interfaces do navegador com o jogo, com isso ganhando
+performance com os efeitos visuais.
+
 \subsection{SVG}
 
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
@@ -465,9 +485,5 @@ desse jogo é a opção de se utilizar apenas canvas para os dispositivos
 que não suportam WebGL, o que mostra que é possível contornar a falta
 de suporte do WebGL para jogos casuais nos dispositivos atuais, assim
 como foi dito previamente.
-
-\subsection{Transformações e transições com CSS3}
-O CSS3 possui uma série de transformações e transições que permitem o
-desenvolvedor rotacionar e escalar os elementos de uma página \cite{agi2011html5}.
 
 \clearpage
