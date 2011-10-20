@@ -67,7 +67,8 @@ dispositivos o seu jogo estará disponível, levando em consideração
 que cada usuário vai escolher seu navegador preferido, e que talvez
 esse navegador não estará na ultima versão. Atualmente vários sites na
 internet descrevem quais funcionalidades do HTML5 estão disponíveis em
-qual navegador, um deles é o dive into html5 \cite{website:diveintohtml5}.
+qual navegador, um deles é o dive into html5 que está disponível
+online em \citeonline{website:diveintohtml5}.
 Esse problema acontece também no desenvolvimento para computadores e
 vídeo games, mas é um pouco mais simples de lidar, pois os jogos
 simplesmente não são compatíveis, ou seja, se você tem um computador
@@ -95,11 +96,12 @@ e quais funcionalidades serão necessárias para a execução do jogo.
 O Canvas provê uma interface com resolução de dependências para
 desenhar coisas diretamente no navegador, e pode ser utilizado para
 gerar gráficos, gráficos de jogos, e outras imagens para serem
-visualizadas no momento da execução \cite{website:w3ccanvas}.
+visualizadas no momento da execução. \cite{website:w3ccanvas}.
 
 O canvas na web segue a mesma interface que é utilizada nas grandes
 plataformas atuais. O conceito de canvas foi criado pela Apple para
-utilizar no webkit do MacOS X \cite{lubbers2010pro}, criando uma API
+utilizar no webkit do MacOS X. \cite{lubbers2010pro}. Com essa
+funcionalidade foi crianda uma API
 para desenhar widgets e outras coisas em sua plataforma, e essa API
 vem sendo padronizada e implementada em vários navegadores.
 
@@ -164,7 +166,7 @@ performance com os efeitos visuais.
 
 SVG é uma linguagem de marcação utilizada para descrever aplicações de gráficos
 bi-dimensionais e imagens, e um conjunto de scripts relacionados a
-interfaces gráficas \cite{website:w3csvg}. Essa linguagem é utilizada por
+interfaces gráficas. \cite{website:w3csvg}. Essa linguagem é utilizada por
 editores como o Inkscape para definir os vetores criados por ele.
 
 Comparando SVG com Canvas, é possível verificar uma grande diferença
@@ -182,7 +184,7 @@ Na Figura~\ref{img:timetrap}, é possível ver o logo da empresa
 Timetrap, que foi desenvolvido apenas com SVG, utilizando animações. O
 logo animado pode ser visto em
 http://files.myopera.com/emoller/blog/timetrap.html conforme
-\cite{website:svgtimetrap}.
+\citeonline{website:svgtimetrap}.
 
 \begin{figure}[H]
   \centering
@@ -203,7 +205,7 @@ ao invés da manipulação de vetores.
 
 WebSocket API define uma especificação que permite as páginas web
 utilizar o protocolo de Sockets para fazer comunicação em duas
-vias com um servidor remoto \cite{website:w3cwebsockets}. Com essa tecnologia
+vias com um servidor remoto. \cite{website:w3cwebsockets}. Com essa tecnologia
 conseguimos facilmente criar jogos multiplayer, pois podemos
 trocar informações entre dois computadores de uma maneira bem mais
 veloz, trafegando menos dados e recebendo as informações mais
@@ -222,7 +224,7 @@ usável para um jogo em tempo real.
 
 Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 (em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
-em latência \cite{lubbers2010pro}.
+em latência. \cite{lubbers2010pro}.
 
 Na Figura~\ref{img:swarmation}, é apresentado um jogo que utiliza
 uma biblioteca que disponibiliza uma interface de código WebSockets,
@@ -249,7 +251,7 @@ foram formadas e quais jogadores devem ser pontuados.
 
 Offline cache, em sua maneira mais simplista, é uma lista apontando
 para o HTML, CSS, Javascript, imagens e outros recursos que devem
-estar disponíveis para o website \cite{pilgrim2010html5}. O arquivo de
+estar disponíveis para o website. \cite{pilgrim2010html5}. O arquivo de
 manifesto é o responsável por conter essa lista de arquivos, provendo
 ao navegador a informação sobre os recursos que
 precisam ser utilizados quando o dispositivo que está executando a
@@ -301,7 +303,7 @@ momento.
 
 Local Storage do HTML5 provê aos websites uma maneira de guardar
 informações e recuperá-las depois, utilizando um conceito similar aos
-cookies, mas já pensando em um grande modelo de dados \cite{pilgrim2010html5}.
+cookies, mas já pensando em um grande modelo de dados. \cite{pilgrim2010html5}.
 Por muito tempo os desenvolvedores utilizaram cookies para guardar
 informações sobre o website diretamente no navegador do usuário, e
 essa tecnologia se provou muito ineficiente para uma quantidade um
@@ -364,7 +366,8 @@ implementação nativa (que será feita pelos navegadores) para que o
 áudio seja executado.
 
 Essa funcionalidade fornece uma API Javascript para a manipulação do
-áudio inserido no documento \cite{pfeiffer2010definitive}, possibilitando parar, pausar, tocar,
+áudio inserido no documento conforme \citeonline{pfeiffer2010definitive},
+com isso é possível parar, pausar, tocar,
 pular entre várias partes do áudio, entre outras funcionalidades.
 
 Um dos problemas que podem ser encontrados com a \tagaudio é o tipo de
@@ -406,7 +409,7 @@ experiencia mais divertida para o jogador.
 
 \subsection{WebGL}
 
-WebGL é uma API para gráficos 3D na web \cite{lubbers2010pro}. Essa
+Seguindo a definição de \cite{lubbers2010pro}, WebGL é uma API para gráficos 3D na web. Essa
 API possibilita a criação de jogos que exigem mais processamento pelo
 computador pois utiliza a GPU do dispositivo em questão para processar
 os gráficos do jogo.
