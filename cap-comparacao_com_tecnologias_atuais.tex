@@ -127,7 +127,7 @@ Tal player está disponível para download no site da empresa. \cite{website:uni
 %http://www.readwriteweb.com/archives/does_html5_really_beat_flash_surprising_results_of_new_tests.php
 
 Performance é um assunto muito discutido no desenvolvimento de jogos
-pois os jogos consomem muito processamento, memória e IO do dispositivo em que estão
+pois eles consomem muito processamento, memória e IO do dispositivo em que estão
 executando, pois estão, entre outras coisas, em constante execução, fazendo
 cálculos diversos para situar o jogador dentro do jogo, por exemplo.
 Entre esses cálculos, dependendo do jogo, estão os cálculos de física dos
@@ -136,13 +136,17 @@ dar impressão de movimento ou sombra e outras coisas que exigem alto
 processamento em um curto período de tempo.
 
 As tecnologias que exigem a instalação de um software de terceiros
-(Java, Unity3D e Flash) possuem uma performance melhor no
-momento de escrita desse trabalho. O motivo desse ganho de performance
+(Java, Unity3D e Flash) temdem a possuir uma performance melhor em alguns casos
+e pior em outros no momento de escrita desse trabalho. De acordo com \citeonline{performanceria},
+o navegador teoricamente não deveria influenciar a performance de uma aplicação
+feita utiliando uma tecnologia que exige um plugin externo, mas isso acontece
+em alguns casos, fazendo com que a aplicação perca um pouco em performance.
+
+Um dos possíveis motivos desse ganho de performance
 é a otimização da plataforma para utilização em um determinado
-dispositivo, fazendo com que o jogo seja interpretado e executado
-nativamente no sistema operacional, assim ganhando várias
-vantagens como um processo separado no sistema, apenas executando um
-jogo que foi previamente "compilado" especialmente para essa tecnologia.
+dispositivo, assim ganhando várias vantagens como um processo separado no
+sistema, apenas executando um jogo que foi previamente "compilado"
+especialmente para essa tecnologia.
 
 O HTML5 juntamente com Javascript perde um pouco em performance, pois
 o sistema operacional vê apenas um navegador como processo, e esse
