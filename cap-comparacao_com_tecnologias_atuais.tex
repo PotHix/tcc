@@ -246,6 +246,14 @@ desenvolvedor do jogo terá os mesmos problemas dos plugins, ou seja,
 também terá de lidar com as diferenças no tamanhos das telas dos
 dispositivos mobile.
 
+A comunidade de desenvolvimento vem se preparando para esse problema e
+já começa a ser discutido possíveis soluções para esse problema.
+Conforme \cite{html5screensize}, uma das possíveis soluções seria a
+utilização do sistema MVC (modelo, visualização e controlador), onde é
+possível separar a apresentação do conteúdo em várias fases, asssim
+tratando a fase de visualização de forma diferente dependendo do tipo
+de dispositivo em que a aplicação for executada.
+
 Uma das desvantagens do HTML5 sobre as outras tecnologias é a versão
 dos navegadores que pode ser diferente em cada dispositivo, assim
 aumentando o problema de fragmentação. Esse problema é conhecido pelos
@@ -259,7 +267,10 @@ pois ele depende dessa plataforma para sua execução, portanto, quando
 um jogo precisa de uma determinada funcionalidade para funcionar, e
 essa funcionalidade ainda não é suportada por todos os navegadores
 mais conhecidos, o usuário precisa ser informado do motivo dele não
-conseguir executar o jogo ao acessá-lo.
+conseguir executar o jogo ao acessá-lo. O mesmo acontece com as
+tecnologias que necessitam de plugins, pois se o plugin não estiver
+instalado no dispositivo do jogador o jogo não será executado.
+
 O escopo desse trabalho são jogos casuais, assim excluiremos jogos
 maiores como é o caso do exemplo acima, portanto para a maioria dos
 casos é possível ter uma segunda alternativa para que o jogo seja
