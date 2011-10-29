@@ -13,15 +13,16 @@ com tranquilidade e o que necessita de mais cautela no seu uso.
 
 \subsection{Javascript como ferramenta}
 
-Como dito por \citeonline{flanagan2006javascript} Javascript é a principal ferramenta
-quando se vai trabalhar em um jogo com HTML5, pois é ela que vai
+Como dito por \citeonline{flanagan2006javascript}, Javascript é a principal ferramenta
+quando se vai trabalhar em um jogo com HTML5, pois são scripts
+desenvolvidos nessa linguagem que vão
 manipular as propriedades dos elementos para passar ao jogador a
 impressão de movimento do protagonista do jogo.
 Javascript é uma linguagem muito poderosa que suporta vários tipos de
 sintaxes, e possui muitas vantagens de uma linguagem de alto nível,
-como por exemplo coletor de lixo (garbage collector), e tipagem
+como por exemplo coletor de lixo (\textit{garbage collector}) e tipagem
 dinâmica, o que ajuda o desenvolvedor a se preocupar menos com tipos
-de variáveis e elementos, e evita a grande preocupação com o
+de variáveis e elementos, evitando assim a grande preocupação com o
 gerenciamento de memória.
 Como desvantagem, o Javascript tende a expor o código do jogo em
 questão para a internet, pois para que um navegador execute o jogo é
@@ -33,7 +34,9 @@ ao usuário, mas de uma maneira não legível, ou seja, será facilmente
 entendida pelo navegador mas dificilmente entendida por um humano que
 quer utilizar seu código-fonte.
 Uma das grandes preocupações de todos os desenvolvedores de jogos é a
-performance. A área de jogos exige muito processamento para calcular
+performance.
+
+A área de jogos exige muito processamento para calcular
 cada um dos passos que um jogador vai dar dentro de um jogo, como cada
 objeto vai se comportar, calcular trajetórias de projéteis, calcular
 iluminação dos objetos da cena, calcular a física dos objetos e outras
@@ -42,18 +45,19 @@ dispositivo que estiver executando o mesmo.
 Sabe-se que o código Javascript será interpretado em cima de um navegador, que por sua vez está sendo
 executado pelo sistema operacional e dividindo memória e processamento
 com outros programas no escalonador de processos, portanto não
-é possível esperar que um jogo que vai rodar no navegador tenha as mesmas
-capacidades que um jogo que executa nativamente no sistema
+é possível esperar que um jogo que vai ser executado no navegador tenha as mesmas
+capacidades que um jogo executado nativamente no sistema
 operacional, com código compilado para a própria plataforma.
 Sabendo a média de performance que é exigida por um jogo,
-deve-se em consideração que um jogo casual que utiliza apenas
+deve-se levar em consideração que um jogo casual que utiliza apenas
 coisas simples, como física básica, calculo de trajetórias e
 movimentação de imagens é totalmente aceitável para ser executado em
-dispositivos que possuem baixa performance, desde que bem executado.
+dispositivos que possuem baixa performance, desde que o código criado
+esteja bem otimizado para evitar calculos desnecessários.
 
 \subsection{Navegadores como plataforma}
 
-Os navegadores são a parte fundamental para a execução do jogo, pois
+O navegadore é a parte fundamental para a execução do jogo, pois
 ele é a plataforma de desenvolvimento que o desenvolvedor está visando,
 ou seja, assim como muitas grandes empresas visam vídeo games,
 computadores ou celulares como plataforma-alvo de desenvolvimento, o
@@ -67,26 +71,31 @@ dispositivos o seu jogo estará disponível, levando em consideração
 que cada usuário vai escolher seu navegador preferido, e que talvez
 esse navegador não estará na ultima versão. Atualmente vários sites na
 internet descrevem quais funcionalidades do HTML5 estão disponíveis em
-qual navegador, um deles é o dive into html5 que está disponível
-online em \citeonline{website:diveintohtml5}.
+cada navegador, sendo um deles o dive into html5 \cite{website:diveintohtml5}.
 Esse problema acontece também no desenvolvimento para computadores e
-vídeo games, mas é um pouco mais simples de lidar, pois os jogos
+videogames, mas é um pouco mais simples de lidar, pois os jogos
 simplesmente não são compatíveis, ou seja, se você tem um computador
-que o hardware não é bom o suficiente para executar um jogo, ele será
-barrado já na instalação, ou será executado mas será impossível de ser
-jogado devido a sua lentidão. O mesmo acontece com os jogos no
-navegador, caso o navegador não tenha suporte às funcionalidades que o
-jogo precisa, ele provavelmente não será executado. Enquanto o
-desenvolvimento do jogo estiver sendo feito, o desenvolvedor deve ter
+que o hardware não é bom o suficiente para executar um jogo, ele pode
+barrado já na instalação evitando assim que o jogador tente jogá-lo e
+tenha uma má experiencia devido a baixa performance do seu hardware.
+Com os jogos no navegador é um pouco mais complicado, pois os jogos
+não são instalados e sim interpretados durante a execução, caso o navegador não tenha suporte às funcionalidades que o
+jogo precisa, ele provavelmente não será executado.
+
+Atualmente existem formas para detectar quais recursos o navegador do
+jogador possui, com isso o desenvolvedor pode prever alguns dos
+possíveis problemas que podem ser encontrados dependendo do navegador
+que o jogador estiver utilizando. Também na fase de desenvolvimento
+do jogo, o desenvolvedor deve ter
 definido quais são as plataformas alvo do seu jogo, pois apesar de
-estar lidando com navegadores que podem executar em uma grande
+estar lidando com navegadores que podem ser executados em uma grande
 quantidade de plataformas, é nítido que não será possível ter a mesma
 performance em todas elas, tendo em vista que um computador pessoal
 possui muito mais capacidade de processamento do que um celular, por
 exemplo.
 
 O problema da fragmentação pode ser mais facilmente contornado quando
-o desenvolvedor fixa algumas configurações, como por exemplo a versão
+o desenvolvedor fixar algumas configurações, como por exemplo a versão
 dos navegadores suportados. A liberdade do desenvolvedor é total,
 bastando apenas ter em mente o quanto de processamento será utilizado
 e quais funcionalidades serão necessárias para a execução do jogo.
@@ -100,8 +109,8 @@ visualizadas no momento da execução. \cite{website:w3ccanvas}.
 
 O canvas na web segue a mesma interface que é utilizada nas grandes
 plataformas atuais. O conceito de canvas foi criado pela Apple para
-utilizar no webkit do MacOS X. \cite{lubbers2010pro}. Com essa
-funcionalidade foi crianda uma API
+ser utilizado no webkit do MacOS X. \cite{lubbers2010pro}. Com essa
+funcionalidade foi criada uma API
 para desenhar widgets e outras coisas em sua plataforma, e essa API
 vem sendo padronizada e implementada em vários navegadores.
 
@@ -116,12 +125,12 @@ nesse elemento (imagens, retângulos e etc) ficam invisíveis para acesso, e
 não podem ser modificados, apenas recriados.
 
 O canvas pode ser utilizado em várias camadas, gerando vários
-elementos canvas dentro do navegador, e posicionando-os no mesmo
+elementos canvas dentro do navegador posicionado no mesmo
 lugar, facilitando a manipulação de cenário e melhorando a
 performance.
 
-Na Figura~\ref{img:angrybirds}, é mostrado um exemplo do jogo Angry
-Birds, que utiliza canvas com várias camadas para a renderização padrão.
+A Figura~\ref{img:angrybirds}, mostra uma tela do Angry Birds, que é um exemplo de jogo
+que utiliza canvas com várias camadas para a renderização padrão.
 
 \newlength{\imgwidth}
 \setlength{\imgwidth}{16.09cm}
@@ -138,11 +147,11 @@ Birds, que utiliza canvas com várias camadas para a renderização padrão.
 
 \subsection{Transformações e transições com CSS3}
 
-O CSS3 possui uma série de transformações e transições que permitem o
+O CSS3 possui uma série de transformações e transições que permitem ao
 desenvolvedor rotacionar e escalar os elementos de uma página
 \cite{agi2011html5}. Apesar da grande movimentação dos desenvolvedores
 em função do desenvolvimento de jogos utilizando as funcionalidades do
-Canvas, muito ainda é discutido sobre utilizar DOM para o
+canvas, muito ainda é discutido sobre utilizar DOM para o
 desenvolvimento de jogos, assim aproveitando as vantagens que o CSS3
 pode trazer.
 Uma das vantagens de ter um jogo que utiliza DOM ao invés de Canvas é
@@ -154,13 +163,19 @@ O CSS3 foi criado para suprir as necessidades de criações de efeitos
 visuais para páginas de internet comuns, dando aos elementos DOM a
 possibilidade de se transformar de várias maneiras. Ao ver essa nova
 gama de funcionalidades algumas pesquisas foram feitas pelos
-desenvolvedores para saber quais eram as vantagens de utiliza-las para
+desenvolvedores para saber quais eram as vantagens de utilizá-las para
 o desenvolvimento de jogos para o navegador.
 
 As transições e transformações do CSS3 são muito úteis ao utilizar
 objetos DOM para um jogo pois todos esses efeitos são renderizados
 pelo navegador com aceleração de hardware, com isso ganhando
-performance com os efeitos visuais.
+performance nos efeitos visuais.
+
+Um exemplo de jogo feito com HTML5 e CSS3 utilizando transições e
+transformações com CSS3 é o Anigma \cite{website:anigma}. Esse jogo
+utiliza DOM para desenhar os objetos do jogo, javascript para
+manipular suas posições e CSS3 para fazer os efeitos que fazem as
+peças desaparecer ou rotacionar.
 
 \subsection{SVG}
 
@@ -201,11 +216,11 @@ ao invés da manipulação de vetores.
 
 \subsection{WebSocket API}
 
-WebSocket API define uma especificação que permite as páginas web
+WebSocket API define uma especificação que permite às páginas web
 utilizar o protocolo de Sockets para fazer comunicação em duas
 vias com um servidor remoto. \cite{website:w3cwebsockets}. Com essa tecnologia
-conseguimos facilmente criar jogos multiplayer, pois podemos
-trocar informações entre dois computadores de uma maneira bem mais
+consegue-se facilmente criar jogos multiplayer, pois as informações
+são trocadas entre dois computadores de uma maneira bem mais
 veloz, trafegando menos dados e recebendo as informações mais
 rapidamente.
 O que traz essa velocidade na comunicação via internet é não utilizar
@@ -218,23 +233,21 @@ o recebimento dos dados e um maior tráfego de rede. Com o Socket (que
 é criado pela funcionalidade de WebSockets), apenas uma conexão TCP é
 criada e mantida durante um período de tempo, assim facilitando o
 tráfego de informações, viabilizando uma comunicação mais rápida e
-usável para um jogo em tempo real.
+adequada para um jogo em tempo real.
 
 Websockets possibilita uma redução de 500 para 1 ou até 1000 para 1
 (em alguns casos) de cabeçalhos de HTTP desnecessários, e até 3 para 1
 em latência. \cite{lubbers2010pro}.
 
 Na Figura~\ref{img:swarmation}, é apresentado um jogo que utiliza
-uma biblioteca que disponibiliza uma interface de código WebSockets,
-a finalidade dela é tentar manter as mesmas interfaces em
+uma biblioteca que disponibiliza uma interface de código Websockets.
+A finalidade dela é tentar manter as mesmas interfaces em
 todos os navegadores, inclusive os que não possuem suporte para essa
-tecnologia.
-
-A ideia do jogo é integrar vários jogadores em um único lugar, sendo que
+tecnologia. A ideia do jogo é integrar vários jogadores em um único lugar, sendo que
 cada jogador assume o papel de um pixel, e eles precisam formar uma
 determinada imagem que é gerada aleatoriamente pelo jogo e mostrada à
 direita. A função do WebSockets nesse jogo é sincronizar em tempo real a
-posição de cada jogador para que ao final da contagem saber quais imagens
+posição de cada jogador para saber ao final da contagem quais imagens
 foram formadas e quais jogadores devem ser pontuados.
 
 \begin{figure}[H]
@@ -248,14 +261,14 @@ foram formadas e quais jogadores devem ser pontuados.
 \subsection{Offline cache}
 
 Offline cache, em sua maneira mais simplista, é uma lista apontando
-para o HTML, CSS, Javascript, imagens e outros recursos que devem
+para o HTML, CSS, scripts em Javascript, imagens e outros recursos que devem
 estar disponíveis para o website. \cite{pilgrim2010html5}. O arquivo de
 manifesto é o responsável por conter essa lista de arquivos, provendo
 ao navegador a informação sobre os recursos que
 precisam ser utilizados quando o dispositivo que está executando a
 página em questão não estiver apto a acessar a internet, ou seja,
 na primeira requisição, tudo que estiver disponível no arquivo de manifesto
-que contem essa lista será baixado, guardado no dispositivo e utilizado até
+que contém essa lista será baixado, guardado no dispositivo e utilizado até
 que o manifesto seja modificado.
 
 A cada nova requisição de uma aplicação que utiliza offline cache o
@@ -263,15 +276,15 @@ navegador verifica o arquivo de manifesto se ele não foi modificado
 o navegador vai utilizar os arquivos que estão disponíveis localmente,
 caso contrário todos os arquivos da seção "CACHE" desse arquivo serão baixados novamente.
 
-A funcionalidade de offline cache também prevê as requisições que não
-podem ser guardadas localmente, requisições que precisam
+A funcionalidade de offline cache também prevê os recursos que não
+podem ser guardadas localmente e as que precisam
 necessariamente estar online para funcionar corretamente, e para isso
-existe uma seção chamara REMOTE no arquivo manifesto, definindo quais
+existe uma seção chamada REMOTE no arquivo manifesto, definindo quais
 são os arquivos que não devem ser considerados quando o usuário não
 estiver offline.
 
 Todos os arquivos utilizados na aplicação devem estar no arquivo de
-manifesto para os arquivos que não estarão disponíveis localmente há
+manifesto; para os arquivos que não estarão disponíveis localmente há
 uma seção chamada FALLBACK.
 
 Utilizando Offline cache é possível criar uma aplicação para a
@@ -291,10 +304,10 @@ normalmente como se fosse uma aplicação nativa.
   \label{img:currency}
 \end{figure}
 
-Essa funcionalidade pode ser muito utilizada em jogos casuais para disponibilizar um
-determinado para utilização em um dispositivo móvel, bastando
-adicionar o jogo aos favoritos, e ele estará disponível a qualquer
-momento.
+Essa funcionalidade pode ser muito utilizada em jogos casuais para
+disponibilizar uma determinada aplicação para utilização em um
+dispositivo móvel. No caso de um jogo, bastaria adiciona-lo aos favoritos,
+e ele estará disponível a qualquer momento.
 
 
 \subsection{Local Storage}
@@ -309,7 +322,7 @@ pouco maior de dados, pois além de ser limitado para guardar informações,
 os dados ficam trafegando pela rede em cada requisição, consumindo
 banda, expondo os dados, e deixando as requisições mais lentas.
 
-O Local storage foi criado para resolver esses problemas, dando uma
+O Local Storage foi criado para resolver esses problemas, dando uma
 interface simples para o desenvolvedor guardar dados de sua
 aplicação diretamente no navegador do usuário. Para guardar tais dados
 o desenvolvedor utiliza um banco que armazena dados seguindo um
@@ -322,9 +335,9 @@ internet é necessário utilizar Local Storage para guardar informações
 que serão sincronizadas com o servidor assim que a aplicação possuir
 conexão com a internet novamente.
 
-Um exemplo que ilustra muito bem a utilização de local storage é a
+Um exemplo que ilustra muito bem a utilização de Local Storage é a
 aplicação do Google para visualização do Gmail offline (vide
-figura~\ref{img:gmailoffline}), que utiliza local storage para guardar
+figura~\ref{img:gmailoffline}), que utiliza Local Storage para guardar
 as informações dos emails que ele controla, e utiliza offline cache
 para manter a aplicação disponível sem a necessidade de conexão com a
 internet.
@@ -332,13 +345,13 @@ internet.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{gmailoffline}
-  \caption{Offline cache {--} Currency.io utilizando offline cache
-  para fazer uma aplicação que ficará disponível mesmo sem acesso a
-  internet.}
+  \caption{Offline cache {--} Aplicação do Gmail que possibilita a
+  leitura dos e-mails offline com as mensagens sincronizadas
+  previamente.}
   \label{img:gmailoffline}
 \end{figure}
 
-Utilizando essas funcionalidades para jogos casuais, é possível
+Utilizando essas funcionalidades para jogos casuais é possível
 guardar informações de tabelas de pontos, nomes dos jogadores,
 informações sobre os níveis e falas dos personagens durante o jogo e
 etc. Quando a funcionalidade de offline cache for utilizada, local
@@ -348,7 +361,7 @@ sincronização com um servidor externo assim que houver conexão com a
 internet.
 
 \subsection{Áudio}
-A uma das funcionalidades construídas para suprir uma das necessidades multimídia
+Para suprir uma das necessidades multimídia
 da internet foi a \tagaudio. Com o passar do tempo e o aumento no
 numero de sites, os conteúdos da internet foram mudando
 e se tornando cada vez mais multimídia, e não apenas hipertexto de
@@ -364,8 +377,9 @@ implementação nativa (que será feita pelos navegadores) para que o
 áudio seja executado.
 
 Essa funcionalidade fornece uma API Javascript para a manipulação do
-áudio inserido no documento conforme \citeonline{pfeiffer2010definitive},
-com isso é possível parar, pausar, tocar,
+áudio inserido no documento, conforme
+\citeonline{pfeiffer2010definitive}.
+Com isso é possível parar, pausar, tocar,
 pular entre várias partes do áudio, entre outras funcionalidades.
 
 Um dos problemas que podem ser encontrados com a \tagaudio é o tipo de
@@ -378,10 +392,10 @@ facilmente contornado pela implementação atual da \tagaudio,
 apenas definindo os dois formatos na mesma tag permitindo que o
 navegador escolha o arquivo correto para ser executado.
 
-A \tagaudio possui algumas particularidades que não permitem uma
+A apresentação do conteúdo associado à \tagaudio possui algumas particularidades que não permitem uma
 resposta rápida e pode atrapalhar a jogabilidade provendo um som com
 atraso. Para resolver esse problema está sendo desenvolvido a
-Web audio API, que fornece APIs bem parecidas com a \tagaudio, mas
+Web Audio API, que fornece APIs bem parecidas com a \tagaudio, mas
 tratando os eventos no momento certo, lidando com a taxa de
 atualização de cada dispositivo.
 
@@ -392,13 +406,13 @@ atualização de cada dispositivo.
   \label{img:webaudioapi}
 \end{figure}
 
-A figura~\ref{img:webaudioapi} mostra o jogo Plink, que utiliza Web
+A Figura~\ref{img:webaudioapi} mostra o jogo Plink, que utiliza Web
 Audio Api para fornecer aos usuários uma forma divertida de interagir
-entre si e criar musicas. Cada usuário controla sua posição com o
+entre si e criar músicas. Cada usuário controla sua posição com o
 mouse, e o som gerado depende da sua posição e cor. Esse é um ótimo
-exemplo de como a Web Audio Api está trazendo a manipulação de audio
+exemplo de como a Web Audio API está trazendo a manipulação de audio
 em tempo real para o navegador, assim resolvendo os problemas de
-latencia da tag audio.
+latência da tag \textit{<audio>}.
 
 Essas funcionalidades são muito úteis para o desenvolvimento de jogos, pois
 todos os sons que o jogo deve produzir podem ser adicionados e
@@ -407,8 +421,8 @@ experiencia mais divertida para o jogador.
 
 \subsection{WebGL}
 
-Seguindo a definição de \cite{lubbers2010pro}, WebGL é uma API para gráficos 3D na web. Essa
-API possibilita a criação de jogos que exigem mais processamento pelo
+Seguindo a definição de \citeonline{lubbers2010pro}, WebGL é uma API para gráficos 3D na web. Essa
+API possibilita a criação de jogos que exigem mais processamento do
 computador pois utiliza a GPU do dispositivo em questão para processar
 os gráficos do jogo.
 
@@ -421,22 +435,22 @@ três dimensões) tenham mais facilidade para portar os jogos mais
 simples para web, apenas lidando com as particularidades de cada
 navegador e com o fluxo diferenciado que um jogo web terá.
 
-O WebGL é baseado na tag canvas, e utiliza a mesma tag utilizada para
-se fazer desenhos canvas comums, mas ao invés de utilizar o contexto
+O WebGL é baseado na tag \textit{<canvas>}, e utiliza a mesma tag
+empregada para fazer desenhos canvas comums, mas ao invés de utilizar o contexto
 2D, é utilizado o contexto 3D.
 
-Um dos possíveis problemas de se utilizar WebGL na atual data desse
+Um dos possíveis problemas de se utilizar WebGL na atual data
 de escrita desse trabalho é a falta de suporte dos navegadores e
 dispositivos para essa funcionalidade. Como o WebGL depende muito do
 hardware do dispositivo, dar suporte para ele ainda é um problema,
 pois depende dos drivers de cada dispositivo funcionar
 corretamente, além do navegador possuir suporte para o mesmo.
 WebGL está sendo bem utilizado atualmente para acelerar a execução do jogo,
-mas não depender totalmente dele para que o jogo funcione, assim
+mas sem depender totalmente dele para que o jogo funcione, assim
 aproveitando as vantagens do WebGL para os navegadores e sistemas que
 possuem esse suporte.
 
-Na figura~\ref{img:webglmodels} é possível ver modelos 3D no formato
+Na Figura~\ref{img:webglmodels} é possível ver modelos 3D no formato
 MD2 (o mesmo formato que o jogo Quake II utilizava para seus
 personagens) utilizando WebGL para a renderização. Isso é feito utilizando a
 biblioteca GLGE, que é um facilitador para a utilização do WebGL.
@@ -450,12 +464,13 @@ biblioteca GLGE, que é um facilitador para a utilização do WebGL.
 
 A figura~\ref{img:webglmodels} dá uma ideia de para onde o WebGL está
 caminhando, e provavelmente daqui a algum tempo será possível criar
-jogos 3D simples que funcionarão diretamente no navegador, ou seja, há
-possibilidade que os jogos simples em três dimensões que estão atualmente
-disponíveis para celulares serem desenvolvidos novamente para que
-sejam executados diretamente no navegador num futuro não tão distante.
+jogos 3D simples que funcionarão diretamente no navegador, ou seja,
+é possível que os jogos simples em três dimensões que estão atualmente
+disponíveis para celulares sejam desenvolvidos novamente para
+serem executados diretamente no navegador num futuro não tão distante.
 
-Outro exemplo de como WebGL pode ser poderoso pode ser visto na Figura~\ref{img:webglwater}
+Outro exemplo de como WebGL pode ser poderoso pode ser visto na
+Figura~\ref{img:webglwater},
 que está disponível integralmente em \citeonline{website:webglwater}.
 Nesse exemplo 3D são utilizadas várias técnicas de sombreamento e
 manipulação da água e da iluminação, que exigem um bom processamento
@@ -472,7 +487,7 @@ modernos.
 
 Apesar de bonitos e interessantes, esses exemplos são apenas provas de
 conceito para mostrar que o WebGL é realmente útil e pode ser
-utilizado para aplicações que exigem um grande processamento do
+utilizado para aplicações que exijam um grande processamento do
 navegador. Mas além de provas de conceito, alguns jogos já estão
 utilizando WebGL como tecnologia auxiliar para acelerar no desenho dos
 gráficos e nos cálculos.
