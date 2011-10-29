@@ -161,7 +161,6 @@ Baseando-se nos testes de \citeonline{performanceria}, é possível notar que
 cada tecnologia possui pontos fortes e fracos em termos de performance, sendo que
 em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
 
-%TODO: incluir a imagem correta.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{chart-performance-timo}
@@ -169,6 +168,7 @@ em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
   início de 2010}
   \label{img:chart-performance-timo}
 \end{figure}
+%TODO: Arrumar o esquema de citação da imagem
 
 Na Figura~\ref{img:chart-performance-timo} criado por \citeonline{performanceria} é
 possível ver a diferença de performance entre diferentes tecnologias para a
@@ -177,6 +177,8 @@ Levando em consideração a tecnologia a tecnologia que possui melhor performanc
 ou seja o Adobe Flash, podemos ver que o HTML5 ainda perde bastante em performance,
 mas isso vem melhorando com o desenvolvimento dos navegadores e a melhoria nas
 \textit{engines} de javascript implementadas pelos navegadores.
+
+%TODO: Inserir um gráfico de um caso que o Javascript é melhor
 
 Tendo em vista que o Adobe Flash possui a quantidade de FPS (Frames por segundo) ideal
 para o desenvolvimento de um jogo casual simples, não será feito novamente o teste de
@@ -191,7 +193,6 @@ Processador i7
 4GB de memória
 Mac OSX Lion
 
-%TODO: incluir a imagem correta.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{chart-performance-pothix}
@@ -200,9 +201,9 @@ Mac OSX Lion
   \label{img:chart-performance-pothix}
 \end{figure}
 
-%TODO: Arrumar a porcentagem
-É possível notar na figura~\ref{img:chart-performance-pothix} que o Javascript evoluiu 1000000000 por cento
-em relação a figura~\ref{img:chart-performance-timo} e se seguir no mesmo ritmo de evolução
+É possível notar na Figura~\ref{img:chart-performance-pothix} que o
+Javascript evoluiu mais de 50\% no melhor caso
+em relação a Figura~\ref{img:chart-performance-timo} e se seguir no mesmo ritmo de evolução
 será possível obter performances cada vez melhores mesmo sem utilizar aceleração de
 hardware.
 
@@ -246,13 +247,19 @@ para celulares com o sistema operacional Android, mas a qualidade
 também não é muito boa não trazendo muito sucesso para a plataforma em
 dispositivos móveis.
 
+
 No caso de jogos feitos com HTML5 e Javascript, a única dependência é
 o navegador, que todos os dispositivos que acessam a internet possuem,
-e a única limitação é exigir um navegador com suporte à essas
-tecnologias, o que acontece com muita frequência nos dispositivos que
-possuem um poder de processamento considerável, que também é um dos
-requisitos para o jogo ser executado sem que o jogador sofra com
-lentidões.
+e assim como \citeonline{davison2005killer} mostra em seu livro com
+Java, tudo depende da plataforma que uma determinada aplicação está
+sendo executada, no caso do Java o jogo vai ter mais performance ou
+mais recursos dependendo da implementação do Java para aquela
+plataforma. O mesmo acontece com os navegadores, o jogo vai possuir
+mais performance ou mais funcionalidades dependendo da plataforma que
+o navegador está sendo executado. Grande parte dos dispositivos que
+possuem um poder de processamento considerável também possuem suporte
+as novas funcionalidades do HTML5, criando a mistura adequada para a
+execução de jogos casuais.
 
 Alguns dispositivos que atualmente possuem um navegador com suporte as
 funcionalidades que o HTML5 especifica, são celulares com o sistema
