@@ -169,13 +169,11 @@ em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
 
 Na Figura~\ref{img:chart-performance-timo} criado por \citeonline{performanceria} é
 possível ver a diferença de performance entre diferentes tecnologias para a
-renderização de gráficos 2D..
+renderização de gráficos 2D.
 Levando em consideração a tecnologia a tecnologia que possui melhor performance,
 ou seja o Adobe Flash, podemos ver que o HTML5 ainda perde bastante em performance,
 mas isso vem melhorando com o desenvolvimento dos navegadores e a melhoria nas
 \textit{engines} de javascript implementadas pelos navegadores.
-
-%TODO: Inserir um gráfico de um caso que o Javascript é melhor
 
 Tendo em vista que o Adobe Flash possui a quantidade de FPS (Frames por segundo) ideal
 para o desenvolvimento de um jogo casual simples, não será feito novamente o teste de
@@ -191,8 +189,8 @@ operacional Mac OSX Lion.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{chart-performance-pothix}
-  \caption{Teste de performance 2D {--} Teste feito por Willian
-  Molinari no fim de 2011}
+  \caption{Teste de performance 2D {--} Teste que mostra a evolução do
+  Javascript desde 2010}
   \label{img:chart-performance-pothix}
 \end{figure}
 
@@ -201,6 +199,16 @@ Javascript evoluiu mais de 50\% no melhor caso
 em relação a Figura~\ref{img:chart-performance-timo} e se seguir no mesmo ritmo de evolução
 será possível obter performances cada vez melhores mesmo sem utilizar aceleração de
 hardware.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{timo-runlength-benchmark-macos}
+  \caption{Teste de performance para redução de tamanho de string {--} Fonte: Timo Ernst (2010)}
+  \label{img:timo-runlength-benchmark-macos}
+\end{figure}
+
+Na Figura~\ref{img:timo-runlength-benchmark-macos} é mostrado um caso
+em que o Javascript fica em vantagem sobre as outras tecnologias.
 
 Utilizando aceleração de hardware é possível conseguir um quantidade
 de \textit{frames} por segundo competitiva entre o Adobe Flash e o
@@ -232,7 +240,7 @@ e na Figura~\ref{img:webgl-javascript-60fps}.
   \label{img:webgl-javascript-60fps}
 \end{figure}
 
-Como pode ser visto, é possível conseguir a mesma tava de
+Como pode ser visto, é possível conseguir a mesma taxa de
 \textit{frames} por segundo para as duas tecnologias utilizando
 códigos parecidos.
 
