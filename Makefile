@@ -45,7 +45,6 @@ publish:	$(DOC).pdf
 
 show:		clean
 		make
-		evince $(DOC).pdf
-		make clean
+		open $(DOC).pdf
 todo:
 		grep TODO *.tex -R
