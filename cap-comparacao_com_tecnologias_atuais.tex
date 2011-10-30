@@ -156,7 +156,6 @@ direcionados para o tal), apesar de estar em constante evolução e
 desenvolvimento para interpretar Javascript de uma maneira mais veloz,
 a cada nova versão.
 
-
 Baseando-se nos testes de \citeonline{performanceria}, é possível notar que
 cada tecnologia possui pontos fortes e fracos em termos de performance, sendo que
 em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
@@ -167,7 +166,6 @@ em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
   \caption{Teste de performance 2D {--} Fonte: Timo Ernst (2010)}
   \label{img:chart-performance-timo}
 \end{figure}
-%TODO: Arrumar o esquema de citação da imagem
 
 Na Figura~\ref{img:chart-performance-timo} criado por \citeonline{performanceria} é
 possível ver a diferença de performance entre diferentes tecnologias para a
@@ -187,10 +185,8 @@ O teste será refeito para mostrar o quanto a performance do Javascript evoluiu 
 período de tempo desde o desenvolvimento da pesquisa feita por \citeonline{performanceria}
 utilizando diversos navegadores em um computador com as seguintes configurações:
 
-Macbook Pro
-Processador i7
-4GB de memória
-Mac OSX Lion
+Macbook Pro, Processador i7, 4GB de memória RAM utilizando o sistema
+operacional Mac OSX Lion.
 
 \begin{figure}[H]
   \centering
@@ -205,6 +201,40 @@ Javascript evoluiu mais de 50\% no melhor caso
 em relação a Figura~\ref{img:chart-performance-timo} e se seguir no mesmo ritmo de evolução
 será possível obter performances cada vez melhores mesmo sem utilizar aceleração de
 hardware.
+
+Utilizando aceleração de hardware é possível conseguir um quantidade
+de \textit{frames} por segundo competitiva entre o Adobe Flash e o
+Javascript. Para o caso do Javascript é necessário o uso do WebGL para
+utilizar essa aceleração. De acordo com os textes feitos por
+\citeonline{webglvsstage3d}, os valores são bem parecidos entre várias
+plataformas, novamente dependendo do suporte do hardware para a
+utilização da aceleração.
+
+Os testes criados por \citeonline{webglvsstage3d} foram executados
+novamente utilizando um
+Macbook Pro, Processador i7, 4GB de memória RAM com o sistema operacional
+Mac OSX Lion e os resultados obtidos podem ser vistos nas Figura~\ref{img:stage3d-flash-60fps}
+e na Figura~\ref{img:webgl-javascript-60fps}.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{stage3d-flash-60fps}
+  \caption{Stage3D com Adobe Flash {--} Demo com mais de 100 cubos
+  semi-transparentes sendo executado a 60 fps}
+  \label{img:stage3d-flash-60fps}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[height=\imgheight,width=\imgwidth]{webgl-javascript-60fps}
+  \caption{WebGL e Javascript {--} Demo com mais de 100 cubos
+  semi-transparentes também sendo executado a 60 fps}
+  \label{img:webgl-javascript-60fps}
+\end{figure}
+
+Como pode ser visto, é possível conseguir a mesma tava de
+\textit{frames} por segundo para as duas tecnologias utilizando
+códigos parecidos.
 
 O estado dos navegadores na data de escrita desse
 trabalho suporta a execução de jogos casuais simples, que exigem
