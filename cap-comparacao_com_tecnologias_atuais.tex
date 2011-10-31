@@ -128,7 +128,7 @@ Tal player está disponível para download no site da empresa. \cite{website:uni
 Performance é um assunto muito discutido no desenvolvimento de jogos
 pois eles consomem muito processamento, memória e IO do dispositivo em que estão
 executando, pois estão, entre outras coisas, em constante execução, fazendo
-cálculos diversos para situar o jogador dentro do jogo, por exemplo.
+cálculos diversos para situar o jogador dentro do jogo por exemplo.
 Entre esses cálculos, dependendo do jogo, estão os cálculos de física dos
 objetos da cena e do próprio jogador, transformação de imagens para
 dar impressão de movimento ou sombra e outras coisas que exigem alto
@@ -151,7 +151,7 @@ O HTML5 juntamente com Javascript perde um pouco em performance, pois
 o sistema operacional vê apenas um navegador como processo, e esse
 navegador vai fazer a interface entre o jogo e o sistema operacional.
 O navegador não é uma plataforma otimizada para jogos (como é o caso
-dos plugins, que possuem apenas essa finalidade, ou são bem
+de alguns plugins, que possuem apenas essa finalidade, ou são bem
 direcionados para o tal), apesar de estar em constante evolução e
 desenvolvimento para interpretar Javascript de uma maneira mais veloz,
 a cada nova versão.
@@ -170,18 +170,18 @@ em muitos casos o Javascript consegue vantagem sobre as outras tecnologias.
 Na Figura~\ref{img:chart-performance-timo} criado por \citeonline{performanceria} é
 possível ver a diferença de performance entre diferentes tecnologias para a
 renderização de gráficos 2D.
-Levando em consideração a tecnologia a tecnologia que possui melhor performance,
+Levando em consideração a tecnologia que possui melhor performance,
 ou seja o Adobe Flash, podemos ver que o HTML5 ainda perde bastante em performance,
 mas isso vem melhorando com o desenvolvimento dos navegadores e a melhoria nas
-\textit{engines} de javascript implementadas pelos navegadores.
+\textit{engines} de javascript implementadas por eles.
 
-Tendo em vista que o Adobe Flash possui a quantidade de FPS (Frames por segundo) ideal
-para o desenvolvimento de um jogo casual simples, não será feito novamente o teste de
-performance para o mesmo.
+Tendo em vista que o Adobe Flash é o único que possui a quantidade de FPS
+(\textit{frames} por segundo) padrão para o desenvolvimento de jogos,
+ele será utilizado como comparação com o HTML5.
 
 O teste foi executado novamente para mostrar o quanto a performance do Javascript evoluiu nesse curto
-período de tempo desde o desenvolvimento da pesquisa feita por \citeonline{performanceria}
-utilizando diversos navegadores no seguinte computador:
+período de tempo desde o desenvolvimento da pesquisa feita por
+\citeonline{performanceria}. O teste será executado utilizando diversos navegadores no seguinte computador:
 
 Macbook Pro, Processador i7, 4GB de memória RAM utilizando o sistema
 operacional Mac OSX Lion.
@@ -189,16 +189,16 @@ operacional Mac OSX Lion.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{chart-performance-pothix}
-  \caption{Teste de performance 2D {--} Teste que mostra a evolução do
-  Javascript desde 2010}
+  \caption{Teste de performance 2D {--} Teste que mostra a performance
+  de um exemplo 2D em Javascript executado na data de escrita desse trabalho}
   \label{img:chart-performance-pothix}
 \end{figure}
 
 É possível notar na Figura~\ref{img:chart-performance-pothix} que o
 Javascript evoluiu mais de 50\% no melhor caso
 em relação a Figura~\ref{img:chart-performance-timo} e se seguir no mesmo ritmo de evolução
-será possível obter performances cada vez melhores mesmo sem utilizar aceleração de
-hardware.
+em breve chegará no mesmo patamar do Adobe Flash e será possível obter performances cada
+vez melhores mesmo sem utilizar aceleração de hardware.
 
 \begin{figure}[H]
   \centering
@@ -207,20 +207,22 @@ hardware.
   \label{img:timo-runlength-benchmark-macos}
 \end{figure}
 
-Na Figura~\ref{img:timo-runlength-benchmark-macos} é mostrado um caso
-em que o Javascript fica em vantagem sobre as outras tecnologias.
+Ainda utilizando os testes feitos por \citeonline{performanceria},
+pode-se notar na Figura~\ref{img:timo-runlength-benchmark-macos} um
+caso em que o Javascript consegue vantagem sobre as tecnologias
+concorrentes. O teste executado se refere a redução de tamanho de um
+determinado texto.
 
-Utilizando aceleração de hardware é possível conseguir um quantidade
+Alem de 2D também é possível utilizar aceleração de hardware para conseguir um quantidade
 de \textit{frames} por segundo competitiva entre o Adobe Flash e o
-Javascript. Para o caso do Javascript é necessário o uso do WebGL para
+Javascript em algumas plataformas. Para o caso do Javascript é necessário o uso do WebGL para
 utilizar essa aceleração. De acordo com os testes feitos por
 \citeonline{website:webglvsstage3d}, os valores são bem parecidos entre várias
 plataformas, novamente dependendo do suporte do hardware para a
 utilização da aceleração.
 
 Os testes criados por \citeonline{website:webglvsstage3d} foram executados
-novamente utilizando um
-Macbook Pro, Processador i7, 4GB de memória RAM com o sistema operacional
+novamente utilizando um Macbook Pro, Processador i7, 4GB de memória RAM com o sistema operacional
 Mac OSX Lion e os resultados obtidos podem ser vistos nas Figura~\ref{img:stage3d-flash-60fps}
 e na Figura~\ref{img:webgl-javascript-60fps}.
 
@@ -252,6 +254,11 @@ para evitar gasto desnecessário de processamento, e menor utilização
 de memória, com isso há uma grande possibilidade de que o mesmo
 funcione sem grandes problemas e com uma performance aceitável em dispositivos
 que possuem menor poder de processamento, como os celulares por exemplo.
+Alguns computadores já possuem suporte para tecnologias como WebGL e
+vários navegadores como Chrome, Firefox, Safari e novas versões do
+Opera, já possuem uma implementação do mesmo, mas a performance ainda
+varia dependendo do suporte dos \textit{drivers} e do navegador em
+questão.
 
 \subsection{Portabilidade}
 
