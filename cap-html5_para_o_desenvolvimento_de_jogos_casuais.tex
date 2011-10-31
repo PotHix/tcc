@@ -290,7 +290,7 @@ Todos os arquivos utilizados na aplicação devem estar no arquivo de
 manifesto; para os arquivos que não estarão disponíveis localmente há
 uma seção chamada FALLBACK.
 
-Utilizando Offline cache é possível criar uma aplicação para a
+Utilizando offline cache é possível criar uma aplicação para a
 internet que funcione normalmente sem a necessidade do usuário estar
 conectado. Um exemplo dessa funcionalidade foi feito na aplicação da
 Figura~\ref{img:currency}. A aplicação em questão pode ser adicionada
@@ -315,7 +315,7 @@ onde estiverem (via 3G por exemplo) as velocidades não são
 boas para fazer \textit{download} de uma quantidade um pouco maior de
 recursos.
 
-A funcionalidade de Offline Cache pode ser muito utilizada em jogos casuais para
+A funcionalidade de offline Cache pode ser muito utilizada em jogos casuais para
 disponibiliza-los para utilização quando o jogador estiver sem acesso
 a internet, bastando que o jogador acesse uma vez e adicione o jogo aos favoritos,
 e ele estará disponível a qualquer momento, com ou sem conexão com a
@@ -357,7 +357,7 @@ internet.
 \begin{figure}[H]
   \centering
 	\includegraphics[height=\imgheight,width=\imgwidth]{gmailoffline}
-  \caption{Offline cache {--} Aplicação do Gmail que possibilita a
+  \caption{Local Storage e Offline cache {--} Aplicação do Gmail que possibilita a
   leitura dos e-mails offline com as mensagens sincronizadas
   previamente.}
   \label{img:gmailoffline}
@@ -394,7 +394,7 @@ Essa funcionalidade fornece uma API Javascript para a manipulação do
 Com isso é possível parar, pausar, tocar,
 pular entre várias partes do áudio, entre outras funcionalidades.
 
-Um dos problemas que podem ser encontrados com a \tagaudio é o tipo de
+Um dos problemas que podem ser encontrados com a \tagaudio  é o tipo de
 implementação de formatos que cada navegador suporta. Há um exemplo
 simples desse problema na atual data de escrita desse trabalho. O
 navegador Firefox possui a implementação do formato \textit{ogg}, que
@@ -404,7 +404,7 @@ facilmente contornado pela implementação atual da \tagaudio,
 apenas definindo os dois formatos na mesma tag permitindo que o
 navegador escolha o arquivo correto para ser executado.
 
-A apresentação do conteúdo associado à \tagaudio possui algumas particularidades que não permitem uma
+A apresentação do conteúdo associado à \tagaudio  possui algumas particularidades que não permitem uma
 resposta rápida e pode atrapalhar a jogabilidade provendo um som com
 atraso. Para resolver esse problema está sendo desenvolvido a
 Web Audio API, que fornece APIs bem parecidas com a \tagaudio, mas
@@ -427,9 +427,9 @@ em tempo real para o navegador, assim resolvendo os problemas de
 latência da tag \textit{<audio>}.
 
 Essas funcionalidades são muito úteis para o desenvolvimento de jogos, pois
-todos os sons que o jogo deve produzir podem ser adicionados e
-manipulados utilizando essas funcionalidades, assim criando uma
-experiencia mais divertida para o jogador.
+todos os jogos possuem algum tipo de efeitos sonoros, e essas
+\textit{APIs} fornecem subsídio para que eles possam ser adcicionadose
+manipulados de uma forma que o jogador se sinta mais imerso no jogo.
 
 \subsection{WebGL}
 
