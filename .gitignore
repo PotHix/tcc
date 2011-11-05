@@ -1,1 +1,9 @@
 *.pdf
+*.tex
+*.bib
+*.bbl
+*.aux
+*.blg
+*.log
+*.lof
+*.toc
