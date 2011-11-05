@@ -16,7 +16,7 @@
   <head>
     <title>Presentation</title>
 
-    <meta charset='utf-8'>
+    <meta charset="utf-8" content="">
     <script type="text/javascript" src='slides.js'></script>
   </head>
 
@@ -30,36 +30,55 @@
         </h1>
         <p>
           Willian Araujo Molinari
-          <br>
-          Novembro de 2011
         </p>
+      </article>
+
+      <article>
+        <h3>Motivação</h3>
+		<ul>
+			<li>Mostrar o estado atual da tecnologia e das ferramentas.</li>
+			<li>Mostrar que o HTML5 consegue suprir as necessidades básicas de desenvolvimento de um jogo casual.</li>
+			<li>Contribuir com informações para o desenvolvimento e crescimento do HTML5 como plataforma para jogos.</li>
+		</ul>
+      </article>
+
+      <article>
+        <h3>Metodologia</h3>
+		<ul>
+			<li>Mostrar a viabilidade da plataforma para a criação de jogos casuais.</li>
+			<li>Facilitar a proliferação de jogos que podem ser jogados no computador e no celular utilizando o mesmo código.</li>
+			<li>Dar uma visão do que compõe o HTML5.</li>
+			<li>Mostrar a evolução do HTML5.</li>
+		</ul>
       </article>
 
       <article>
         <h3>Objetivos</h3>
         <ul>
-			<li>Dar uma visão do que compõe o HTML5.</li>
-			<li>Mostrar a evolução do HTML5.</li>
-			<li>Mostrar o estado atual da tecnologia e das ferramentas.</li>
 			<li>Comparar com as outras tecnologias utilizadas no mercado.</li>
 			<li>Mostrar sua viabilidade para desenvolvimento de jogos casuais simples.</li>
         </ul>
       </article>
 
       <article>
-        <h3>Motivação</h3>
-		<p>Contribuir com informações para o desenvolvimento e crescimento do HTML5 como plataforma para jogos.</p>
-		<p>Mostrar a viabilidade da plataforma para a criação de jogos casuais.</p>
-		<p>Facilitar a proliferação de jogos que podem ser jogados no computador e no celular utilizando o mesmo código.</p>
-      </article>
-
-      <article>
         <h3>HTML5 e seus dependentes</h3>
         <ul class="build">
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>Javascript</li>
-			<li>Navegadores</li>
+			<li>
+				<strong>HTML</strong>
+				<ul><li>Criação de documentos estruturados</li></ul>
+			</li>
+			<li>
+				<strong>CSS</strong>
+				<ul><li>Criação de estilos para páginas HTML</li></ul>
+			</li>
+			<li>
+				<strong>Javascript</strong>
+				<ul><li>Manipulação de documentos HTML</li></ul>
+			</li>
+			<li>
+				<strong>Navegadores</strong>
+				<ul><li>Plataforma para execução dos itens acima</li></ul>
+			</li>
         </ul>
       </article>
 
@@ -79,56 +98,77 @@
 
       <article>
         <h3>Canvas</h3>
-		<p>Canvas é uma API que permite ao desenvolvedor desenhar objetos na tela utilizando uma forma pré-determinada interface.</p>
-		<p>Com canvas é possível criar diversas formas geométricas, importar imagens, criar curvas e etc.</p>
-		<p>Grande parte dos navegadores já possuem suporte a canvas e a cada nova versão o suporte é melhorado, tornando as interações mais rápidas.</p>
+        <ul>
+			<li>Uma API que permite ao desenvolvedor fazer desenhos diretamente no navegador.</li>
+			<li>Criação de formas geométricas.</li>
+			<li>Importação de imagens.</li>
+			<li>Suporte nos navegadores modernos.</li>
+        </ul>
       </article>
 
       <article>
         <h3>DOM e transformações CSS3</h3>
-		<p>Também é possível desenvolver jogos utilizando DOM seguindo a mesma linha de estruturação das páginas de internet comuns.</p>
-		<p>Ao utilizar DOM não é necessário o redesenho de toda a área bastando apenas o reposicionamento dos elementos.</p>
-		<p>Utilizando DOM se torna possível a aplicação de transições e outros efeitos CSS3, que permitem efeitos acelerados por hardware para o jogo.</p>
+        <ul>
+			<li>Possibilidade de desenvolvimento de jogos sem a utilização de canvas.</li>
+			<li>Compatível com grande parte dos navegadores por seguir o padrão atual de criação de páginas de internet.</li>
+			<li>Evita o redesenho de objetos a cada frame, bastando reposicionar os atuais.</li>
+			<li>Utilização de efeitos e transições CSS3 aceleradas por hardware.</li>
+        </ul>
       </article>
 
       <article>
         <h3>SVG</h3>
-		<p>SVG é uma especificação que permite a utilização de gráficos vetoriais diretamente no navegador.</p>
-		<p>Utilizando essa especificação é possível fazer animações diretamente no navegador com suporte nativo.</p>
+        <ul>
+			<li>Utilização de graficos vetoriais diretamente no navegador.</li>
+			<li>Animações diretamente no navegador.</li>
+        </ul>
       </article>
 
       <article>
         <h3>Websockets</h3>
-		<p>A tecnologia de Websockets traz o poder dos sockets do desktop para o navegador.</p>
-		<p>Com essa tecnologia é possível abrir uma conexão com o servidor e trocar dados de uma maneira mais rápida.</p>
-		<p>Essa tecnologia é muito importante para jogos com mais de um jogador, pois ela fará a conexão entre computadores remotos.</p>
+        <ul>
+			<li>Sockets no navegador.</li>
+			<li>Possibilidade de manter uma conexão direta com o servidor.</li>
+			<li>Troca de informações mais rapidamente.</li>
+			<li>Utilização para jogos multiplayer.</li>
+        </ul>
       </article>
 
       <article>
         <h3>Offline cache</h3>
-		<p>Essa tecnologia define uma maneira de deixar uma página de internet disponível mesmo quando o usuário não possui acesso a internet.</p>
-		<p>Utilizando essa tecnologia é possível criar jogos casuais que podem ser jogados em qualquer lugar.</p>
+        <ul>
+			<li>Jogos disponíveis sem a necessidade de acesso constante a internet.</li>
+			<li>Dá ao jogador a possibilidade de jogar em qualquer lugar.</li>
+        </ul>
       </article>
 
       <article>
         <h3>Local storage</h3>
-		<p>Com Local storage é possível guardar informações no navegador do usuário para consultas posteriores.</p>
-		<p>Essa tecnologia vem para acabar com a utilização de cookies para guardar informações da aplicação.</p>
-		<p>Utilizando-a será possível guardar informações especícicas sobre o jogo sem precisar de acesso ao dispositivo do jogador.</p>
+        <ul>
+			<li>Local para guardar dados no navegador do usuário.</li>
+			<li>Substituição para o uso indevido de cookies.</li>
+			<li>Um ótimo local para guardar informações sobre o jogo.</li>
+        </ul>
       </article>
 
       <article>
         <h3>Audio</h3>
-		<p>O HTML5 possui em sua especificação uma implementação para tratar audio nativamente no navegador e vários navegadores já possuem essa implementação.</p>
-		<p>Juntamente com a implementação de Audio existe também a implementação chamada WebAudioApi, que permite sons tem tempo real para o navegador.</p>
-		<p>Essas duas tecnologias podem prover toda a sonosplastia necessária para um jogo casual simples.</p>
+        <ul>
+			<li>Implementação nativa para tocar audio no navegador.</li>
+			<li>Grande suporte nos navegadores.</li>
+			<li>WebAudioApi e o audio em tempo real.</li>
+			<li>Subsídio para produzir toda a sonoplastia necessária para um jogo casual.</li>
+        </ul>
       </article>
 
       <article>
         <h3>WebGL</h3>
-		<p>A tecnologia de WebGL provê aceleração 3D via navegador.</p>
-		<p>Utilizando-a será possível conversar diretamente com a GPU do dispositivo para fazer calculos 3D utilizando OpenGL ES.</p>
-		<p>Essa tecnologia está ganhado espaço e cada vez mais conseguindo mais suporte, e com ela será possível melhorar cada vez mais os jogos casuais.</p>
+        <ul>
+			<li>Aceleração 3D via navegador.</li>
+			<li>Acesso a GPU utilizando o navegador.</li>
+			<li>Baseado em OpenGL ES.</li>
+			<li>Suporte grande parte dos navegadores incluindo suporte.</li>
+        </ul>
       </article>
 
       <article>
@@ -137,7 +177,7 @@
 			<li>Testes de performance.</li>
 			<li>Comparação dos problemas de fragmentação.</li>
 			<li>Comparação dos problemas de portabilidade.</li>
-			<li>Recursos para desenvolvimento e suporte das tecnologias.</li>
+			<li>Recursos para desenvolvimento e suporte.</li>
         </ul>
       </article>
 
@@ -153,33 +193,53 @@
 
       <article>
         <h3>Performance 2D no início de 2010</h3>
-		<img src="images/chart-performance-timo.png"></img>
+		<img alt="Performance 2D no início de 2010" src="images/chart-performance-timo.png" />
 		<div class="source">Fonte: Timo Ernst</div>
       </article>
 
       <article>
         <h3>Performance 2D no fim de 2011</h3>
-		<img src="images/chart-performance-pothix.png"></img>
+		<img alt="Performance 2D no fim de 2011" src="images/chart-performance-pothix.png" />
+		<div class="source">Fonte: Código feito por Timo Ernst, executado novamente por Willian Molinari.</div>
       </article>
 
       <article>
         <h3>Performance 3D com Flash e stage3D</h3>
-		<img src="images/stage3d-flash-60fps.png"></img>
-		<div class="source">Código de teste feito por Felix</div>
+		<img alt="Performance 3D com Flash e stage3D" src="images/stage3d-flash-60fps.png" />
+		<div class="source">Fonte: Código de teste feito por Felix Turner, executado novamente por Willian Molinari.</div>
       </article>
 
       <article>
         <h3>Performance 3D com WebGL e Javascript</h3>
-		<img src="images/webgl-javascript-60fps.png"></img>
-		<div class="source">Código de teste feito por Felix</div>
+		<img alt="Performance 3D com WebGL e Javascript" src="images/webgl-javascript-60fps.png" />
+		<div class="source">Fonte: Código de teste feito por Felix Turner, executado novamente por Willian Molinari.</div>
       </article>
 
       <article>
         <h3>Portabilidade e fragmentação</h3>
         <ul>
+			<li>Um código executado em vários dispositivos.</li>
+			<li>Prós e contras da fragmentação.</li>
 			<li>Mostrar imagens do biolab disaster (reconquest?) em vários dispositivos.</li>
-			<li>Talvez alguma frase para falar sobre o problema de fragmentação.</li>
 		</ul>
+      </article>
+
+      <article>
+        <h3>Recursos para desenvolvimento e suporte</h3>
+        <ul>
+			<li>Engines.</li>
+			<li>Editores de mapas.</li>
+			<li>Empresas (imagem do Google. Facebook, Adobe, Apple).</li>
+		</ul>
+      </article>
+
+      <article>
+        <h3>Considerações finais</h3>
+        <ul>
+			<li>HTML5 é uma tecnologia que está em constante evolução e as grandes empresas da internet estão investindo no seu crescimento.</li>
+			<li>Jogos simples podem funcionar tanto em computadores como em celulares.</li>
+			<li>A performance está em constante evolução e está aceitável para jogos casuais simples.</li>
+        </ul>
       </article>
 
       <article>
@@ -189,15 +249,6 @@
         <ul class="build">
 			<li>Performance em dispositivos móveis.</li>
 			<li>Obtenção de lucro com jogos feitos com HTML5 e Javascript.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Considerações finais</h3>
-        <ul>
-			<li>HTML5 é uma tecnologia que está em constante evolução.</li>
-			<li>Jogos simples podem funcionar tanto em computadores como em celulares.</li>
-			<li>HTML5 é uma tecnologia plausível de utilização para jogos casuais.</li>
         </ul>
       </article>
 
