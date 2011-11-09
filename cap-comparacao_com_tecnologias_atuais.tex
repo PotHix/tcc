@@ -91,7 +91,7 @@ que possui como foco facilitar o desenvolvimento de jogos no
 geral, tirando do desenvolvedor a preocupação de criar um jogo para
 diversas plataformas, assim deixando-o mais livre para pensar nas
 funcionalidades do seu próprio jogo e também prover um ambiente
-simples para esse desenvolvimento, lhe dando ferramentas gráficas que
+simples para esse desenvolvimento, dando-lhe ferramentas gráficas que
 facilitam a criação dos personagens e mapas do jogo, tanto para jogos
 3D, que são o foco principal da \textit{engine}, como para jogos 2D
 que podem se utilizar do 3D para a criação de um jogo que faça uma
@@ -173,18 +173,17 @@ renderização de gráficos 2D.
 Levando em consideração a tecnologia que possui melhor performance,
 ou seja o Adobe Flash, podemos ver que o HTML5 ainda perde bastante em performance,
 mas isso vem melhorando com o desenvolvimento dos navegadores e a melhoria nas
-\textit{engines} de javascript implementadas por eles.
+\textit{engines} de Javascript implementadas por eles.
 
 Tendo em vista que o Adobe Flash é o único que possui a quantidade de FPS
 (\textit{frames} por segundo) padrão para o desenvolvimento de jogos,
 ele será utilizado como comparação com o HTML5.
 
-O teste foi executado novamente para mostrar o quanto a performance do Javascript evoluiu nesse curto
+O teste foi executado neste trabalho para mostrar o quanto a performance do Javascript evoluiu nesse curto
 período de tempo desde o desenvolvimento da pesquisa feita por
-\citeonline{performanceria}. O teste será executado utilizando diversos navegadores no seguinte computador:
-
-Macbook Pro, Processador i7, 4GB de memória RAM utilizando o sistema
-operacional Mac OSX Lion.
+\citeonline{performanceria}. O teste foi feito utilizando um
+computador Macbook Pro, Processador i7, 4GB de memória RAM utilizando o sistema
+operacional Mac OSX Lion, executando diversos navegadores.
 
 \begin{figure}[H]
   \centering
@@ -222,7 +221,7 @@ plataformas, novamente dependendo do suporte do hardware para a
 utilização da aceleração.
 
 Os testes criados por \citeonline{website:webglvsstage3d} foram executados
-novamente utilizando um Macbook Pro, Processador i7, 4GB de memória RAM com o sistema operacional
+neste trabalho utilizando um Macbook Pro, Processador i7, 4GB de memória RAM com o sistema operacional
 Mac OSX Lion e os resultados obtidos podem ser vistos nas Figura~\ref{img:stage3d-flash-60fps}
 e na Figura~\ref{img:webgl-javascript-60fps}.
 
@@ -236,14 +235,14 @@ e na Figura~\ref{img:webgl-javascript-60fps}.
 
 A Figura~\ref{img:stage3d-flash-60fps} acima mostra a execução da
 versão Adobe Flash do experimento, sendo executado entre 55 e 60 fps.
-No caso do hardware uqe é utilizado, o Flash está utilizando OpenGL
+No caso do hardware que é utilizado, o Flash está utilizando OpenGL
 para a renderização e consegue uma boa taxa de \textit{frames} por
 segundo.
 
 Já a Figura~\ref{img:webgl-javascript-60fps} abaixo mostra a execução da
 versão WebGL do experimento, também sendo executado a 60 fps no mesmo
 hardware. Há bastante divergencia nos testes pois cada pessoa que
-executa o teste e possui um hardware diferente pode chegar a
+executa o teste possui um hardware diferente e pode chegar a
 resultados diferentes dependendo do tipo de suporte que o hardware
 possui, mas o teste executado para este trabalho mostra que em alguns
 hardwares a execução é bem parecida para as duas tecnologias.
@@ -294,7 +293,7 @@ funciona.
 Um grande exemplo de problema pode ser notado com o Adobe Flash, que possui
 \textit{plugin} para varios navegadores e funciona muito bem em sistemas Windows,
 mas tem uma qualidade não muito boa em sistemas derivados de Unix como
-o Mac Os ou o Linux. Além desse baixa qualidade nos computadores, o
+o Mac OS ou o Linux. Além desse baixa qualidade nos computadores, o
 Flash não possui uma versão para os celulares da Apple, assim tirando
 do desenvolvedor que escolher essa plataforma uma valiosa quantia de
 jogadores que poderiam pagar pelo produto. O Flash possui uma versão
@@ -306,18 +305,18 @@ dispositivos móveis.
 No caso de jogos feitos com HTML5 e Javascript, a única dependência é
 o navegador, que todos os dispositivos que acessam a internet possuem,
 e assim como \citeonline{davison2005killer} mostra em seu livro com
-Java, tudo depende da plataforma que uma determinada aplicação está
+Java, tudo depende da plataforma em que uma determinada aplicação está
 sendo executada, no caso do Java o jogo vai ter mais performance ou
 mais recursos dependendo da implementação do Java para aquela
 plataforma. O mesmo acontece com os navegadores, o jogo vai possuir
-mais performance ou mais funcionalidades dependendo da plataforma que
+uma melhor performance ou mais funcionalidades dependendo da plataforma que
 o navegador está sendo executado. Grande parte dos dispositivos que
 possuem um poder de processamento considerável também possuem suporte
 as novas funcionalidades do HTML5, criando a mistura adequada para a
 execução de jogos casuais.
 
-Alguns dispositivos que atualmente possuem um navegador com suporte as
-funcionalidades que o HTML5 especifica, são celulares com o sistema
+Alguns dispositivos que atualmente possuem um navegador com suporte às
+funcionalidades que o HTML5 especifica são celulares com o sistema
 operacional Android e celulares da Apple com sistema operacional iOS,
 também desenvolvido pela Apple.
 Ambos os celulares possuem um navegador capaz de rodar jogos feitos
@@ -354,10 +353,10 @@ no dispositivo em questão.
 Independente do navegador já estar instalado no sistema, o
 desenvolvedor do jogo terá os mesmos problemas dos \textit{plugins}, ou seja,
 também terá de lidar com as diferenças no tamanhos das telas dos
-dispositivos mobile.
+dispositivos móveis.
 
 A comunidade de desenvolvimento vem se preparando para esse problema e
-já começa a ser discutido possíveis soluções para esse problema.
+já começam a ser discutidas possíveis soluções para esse problema.
 Conforme \citeonline{html5screensize}, uma das possíveis soluções seria a
 utilização do sistema MVC (modelo, visualização e controlador), onde é
 possível separar a apresentação do conteúdo em várias fases, asssim
@@ -394,7 +393,7 @@ gráficos, como ferramentas WYSIWYG que facilitam o posicionamento de
 objetos e outras apenas disponibilizam suas bibliotecas como um
 framework para facilitar tarefas de código.
 
-A adobe possui o produto Adobe Flash professional. \cite{website:adobeflash}.
+A Adobe possui o produto Adobe Flash professional. \cite{website:adobeflash}.
 Esse produto possibilita ao desenvolvedor um acesso rápido às ferramentas de cores
 e desenhos, e facilita muito o posicionamento e a transição entre o
 código e a amostragem do jogo, integrando os dois lados em uma única
@@ -439,12 +438,12 @@ construtores de níveis para jogos 2D, versão para celulares,
 integração com engines que simulam física e outras coisas que
 realmente facilitam a tarefa de desenvolver um jogo casual.
 
-Além das ferramentas, e comunidades como é comum entre as tecnologias
+Além das ferramentas e comunidades, como é comum entre as tecnologias
 mencionadas nesse trabalho, o HTML5 possui também algumas empresas que
 apoiam e contribuem para seu crescimento. Um exemplo de empresa que
-está apoiando com material é o Facebook possui uma página
+está apoiando com material é o Facebook, que possui uma página
 dedicada aos desenvolvedores que pretendem criar aplicativos ou jogos
-utilizando HTML5 para a rede social. \cite{facebookhtml5}.
+utilizando HTML5 para a rede social. \cite{website:facebookhtml5}.
 
 Outras grandes empresas publicam materiais ou estão por trás do
 desenvolvimento do HTML5, como é o cado da Google e da Apple. A Google
@@ -471,7 +470,7 @@ Os applets Java foram bastante utilizados no início do desenvolvimento
 de jogos para a internet, mas perderam
 bastante espaço depois do surgimento do Adobe Flash e atualmente
 são bem pouco utilizados para o desenvolvimento de
-jogos, sendo mais utilizado para trabalhos academicos.
+jogos, sendo mais utilizado para trabalhos acadêmicos.
 Como os applets Java tiveram maior sucesso antes da época das redes
 sociais, a maioria dos seus jogos são simples e apenas para um
 jogador. Um exemplo desse tipo de jogo é o 3D-BOX,

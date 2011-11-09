@@ -57,9 +57,9 @@ esteja bem otimizado para evitar calculos desnecessários.
 
 \subsection{Navegadores como plataforma}
 
-O navegadore é a parte fundamental para a execução do jogo, pois
+O navegador é a parte fundamental para a execução do jogo, pois
 ele é a plataforma de desenvolvimento que o desenvolvedor está visando,
-ou seja, assim como muitas grandes empresas visam vídeo games,
+ou seja, assim como muitas grandes empresas visam videogames,
 computadores ou celulares como plataforma-alvo de desenvolvimento, o
 desenvolvedor deve ter em mente que está desenvolvendo para o
 navegador, e estar ciente de suas vantagens, desvantagens e
@@ -120,14 +120,20 @@ objetos e manipulá-los da mesma forma que é feito com jogos
 simples em duas dimensões para computadores.
 Diferentemente do DOM, que cria vários objetos que podem ser
 manipulados individualmente pelo navegador, o canvas quando criado
-gera apenas um elemento no navegador, e todos os elementos criados
-nesse elemento (imagens, retângulos e etc) ficam invisíveis para acesso, e
-não podem ser modificados, apenas recriados.
+gera apenas um elemento e todos os elementos criados
+nele (imagens, retângulos e etc) ficam indisponíveis para acesso,
+sendo assim eles não podem ser modificados, necessitando então que
+eles sejam recriados para que a imagem se modifique e passe ao jogador
+a sensação de movimento.
 
-O canvas pode ser utilizado em várias camadas, gerando vários
-elementos canvas dentro do navegador posicionado no mesmo
-lugar, facilitando a manipulação de cenário e melhorando a
-performance.
+O canvas pode ser utilizado em várias camadas, para isso são gerados
+vários elementos canvas dentro do navegador posicionando-os no mesmo
+lugar. Essa tecnica é recomendada pelos desenvolvedores de jogos e
+facilita a manipulação do cenário e de outras imagens pois permite que
+apenas uma parte possa ser redesenhada, e que isso possa ser feito
+seguindo um processo diferente do desenho dos personagens por exemplo.
+Com isso é possível ter um pequeno ganho de performance e uma melhor
+qualidade no desenvolvimento.
 
 A Figura~\ref{img:angrybirds}, mostra uma tela do Angry Birds, que é um exemplo de jogo
 que utiliza canvas com várias camadas para a renderização padrão.
@@ -474,7 +480,7 @@ biblioteca GLGE, que é um facilitador para a utilização do WebGL.
   \label{img:webglmodels}
 \end{figure}
 
-A figura~\ref{img:webglmodels} dá uma ideia de para onde o WebGL está
+A Figura~\ref{img:webglmodels} dá uma ideia de para onde o WebGL está
 caminhando, e provavelmente daqui a algum tempo será possível criar
 jogos 3D simples que funcionarão diretamente no navegador, ou seja,
 é possível que os jogos simples em três dimensões que estão atualmente
