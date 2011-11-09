@@ -126,14 +126,23 @@ sendo assim eles não podem ser modificados, necessitando então que
 eles sejam recriados para que a imagem se modifique e passe ao jogador
 a sensação de movimento.
 
+Por ser o principal caminho para o desenho de imagens na tela, e por
+consequencia a funcionalidade que é mais utilizada no desenvolvimento
+de aplicações que fazem algum tipo de desenho na tela, o canvas se tornou o foco
+de melhorias de performance dos navegadores atuais. Muitas vezes
+o Javascript não é o responsável por algumas lentidões
+tendo em vista que a aplicacão fica a maior parte do seu tempo
+desenhando na tela utilizando a interface do canvas, portanto cada vez
+mais está sendo investido tempo no desenvolvimento para melhorias da interface
+do canvas para o desenvolvedor.
+
 O canvas pode ser utilizado em várias camadas, para isso são gerados
 vários elementos canvas dentro do navegador posicionando-os no mesmo
-lugar. Essa tecnica é recomendada pelos desenvolvedores de jogos e
-facilita a manipulação do cenário e de outras imagens pois permite que
+lugar. Essa técnica é recomendada pelos desenvolvedores de jogos e
+facilita a manipulação do cenário e de outras imagens simultaneamente pois permite que
 apenas uma parte possa ser redesenhada, e que isso possa ser feito
-seguindo um processo diferente do desenho dos personagens por exemplo.
-Com isso é possível ter um pequeno ganho de performance e uma melhor
-qualidade no desenvolvimento.
+seguindo um processo diferente do desenho dos personagens por exemplo,
+assim obtendo um pequeno ganho de performance e facilidade no desenvolvimento.
 
 A Figura~\ref{img:angrybirds}, mostra uma tela do Angry Birds, que é um exemplo de jogo
 que utiliza canvas com várias camadas para a renderização padrão.
