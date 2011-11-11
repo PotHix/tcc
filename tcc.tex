@@ -25,24 +25,21 @@
   \input{epigrafe}
   \clearpage
 
-  %%% Índice
-  \renewcommand\thepage{}
-  \setcounter{tocdepth}{1}
-  \tableofcontents
-  \clearpage
-
+  %%% Resumos
+  \include{resumo}
+  \include{resumo_en}
 
   %%% Lista de Figuras
   \listoffigures
   \clearpage
 
-%  %%% Lista de Tabelas
-%  \listoftables
-%  \clearpage
+  %%% Índice
+  \renewcommand\thepage{}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+  \clearpage
 
   %%% Capítulos
-  \include{resumo}
-  \include{resumo_en}
   \renewcommand\thepage{\arabic{page}}
   \setcounter{page}{1}
   \include{introducao}
