@@ -127,18 +127,23 @@ eles sejam recriados para que a imagem se modifique e passe ao jogador
 a sensação de movimento.
 
 Por ser o principal caminho para o desenho de imagens na tela, e por
-consequencia a funcionalidade que é mais utilizada no desenvolvimento
+consequência a funcionalidade que é mais utilizada no desenvolvimento
 de aplicações que fazem algum tipo de desenho na tela, o canvas se tornou o foco
 de melhorias de performance dos navegadores atuais. Muitas vezes
 o Javascript não é o responsável por algumas lentidões
-tendo em vista que a aplicacão fica a maior parte do seu tempo
+tendo em vista que a aplicação fica a maior parte do seu tempo
 desenhando na tela utilizando a interface do canvas, portanto cada vez
 mais está sendo investido tempo no desenvolvimento para melhorias da interface
 do canvas para o desenvolvedor.
 
 O canvas pode ser utilizado em várias camadas, para isso são gerados
 vários elementos canvas dentro do navegador posicionando-os no mesmo
-lugar. Essa técnica é recomendada pelos desenvolvedores de jogos e
+lugar. A grande maioria dos jogos desenvolvidos atualmente utilizam
+essa técnica para ganhar performance, um exemplo é o jogo Jogando e
+Aprendendo, que foi desenvolvido na Fundação Santo André pelo autor
+desse trabalho. \cite{website:jogandoeaprendendo}.
+
+A técnica de canvas em várias camadas é recomendada pelos desenvolvedores de jogos e
 facilita a manipulação do cenário e de outras imagens simultaneamente pois permite que
 apenas uma parte possa ser redesenhada, e que isso possa ser feito
 seguindo um processo diferente do desenho dos personagens por exemplo,
@@ -169,7 +174,7 @@ em função do desenvolvimento de jogos utilizando as funcionalidades do
 canvas, muito ainda é discutido sobre utilizar DOM para o
 desenvolvimento de jogos, assim aproveitando as vantagens que o CSS3
 pode trazer.
-Uma das vantagens de ter um jogo que utiliza DOM ao invés de Canvas é
+Uma das vantagens de ter um jogo que utiliza DOM ao invés de canvas é
 a maior compatibilidade com os navegadores, pois todos possuem suporte
 a DOM, que é utilizado para a renderização das páginas de internet que
 estão funcionando atualmente.
