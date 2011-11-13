@@ -10,6 +10,7 @@
   \clearpage
 
   %%% Folha Rosto
+  \setcounter{page}{1} % A contagem de páginas começa na folha de rosto...
   \input{folharosto}
   \clearpage
 
@@ -42,7 +43,6 @@
 
   %%% Capítulos
   \renewcommand\thepage{\arabic{page}}
-  \setcounter{page}{1}
   \include{introducao}
   \include{cap-javascript_html5_e_a_evolucao_dos_navegadores}
   \include{cap-jogos-casuais-e-sua-evolucao}
