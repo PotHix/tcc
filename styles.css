@@ -610,3 +610,7 @@ article.smaller q::after {
 .prettyprint .var { /* a declaration; a variable name */
   color: rgb(127, 0, 127);
 }
+
+.inline-images {
+	margin-top: 20px;
+}
