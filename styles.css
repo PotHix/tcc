@@ -97,7 +97,7 @@ body {
 }
 
 .slides.template-default > article:not(.nobackground):not(.biglogo) {
-  background: url(images/plaev-logo-small.png) 710px 625px no-repeat;
+  background: url(images/fsa-logo-small.jpg) 730px 625px no-repeat;
 
   background-color: white;
 }
@@ -611,6 +611,6 @@ article.smaller q::after {
   color: rgb(127, 0, 127);
 }
 
-.inline-images {
+.element-demo {
 	margin-top: 20px;
 }
