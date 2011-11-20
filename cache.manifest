@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# revision 1
+# revision 2
 
 NETWORK:
 *
@@ -8,15 +8,18 @@ CACHE:
 slides.js
 styles.css
 
-images/angrybirds.png
+images/angrybirds.jpg
+images/apple-adobe.png
 images/beslimed.png
 images/currency.png
 images/emberwind.png
 images/fsa-logo-small.png
 images/gmailoffline.png
+images/google.jpg
 images/stage3d-flash-60fps.png
 images/swarmation.png
 images/webgl-javascript-60fps.png
 images/chart-performance-pothix.png
 images/chart-performance-timo.png
 images/webglwater.png
+images/w3c.png
