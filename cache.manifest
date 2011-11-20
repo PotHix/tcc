@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# revision 1
+
+NETWORK:
+*
+
+CACHE:
+slides.js
+styles.css
+
+images/angrybirds.png
+images/beslimed.png
+images/currency.png
+images/emberwind.png
+images/fsa-logo-small.png
+images/gmailoffline.png
+images/stage3d-flash-60fps.png
+images/swarmation.png
+images/webgl-javascript-60fps.png
+images/chart-performance-pothix.png
+images/chart-performance-timo.png
+images/webglwater.png
