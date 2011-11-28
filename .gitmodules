@@ -1,0 +1,3 @@
+[submodule "demos/jogandoeaprendendo"]
+	path = demos/jogandoeaprendendo
+	url = git@github.com:PotHix/JeP.git
