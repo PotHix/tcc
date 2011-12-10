@@ -546,8 +546,9 @@ function addFontStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
-  el.href = 'http://fonts.googleapis.com/css?family=' +
-            'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono';
+  //el.href = 'http://fonts.googleapis.com/css?family=' +
+  //          'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono';
+  el.href = 'font.css' +
 
   document.body.appendChild(el);
 };
